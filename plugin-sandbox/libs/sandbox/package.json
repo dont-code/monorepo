@@ -1,0 +1,21 @@
+{
+  "name": "@dontcode/sandbox",
+  "version": "1.6.1-14",
+  "peerDependencies": {
+    "@angular/common": "^15.1.2",
+    "@angular/core": "^15.1.2",
+    "@angular/router": "^15.1.2",
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primeng": "^15.1.1",
+    "broadcast-channel": "^4.20.2",
+    "core-js": "^3.27.2",
+    "dexie": "^3.2.2",
+    "rxjs": "^7.8.0",
+    "@dontcode/core": "^1.0.0",
+    "@dontcode/plugin-common": "^1.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.4.1"
+  }
+}

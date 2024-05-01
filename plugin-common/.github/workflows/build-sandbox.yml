@@ -1,0 +1,72 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Sandbox Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch name to re-build ?
+        required: true
+        type: string
+  push:
+    paths:
+      - '*'
+      - 'libs/sandbox/**'
+      - '.github/workflows/build-sandbox.yml'
+
+jobs:
+  build:
+    env:
+      branch: ${{ inputs.branch || github.ref_name }}
+      stage: ${{ inputs.branch == 'main' && 'latest' || github.ref_name == 'main' && 'latest' || 'next' }}
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chromium, chrome]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: dont-code/plugins
+          path: plugins
+          fetch-depth: 0
+          ref: ${{ env.branch }}
+          token: ${{secrets.DONTCODE_ACTIONS_TOKEN}}
+      - name: Setup build environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+          cache-dependency-path: plugins/package-lock.json
+      - name: Install
+        run: |
+          npm install -g nx
+          npm ci
+          npm install @dontcode/core@${{env.stage}} --no-optional
+        working-directory: 'plugins'
+      - name: Build
+        run: |
+          nx run sandbox:build:production
+        working-directory: 'plugins'
+      - name: Tests
+        run: |
+          nx run sandbox:test
+          nx run plugin-tester-e2e:e2e --browser ${{matrix.browser}}
+        working-directory: 'plugins'
+      - uses: actions/upload-artifact@v4
+        # Test run screenshots only on failure
+        if: failure()
+        with:
+          name: cypress-${{matrix.browser}}-screenshots
+          path: plugins/dist/cypress/apps/plugin-tester-e2e/screenshots
+          # Test run video was always captured, so this action uses "always()" condition
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-${{matrix.browser}}-videos
+          path: plugins/dist/cypress/apps/plugin-tester-e2e/videos

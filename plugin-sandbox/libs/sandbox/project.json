@@ -1,0 +1,44 @@
+{
+  "name": "sandbox",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/sandbox/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/sandbox"],
+      "options": {
+        "project": "libs/sandbox/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": false
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/sandbox/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/sandbox/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/sandbox"],
+      "options": {
+        "jestConfig": "libs/sandbox/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/sandbox/src/**/*.ts",
+          "libs/sandbox/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
