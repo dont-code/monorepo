@@ -1,0 +1,28 @@
+<h1>List of {{entityName}}</h1>
+<p-toolbar>
+  <ng-template pTemplate="left">
+    <button name="new" pButton icon="pi pi-plus" class="p-button-rounded p-button-success p-mr-2" (click)="newEntity()" pTooltip="Create a new {{entityName}}." [disabled]="dataLoading"></button>
+    <button name="delete" pButton icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteEntity()"  pTooltip="Remove permanently the selected {{entityName}}." [disabled]="!selectedItem"></button>
+    <i class="pi pi-minus p-mx-2" style="font-size: 0.5rem"></i>
+    <button name="refresh" pButton [icon]="refreshIcon" class="p-button-rounded p-button-warning" (click)="refreshScreen()" pTooltip="Refresh values of all {{entityName}}." [disabled]="dataLoading"></button>
+    <button name="save" pButton icon="pi pi-save" class="p-button-rounded p-button-warning" (click)="saveEntity()" pTooltip="Saves permanently the selected {{entityName}}." [disabled]="!canSave"></button>
+  </ng-template>
+</p-toolbar>
+<p-tabView [(activeIndex)]="tabIndex">
+  <p-tabPanel header="List">
+      <!-- Display an array of elements -->
+    <dontcode-list-entity [store]="store" [(selectedItem)]="selectedItem" (selectedItemChange)="selectChange($event)" ></dontcode-list-entity>
+  </p-tabPanel>
+  <p-tabPanel header="Edit" [disabled]="!selectedItem">
+      <dontcode-edit-entity [value]="selectedItem"></dontcode-edit-entity>
+  </p-tabPanel>
+</p-tabView>
+<p-toolbar>
+  <ng-template pTemplate="left">
+    <button name="new-bottom" pButton icon="pi pi-plus" class="p-button-rounded p-button-success p-mr-2" (click)="newEntity()" pTooltip="Create a new {{entityName}}." [disabled]="dataLoading"></button>
+    <button name="delete-bottom" pButton icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteEntity()" pTooltip="Remove permanently the selected {{entityName}}." [disabled]="!selectedItem"></button>
+    <i class="pi pi-minus p-mx-2" style="font-size: 0.5rem"></i>
+    <button name="refresh-bottom" pButton [icon]="refreshIcon" class="p-button-rounded p-button-warning" (click)="refreshScreen()" pTooltip="Refresh values of all {{entityName}}." [disabled]="dataLoading"></button>
+    <button name="save-bottom" pButton icon="pi pi-save" class="p-button-rounded p-button-warning" (click)="saveEntity()" pTooltip="Saves permanently the selected {{entityName}}." [disabled]="!canSave"></button>
+  </ng-template>
+</p-toolbar>

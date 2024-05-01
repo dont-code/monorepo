@@ -223,7 +223,7 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote main branch.
      */
-    "url": "https://github.com/microsoft/rush-example",
+    "url": "https://github.com/dont-code/monorepo",
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
@@ -410,19 +410,25 @@
     // }
     {
       "packageName": "@dontcode/core",
-      "projectFolder": "core",
+      "projectFolder": "libs/core",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     {
       "packageName": "@dontcode/plugin-common",
-      "projectFolder": "plugin-common",
+      "projectFolder": "libs/ng-common",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     {
       "packageName": "@dontcode/plugin-sandbox",
-      "projectFolder": "plugin-sandbox",
+      "projectFolder": "libs/ng-sandbox",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@dontcode/plugin-std",
+      "projectFolder": "plugins/standard",
       "reviewCategory": "production",
       "shouldPublish": true
     }  ]

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "basic": "libs/basic",
+    "fields": "libs/fields",
+    "plugin-tester": "apps/plugin-tester",
+    "plugin-tester-e2e": "apps/plugin-tester-e2e"
+  }
+}

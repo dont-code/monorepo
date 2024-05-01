@@ -1,0 +1,16 @@
+<p-confirmDialog header="Error" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+<ng-template #EDIT_URL><ng-container [formGroup]="form"><input [name]="name" [formControlName]="name" pInputText class="w-full"/></ng-container></ng-template>
+<ng-template #EDIT_IMAGE>
+  <ng-container [formGroup]="form">
+    <div class="grid">
+      <div class="col-2">
+        <p-fileUpload *ngIf="supportsImageUpload()" mode="basic" chooseLabel="Browse" [name]="name+'-img'" [auto]="true" [multiple]="false" accept="image/*" [customUpload]="true" (uploadHandler)="uploadImage ($event)"></p-fileUpload>
+      </div>
+      <div class="col-10">
+        <input [name]="name" [formControlName]="name" pInputText class="w-full" />
+      </div>
+    </div>
+  </ng-container>
+</ng-template>
+<ng-template #READ_URL><a [pTooltip]="value" [href]="value" target="_blank">{{calculateUrl (value)}}</a></ng-template>
+<ng-template #READ_IMAGE><img class="inline-image" [src]="value" /></ng-template>

@@ -1,0 +1,140 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: All Plugins Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: The version of the release, if needed (x.y.z-p)
+        required: false
+        type: string
+      next:
+        description: Is it a dev / next release ?
+        required: true
+        type: boolean
+      deploy:
+        description: Deploy to public website?
+        required: true
+        type: boolean
+
+jobs:
+  build:
+    env:
+      branch: ${{ inputs.next == true && 'Development' || 'main' }}
+      stage: ${{ inputs.next == true && 'next' || 'latest' }}
+      version: ${{ inputs.next == true && 'patch' || 'minor' }}
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chromium, chrome]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: dont-code/plugins
+          path: plugins
+          fetch-depth: 0
+          ref: ${{ env.branch }}
+          token: ${{secrets.DONTCODE_ACTIONS_TOKEN}}
+      - name: Setup build environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+          cache-dependency-path: plugins/package-lock.json
+      - name: Install Nx.dev
+        run: npm install -g nx
+      - name: Version
+        if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
+        run: |
+          PACKAGE_VERSION=$(npm view @dontcode/plugin-basic versions --json | jq -r '.[-1]')
+          echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
+          cd libs/basic
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd ../fields
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd ../screen
+          npm version $PACKAGE_VERSION --allow-same-version
+        working-directory: 'plugins'
+      - name: Version ${{env.version}}
+        if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
+        run: |
+          cd libs/basic
+          npm version ${{env.version}}
+          cd ../fields
+          npm version ${{env.version}}
+          cd ../screen
+          npm version ${{env.version}}
+        working-directory: 'plugins'
+      - name: Version
+        if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version != '') }}
+        run: |
+          PACKAGE_VERSION=${{inputs.version}}
+          echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
+          cd libs/basic
+          npm version $PACKAGE_VERSION
+          cd ../fields
+          npm version $PACKAGE_VERSION
+          cd ../screen
+          npm version $PACKAGE_VERSION
+        working-directory: 'plugins'
+      - name: Install ${{env.stage}}
+        run: |
+          npm ci
+          npm install @dontcode/core@${{env.stage}} --no-optional
+        working-directory: 'plugins'
+      - name: Build
+        run: |
+          nx run basic:build:production
+          nx run fields:build:production
+          nx run screen:build:production
+        working-directory: 'plugins'
+      - name: Unit tests
+        run: |
+          nx run screen:test
+          nx run basic:test
+          nx run fields:test
+          nx run plugin-tester:test
+        working-directory: 'plugins'
+      - run: |
+          nx run plugin-tester-e2e:e2e --browser ${{matrix.browser}}
+        working-directory: 'plugins'
+      - uses: actions/upload-artifact@v4
+        # Test run screenshots only on failure
+        if: failure()
+        with:
+          name: cypress-${{matrix.browser}}-screenshots
+          path: plugins/dist/cypress/apps/plugin-tester-e2e/screenshots
+          # Test run video was always captured, so this action uses "always()" condition
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-${{matrix.browser}}-videos
+          path: plugins/dist/cypress/apps/plugin-tester-e2e/videos
+      - name: Deploy all plugins
+        run: nx run plugin-tester:build:production --output-path="dist/apps/plugin-tester/${{env.stage}}" --base-href "https://run.dont-code.net/plugins/${{env.stage}}/"
+        working-directory: 'plugins'
+      - if: ${{ success()  && ( matrix.browser == 'chromium' ) && ( inputs.deploy == true) }}
+        uses: gcollin/ghaction-github-pages@main
+        with:
+          repo: dont-code/plugins
+          target_branch: gh-pages # The branch the action should deploy to.
+          build_dir: plugins/dist/apps/plugin-tester
+          keep_history: true
+          multiple_sites: true
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{secrets.DONTCODE_ACTIONS_TOKEN }}
+      - name: Publish all libraries $${{env.stage}}
+        if: ${{ success() && ( matrix.browser == 'chromium' ) }}
+        run: |
+          npm publish plugins/dist/libs/basic --access public --tag ${{env.stage}}
+          npm publish plugins/dist/libs/fields --access public --tag ${{env.stage}}
+          npm publish plugins/dist/libs/screen --access public --tag ${{env.stage}}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
