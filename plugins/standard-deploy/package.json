@@ -26,7 +26,7 @@
     "@angular/router": "^15.1.2",
     "@dontcode/core": "workspace:^",
     "@dontcode/plugin-common": "workspace:^",
-    "@dontcode/plugin-sandbox": "workspace:^",
+    "@dontcode/sandbox": "workspace:^",
     "@dontcode/plugin-std": "workspace:^",
     "@fortawesome/angular-fontawesome": "^0.12.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

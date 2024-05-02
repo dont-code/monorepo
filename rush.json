@@ -421,7 +421,7 @@
       "shouldPublish": true
     },
     {
-      "packageName": "@dontcode/plugin-sandbox",
+      "packageName": "@dontcode/sandbox",
       "projectFolder": "libs/ng-sandbox",
       "reviewCategory": "production",
       "shouldPublish": true

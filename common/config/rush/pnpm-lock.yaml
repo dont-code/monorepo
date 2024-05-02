@@ -779,12 +779,12 @@ importers:
       '@dontcode/plugin-common':
         specifier: workspace:^
         version: link:../../libs/ng-common
-      '@dontcode/plugin-sandbox':
-        specifier: workspace:^
-        version: link:../../libs/ng-sandbox
       '@dontcode/plugin-std':
         specifier: workspace:^
         version: link:../standard
+      '@dontcode/sandbox':
+        specifier: workspace:^
+        version: link:../../libs/ng-sandbox
       '@fortawesome/angular-fontawesome':
         specifier: ^0.12.1
         version: 0.12.1(@angular/core@15.2.10(rxjs@7.8.1)(zone.js@0.12.0))(@fortawesome/fontawesome-svg-core@6.5.2)

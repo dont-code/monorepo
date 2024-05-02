@@ -1,5 +1,5 @@
 {
-  "name": "@dontcode/plugin-sandbox",
+  "name": "@dontcode/sandbox",
   "version": "7.1.0",
   "license": "MIT",
   "main": "dist/libs/sandbox/esm2020/index.mjs",

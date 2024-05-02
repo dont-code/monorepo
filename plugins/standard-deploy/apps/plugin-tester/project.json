@@ -21,7 +21,7 @@
           "apps/plugin-tester/src/favicon.ico",
           "apps/plugin-tester/src/assets",
           {
-            "input": "./node_modules/@dontcode/plugin-sandbox/dist/libs/sandbox/assets",
+            "input": "./node_modules/@dontcode/sandbox/dist/libs/sandbox/assets",
             "glob": "**/*",
             "output": "assets"
           }

@@ -3,7 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
-import {SandboxModule} from "@dontcode/plugin-sandbox";
+import {SandboxModule} from "@dontcode/sandbox";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {environment} from "../environments/environment";
 import {HttpClientModule} from "@angular/common/http";

@@ -8,7 +8,7 @@ module.exports = {
     return {
       "@dontcode/core": {...config,singleton: true, strictVersion: false},
       "@dontcode/plugin-common": {...config,singleton: true, strictVersion: false},
-      "@dontcode/plugin-sandbox": {...config,singleton: true, strictVersion: false},
+      "@dontcode/sandbox": {...config,singleton: true, strictVersion: false},
       "@dontcode/plugin-std": {...config,singleton: true, strictVersion: false},
     }[name];
   }
