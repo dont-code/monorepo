@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "std": "libs/std",
     "plugin-tester": "apps/plugin-tester",
     "plugin-tester-e2e": "apps/plugin-tester-e2e"
   }

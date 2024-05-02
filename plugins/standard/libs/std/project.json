@@ -1,0 +1,44 @@
+{
+  "name": "basic",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/std/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/std"],
+      "options": {
+        "project": "libs/std/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": false
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/std/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/std/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/std"],
+      "options": {
+        "jestConfig": "libs/std/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/std/src/**/*.ts",
+          "libs/std/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

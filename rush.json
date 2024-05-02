@@ -431,5 +431,12 @@
       "projectFolder": "plugins/standard",
       "reviewCategory": "production",
       "shouldPublish": true
-    }  ]
+    },
+    {
+      "packageName": "@dontcode/plugin-std-tester",
+      "projectFolder": "plugins/standard-deploy",
+      "reviewCategory": "production",
+      "shouldPublish": false
+      }
+    ]
 }

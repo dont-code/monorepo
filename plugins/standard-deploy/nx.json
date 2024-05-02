@@ -29,7 +29,7 @@
       "style": "scss"
     }
   },
-  "defaultProject": "std",
+  "defaultProject": "common",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
