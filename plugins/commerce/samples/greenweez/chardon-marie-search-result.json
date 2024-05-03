@@ -1,0 +1,1769 @@
+{
+  "results": [
+    {
+      "hits": [
+        {
+          "attributes": {
+            "calibre": null,
+            "fresh_product": false,
+            "products_fleg": false,
+            "products_package": false,
+            "bulk_only": false,
+            "defrost": false,
+            "consumable_product": true,
+            "allergen": null,
+            "variety": null,
+            "nutriscore": null,
+            "repairability_score": null,
+            "eco_tax": null,
+            "gift_card": false,
+            "donation": false,
+            "origin": null,
+            "weight": 0.035,
+            "height": 3,
+            "length": 11,
+            "width": 3
+          },
+          "flags": {
+            "marketplace": false,
+            "top_sale": true,
+            "top_product_bio": false,
+            "top_product_eco": false,
+            "short_use-by_date": false,
+            "new": false,
+            "has_discount": false,
+            "available": true,
+            "committed_price": true,
+            "discount_short_use-by_date": false,
+            "discount_limited_quantity": false
+          },
+          "shop_data": {
+            "id": 12632,
+            "variant": {
+              "images": [
+                {
+                  "type": "variant",
+                  "path": "2WEEZ0009_0.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "2WEEZ0009_1.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "2WEEZ0009_2.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "2WEEZ0009_3.jpg"
+                }
+              ],
+              "code": "2WEEZ0009",
+              "product": {
+                "legacyId": 109565,
+                "brand": {
+                  "name": "Greenweez"
+                },
+                "id": 30723,
+                "slug": "charbon-de-bois-binchotan-filtre-a-eau-100-naturel"
+              }
+            },
+            "offerData": [
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/28933",
+                "@type": "OfferData",
+                "type": "state",
+                "value": "Neuf",
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/28934",
+                "@type": "OfferData",
+                "type": "flags",
+                "flags": {
+                  "marketplace": false,
+                  "top_sale": true,
+                  "top_product_bio": false,
+                  "top_product_eco": false,
+                  "short_use-by_date": false,
+                  "new": false,
+                  "has_discount": false,
+                  "available": true,
+                  "committed_price": true,
+                  "discount_short_use-by_date": false,
+                  "discount_limited_quantity": false
+                },
+                "committedPrice": true,
+                "mutable": true
+              }
+            ],
+            "sellerCatalog": {
+              "seller": {
+                "name": "Greenweez",
+                "slug": "greenweez-france",
+                "logo": null
+              }
+            },
+            "onHand": 1802,
+            "pricing": {
+              "channelCode": "france",
+              "price": 540,
+              "originalPrice": 540,
+              "minimumPrice": 0,
+              "discount": false,
+              "priceIncludedVat": 648,
+              "priceHasIncludedVat": false,
+              "taxAmount": 108,
+              "taxPercent": 20,
+              "originalTaxAmount": 108,
+              "originalPriceIncludedVat": 648,
+              "appliedPromotion": null
+            }
+          },
+          "main_category": "Maison & Extérieur > Maison > Carafe filtrante et Fontaine > Charbon, filtre et cartouche",
+          "seller": {
+            "name": "Greenweez",
+            "media": {
+              "src": "https://static.greenweez.com/marketplace/greenweez_black.png",
+              "type": "image"
+            }
+          },
+          "stats": {
+            "sales": {
+              "qty_28_avg": 483.85
+            },
+            "reviews": {
+              "reviews_nb": 117,
+              "reviews_score": 4.538,
+              "reviews_score_round": 4
+            },
+            "main_search_attribute": {
+              "main_search_cat": "charbon filtre"
+            },
+            "scoring": {
+              "pdt_score": 0,
+              "pdt_dft_score": 1.552002515333948e+22,
+              "rank_offers": 1
+            }
+          },
+          "name": "Charbon de bois Binchotan filtre à eau 100% naturel",
+          "capacity": {
+            "unit": "pce",
+            "value": 1
+          },
+          "discount": {
+            "percent": 0
+          },
+          "objectID": "12632",
+          "_highlightResult": {
+            "shop_data": {
+              "id": {
+                "value": "12632",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "variant": {
+                "identifiers": [
+                  {
+                    "value": "3701269700249",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                ],
+                "code": {
+                  "value": "2WEEZ0009",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "product": {
+                  "legacyId": {
+                    "value": "109565",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "brand": {
+                    "name": {
+                      "value": "Greenweez",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  },
+                  "id": {
+                    "value": "30723",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "code": {
+                    "value": "2WEEZ0009",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "translations": {
+                    "fr_FR": {
+                      "shortDescription": {
+                        "value": "<p><strong>Bâton de __ais-highlight__charbon__/ais-highlight__ de bois blanc Binchotan</strong>. Fabriqué au Japon selon une méthode traditionnelle ancestrale. Améliore le goût de l'eau du robinet. Filtre 100% naturel. ATTENTION les dimensions peuvent __ais-highlight__varie__/ais-highlight__r en fonction des bâtons : +/-2cm de diamètre et +/- 10cm de longueur.</p>",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      },
+                      "name": {
+                        "value": "__ais-highlight__Charbon__/ais-highlight__ de bois Binchotan filtre à eau 100% naturel",
+                        "matchLevel": "partial",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon"
+                        ]
+                      }
+                    }
+                  },
+                  "mainTaxon": {
+                    "name": {
+                      "value": "__ais-highlight__Charbon__/ais-highlight__, filtre et cartouche",
+                      "matchLevel": "partial",
+                      "fullyHighlighted": false,
+                      "matchedWords": [
+                        "chardon"
+                      ]
+                    }
+                  }
+                }
+              },
+              "sellerCatalog": {
+                "seller": {
+                  "name": {
+                    "value": "Greenweez",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              }
+            },
+            "stats": {
+              "main_search_attribute": {
+                "main_search_cat": {
+                  "value": "__ais-highlight__charbon__/ais-highlight__ filtre",
+                  "matchLevel": "partial",
+                  "fullyHighlighted": false,
+                  "matchedWords": [
+                    "chardon"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "calibre": null,
+            "fresh_product": false,
+            "products_fleg": false,
+            "products_package": true,
+            "bulk_only": false,
+            "defrost": false,
+            "consumable_product": true,
+            "allergen": null,
+            "variety": null,
+            "nutriscore": null,
+            "repairability_score": null,
+            "eco_tax": null,
+            "gift_card": false,
+            "donation": false,
+            "origin": null,
+            "weight": 0.11,
+            "height": 0,
+            "length": 0,
+            "width": 0
+          },
+          "flags": {
+            "marketplace": false,
+            "top_sale": false,
+            "top_product_bio": false,
+            "top_product_eco": false,
+            "short_use-by_date": false,
+            "new": false,
+            "has_discount": false,
+            "available": true,
+            "committed_price": true,
+            "discount_short_use-by_date": false,
+            "discount_limited_quantity": false
+          },
+          "shop_data": {
+            "id": 12517,
+            "variant": {
+              "images": [
+                {
+                  "type": "variant",
+                  "path": "1PACK3086_0.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "1PACK3086_1.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "1PACK3086_2.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "1PACK3086_3.jpg"
+                }
+              ],
+              "code": "1PACK3086",
+              "product": {
+                "legacyId": 110999,
+                "brand": {
+                  "name": "Greenweez"
+                },
+                "id": 32375,
+                "slug": "lot-de-3-charbons-de-bois-binchotan-filtre-a-eau-100-naturel"
+              }
+            },
+            "offerData": [
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/28665",
+                "@type": "OfferData",
+                "type": "state",
+                "value": "Neuf",
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/28666",
+                "@type": "OfferData",
+                "type": "flags",
+                "flags": {
+                  "marketplace": false,
+                  "top_sale": false,
+                  "top_product_bio": false,
+                  "top_product_eco": false,
+                  "short_use-by_date": false,
+                  "new": false,
+                  "has_discount": false,
+                  "available": true,
+                  "committed_price": true,
+                  "discount_short_use-by_date": false,
+                  "discount_limited_quantity": false
+                },
+                "committedPrice": true,
+                "mutable": true
+              }
+            ],
+            "sellerCatalog": {
+              "seller": {
+                "name": "Greenweez",
+                "slug": "greenweez-france",
+                "logo": null
+              }
+            },
+            "onHand": 590,
+            "pricing": {
+              "channelCode": "france",
+              "price": 1606,
+              "originalPrice": 1606,
+              "minimumPrice": 0,
+              "discount": false,
+              "priceIncludedVat": 1927,
+              "priceHasIncludedVat": false,
+              "taxAmount": 321,
+              "taxPercent": 20,
+              "originalTaxAmount": 321,
+              "originalPriceIncludedVat": 1927,
+              "appliedPromotion": null
+            }
+          },
+          "main_category": "Maison & Extérieur > Maison > Carafe filtrante et Fontaine > Charbon, filtre et cartouche",
+          "seller": {
+            "name": "Greenweez",
+            "media": {
+              "src": "https://static.greenweez.com/marketplace/greenweez_black.png",
+              "type": "image"
+            }
+          },
+          "stats": {
+            "sales": {
+              "qty_28_avg": 1038.92
+            },
+            "reviews": {
+              "reviews_nb": 92,
+              "reviews_score": 4.609,
+              "reviews_score_round": 4
+            },
+            "main_search_attribute": {
+              "main_search_cat": "charbon filtre"
+            },
+            "scoring": {
+              "pdt_score": 0,
+              "pdt_dft_score": 1.558436937211717e+22,
+              "rank_offers": 1
+            }
+          },
+          "name": "Lot de 3 charbons de bois Binchotan filtre à eau 100% naturel",
+          "capacity": {
+            "unit": "pce",
+            "value": 0
+          },
+          "discount": {
+            "percent": 0
+          },
+          "objectID": "12517",
+          "_highlightResult": {
+            "shop_data": {
+              "id": {
+                "value": "12517",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "variant": {
+                "identifiers": [
+                  {
+                    "value": "",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                ],
+                "code": {
+                  "value": "1PACK3086",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "product": {
+                  "legacyId": {
+                    "value": "110999",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "brand": {
+                    "name": {
+                      "value": "Greenweez",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  },
+                  "id": {
+                    "value": "32375",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "code": {
+                    "value": "1PACK3086",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "translations": {
+                    "fr_FR": {
+                      "shortDescription": {
+                        "value": "<p><strong>Lot de 3 bâtons de __ais-highlight__charbon__/ais-highlight__ de bois blanc Binchotan</strong>. Fabriqué au Japon selon une méthode traditionnelle ancestrale. Améliore le goût de l'eau du robinet. Filtre 100% naturel. ATTENTION les dimensions peuvent __ais-highlight__varie__/ais-highlight__r en fonction des bâtons : +/-2cm de diamètre et +/- 10cm de longueur.</p>",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      },
+                      "name": {
+                        "value": "Lot de 3 charbons de bois Binchotan filtre à eau 100% naturel",
+                        "matchLevel": "none",
+                        "matchedWords": []
+                      }
+                    }
+                  },
+                  "mainTaxon": {
+                    "name": {
+                      "value": "__ais-highlight__Charbon__/ais-highlight__, filtre et cartouche",
+                      "matchLevel": "partial",
+                      "fullyHighlighted": false,
+                      "matchedWords": [
+                        "chardon"
+                      ]
+                    }
+                  }
+                }
+              },
+              "sellerCatalog": {
+                "seller": {
+                  "name": {
+                    "value": "Greenweez",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              }
+            },
+            "stats": {
+              "main_search_attribute": {
+                "main_search_cat": {
+                  "value": "__ais-highlight__charbon__/ais-highlight__ filtre",
+                  "matchLevel": "partial",
+                  "fullyHighlighted": false,
+                  "matchedWords": [
+                    "chardon"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "calibre": null,
+            "fresh_product": false,
+            "products_fleg": false,
+            "products_package": false,
+            "bulk_only": false,
+            "defrost": false,
+            "consumable_product": true,
+            "allergen": null,
+            "variety": null,
+            "nutriscore": null,
+            "repairability_score": null,
+            "eco_tax": null,
+            "gift_card": false,
+            "donation": false,
+            "origin": null,
+            "weight": 0.09,
+            "height": 9,
+            "length": 10,
+            "width": 10
+          },
+          "flags": {
+            "marketplace": false,
+            "top_sale": true,
+            "top_product_bio": false,
+            "top_product_eco": false,
+            "short_use-by_date": true,
+            "new": false,
+            "has_discount": false,
+            "available": true,
+            "committed_price": false,
+            "discount_short_use-by_date": false,
+            "discount_limited_quantity": false
+          },
+          "shop_data": {
+            "id": 108870,
+            "variant": {
+              "images": [
+                {
+                  "type": "variant",
+                  "path": "1NATF0093_0.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "1NATF0093_1.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "1NATF0093_2.jpg"
+                }
+              ],
+              "code": "1NATF0093",
+              "product": {
+                "legacyId": 104168,
+                "brand": {
+                  "name": "Nat & Form"
+                },
+                "id": 135624,
+                "slug": "chardon-marie-bio-x-200-gelules"
+              }
+            },
+            "offerData": [
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/306246",
+                "@type": "OfferData",
+                "type": "state",
+                "value": "Neuf",
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/306247",
+                "@type": "OfferData",
+                "type": "flags",
+                "flags": {
+                  "marketplace": false,
+                  "top_sale": true,
+                  "top_product_bio": false,
+                  "top_product_eco": false,
+                  "short_use-by_date": true,
+                  "new": false,
+                  "has_discount": false,
+                  "available": true,
+                  "committed_price": false,
+                  "discount_short_use-by_date": false,
+                  "discount_limited_quantity": false
+                },
+                "committedPrice": false,
+                "mutable": true
+              }
+            ],
+            "sellerCatalog": {
+              "seller": {
+                "name": "Greenweez",
+                "slug": "greenweez-france",
+                "logo": null
+              }
+            },
+            "onHand": 62,
+            "pricing": {
+              "channelCode": "france",
+              "price": 1033,
+              "originalPrice": 1033,
+              "minimumPrice": 0,
+              "discount": false,
+              "priceIncludedVat": 1090,
+              "priceHasIncludedVat": false,
+              "taxAmount": 57,
+              "taxPercent": 5.5,
+              "originalTaxAmount": 57,
+              "originalPriceIncludedVat": 1090,
+              "appliedPromotion": null
+            }
+          },
+          "main_category": "Supermarché bio > Santé > Complément alimentaire > Minceur, détox",
+          "seller": {
+            "name": "Greenweez",
+            "media": {
+              "src": "https://static.greenweez.com/marketplace/greenweez_black.png",
+              "type": "image"
+            }
+          },
+          "stats": {
+            "sales": {
+              "qty_28_avg": 33.85
+            },
+            "reviews": {
+              "reviews_nb": 8,
+              "reviews_score": 4.875,
+              "reviews_score_round": 4
+            },
+            "main_search_attribute": {
+              "main_search_cat": ""
+            },
+            "scoring": {
+              "pdt_score": 0,
+              "pdt_dft_score": 25658136650061580000,
+              "rank_offers": 1
+            }
+          },
+          "name": "Chardon Marie bio x 200 gélules",
+          "capacity": {
+            "unit": "kg",
+            "value": 0.065
+          },
+          "discount": {
+            "percent": 0
+          },
+          "objectID": "108870",
+          "_highlightResult": {
+            "labels": [
+              {
+                "name": {
+                  "value": "AB",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              {
+                "name": {
+                  "value": "Agriculture Biologique",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            ],
+            "shop_data": {
+              "id": {
+                "value": "108870",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "variant": {
+                "identifiers": [
+                  {
+                    "value": "3535400007863",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                ],
+                "code": {
+                  "value": "1NATF0093",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "product": {
+                  "legacyId": {
+                    "value": "104168",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "brand": {
+                    "name": {
+                      "value": "Nat & Form",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  },
+                  "id": {
+                    "value": "135624",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "code": {
+                    "value": "1NATF0093",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "translations": {
+                    "fr_FR": {
+                      "shortDescription": {
+                        "value": "<p>Complément alimentaire de __ais-highlight__chardon__/ais-highlight__ __ais-highlight__marie__/ais-highlight__ : contribue à l'amélioration de la digestion. 200 gélules, dose 250mg</p>",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      },
+                      "name": {
+                        "value": "__ais-highlight__Chardon__/ais-highlight__ __ais-highlight__Marie__/ais-highlight__ bio x 200 gélules",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      }
+                    }
+                  },
+                  "mainTaxon": {
+                    "name": {
+                      "value": "Minceur, détox",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  }
+                }
+              },
+              "sellerCatalog": {
+                "seller": {
+                  "name": {
+                    "value": "Greenweez",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              }
+            },
+            "stats": {
+              "main_search_attribute": {
+                "main_search_cat": {
+                  "value": "",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "calibre": null,
+            "fresh_product": false,
+            "products_fleg": false,
+            "products_package": true,
+            "bulk_only": false,
+            "defrost": false,
+            "consumable_product": true,
+            "allergen": null,
+            "variety": null,
+            "nutriscore": null,
+            "repairability_score": null,
+            "eco_tax": null,
+            "gift_card": false,
+            "donation": false,
+            "origin": null,
+            "weight": 0.18,
+            "height": 0,
+            "length": 0,
+            "width": 0
+          },
+          "flags": {
+            "marketplace": false,
+            "top_sale": false,
+            "top_product_bio": false,
+            "top_product_eco": false,
+            "short_use-by_date": true,
+            "new": false,
+            "has_discount": false,
+            "available": true,
+            "committed_price": false,
+            "discount_short_use-by_date": false,
+            "discount_limited_quantity": false
+          },
+          "shop_data": {
+            "id": 103952,
+            "variant": {
+              "images": [
+                {
+                  "type": "variant",
+                  "path": "1PACK1583_0.jpg"
+                }
+              ],
+              "code": "1PACK1583",
+              "product": {
+                "legacyId": 107887,
+                "brand": {
+                  "name": "Nat & Form"
+                },
+                "id": 177427,
+                "slug": "lot-de-2-x-chardon-marie-bio-2x-200-gelules"
+              }
+            },
+            "offerData": [
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/291978",
+                "@type": "OfferData",
+                "type": "state",
+                "value": "Neuf",
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/291979",
+                "@type": "OfferData",
+                "type": "flags",
+                "flags": {
+                  "marketplace": false,
+                  "top_sale": false,
+                  "top_product_bio": false,
+                  "top_product_eco": false,
+                  "short_use-by_date": true,
+                  "new": false,
+                  "has_discount": false,
+                  "available": true,
+                  "committed_price": false,
+                  "discount_short_use-by_date": false,
+                  "discount_limited_quantity": false
+                },
+                "committedPrice": false,
+                "mutable": true
+              }
+            ],
+            "sellerCatalog": {
+              "seller": {
+                "name": "Greenweez",
+                "slug": "greenweez-france",
+                "logo": null
+              }
+            },
+            "onHand": 30,
+            "pricing": {
+              "channelCode": "france",
+              "price": 2045,
+              "originalPrice": 2045,
+              "minimumPrice": 0,
+              "discount": false,
+              "priceIncludedVat": 2157,
+              "priceHasIncludedVat": false,
+              "taxAmount": 112,
+              "taxPercent": 5.5,
+              "originalTaxAmount": 112,
+              "originalPriceIncludedVat": 2157,
+              "appliedPromotion": null
+            }
+          },
+          "main_category": "Supermarché bio > Santé > Complément alimentaire > Minceur, détox",
+          "seller": {
+            "name": "Greenweez",
+            "media": {
+              "src": "https://static.greenweez.com/marketplace/greenweez_black.png",
+              "type": "image"
+            }
+          },
+          "stats": {
+            "sales": {
+              "qty_28_avg": 8.31
+            },
+            "reviews": {
+              "reviews_nb": 1,
+              "reviews_score": 5,
+              "reviews_score_round": 5
+            },
+            "main_search_attribute": {
+              "main_search_cat": ""
+            },
+            "scoring": {
+              "pdt_score": 0,
+              "pdt_dft_score": 17834881624857490000,
+              "rank_offers": 1
+            }
+          },
+          "name": "Lot de 2 x Chardon Marie bio - 2x 200 gélules",
+          "capacity": {
+            "unit": "kg",
+            "value": 0.13
+          },
+          "discount": {
+            "percent": 0
+          },
+          "objectID": "103952",
+          "_highlightResult": {
+            "labels": [
+              {
+                "name": {
+                  "value": "AB",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              {
+                "name": {
+                  "value": "Agriculture Biologique",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            ],
+            "shop_data": {
+              "id": {
+                "value": "103952",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "variant": {
+                "identifiers": [
+                  {
+                    "value": "",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                ],
+                "code": {
+                  "value": "1PACK1583",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "product": {
+                  "legacyId": {
+                    "value": "107887",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "brand": {
+                    "name": {
+                      "value": "Nat & Form",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  },
+                  "id": {
+                    "value": "177427",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "code": {
+                    "value": "1PACK1583",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "translations": {
+                    "fr_FR": {
+                      "shortDescription": {
+                        "value": "<p>Complément alimentaire de __ais-highlight__chardon__/ais-highlight__ __ais-highlight__marie__/ais-highlight__ : contribue à l'amélioration de la digestion. <br /><br />Lot de 2 piluliers de 200 gélules, dose 250mg</p>",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      },
+                      "name": {
+                        "value": "Lot de 2 x __ais-highlight__Chardon__/ais-highlight__ __ais-highlight__Marie__/ais-highlight__ bio - 2x 200 gélules",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      }
+                    }
+                  },
+                  "mainTaxon": {
+                    "name": {
+                      "value": "Minceur, détox",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  }
+                }
+              },
+              "sellerCatalog": {
+                "seller": {
+                  "name": {
+                    "value": "Greenweez",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              }
+            },
+            "stats": {
+              "main_search_attribute": {
+                "main_search_cat": {
+                  "value": "",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "calibre": null,
+            "fresh_product": false,
+            "products_fleg": false,
+            "products_package": false,
+            "bulk_only": false,
+            "defrost": false,
+            "consumable_product": true,
+            "allergen": null,
+            "variety": null,
+            "nutriscore": null,
+            "repairability_score": null,
+            "eco_tax": null,
+            "gift_card": false,
+            "donation": false,
+            "origin": null,
+            "weight": 0.5,
+            "height": 8,
+            "length": 28,
+            "width": 26
+          },
+          "flags": {
+            "marketplace": false,
+            "top_sale": true,
+            "top_product_bio": false,
+            "top_product_eco": false,
+            "short_use-by_date": true,
+            "new": false,
+            "has_discount": false,
+            "available": true,
+            "committed_price": false,
+            "discount_short_use-by_date": false,
+            "discount_limited_quantity": false
+          },
+          "shop_data": {
+            "id": 100149,
+            "variant": {
+              "images": [
+                {
+                  "type": "variant",
+                  "path": "2EMIL0166_0.jpg"
+                }
+              ],
+              "code": "2EMIL0166",
+              "product": {
+                "legacyId": 86188,
+                "brand": {
+                  "name": "Emile Noel"
+                },
+                "id": 152743,
+                "slug": "huile-de-chardon-marie-vierge-25cl"
+              }
+            },
+            "offerData": [
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/281364",
+                "@type": "OfferData",
+                "type": "state",
+                "value": "Neuf",
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/281365",
+                "@type": "OfferData",
+                "type": "flags",
+                "flags": {
+                  "marketplace": false,
+                  "top_sale": true,
+                  "top_product_bio": false,
+                  "top_product_eco": false,
+                  "short_use-by_date": true,
+                  "new": false,
+                  "has_discount": false,
+                  "available": true,
+                  "committed_price": false,
+                  "discount_short_use-by_date": false,
+                  "discount_limited_quantity": false
+                },
+                "committedPrice": false,
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/777326",
+                "@type": "OfferData",
+                "type": "lot",
+                "name": "L22001592",
+                "useByDate": "2024-09-28T00:00:00+00:00",
+                "mutable": true
+              }
+            ],
+            "sellerCatalog": {
+              "seller": {
+                "name": "Greenweez",
+                "slug": "greenweez-france",
+                "logo": null
+              }
+            },
+            "onHand": 16,
+            "pricing": {
+              "channelCode": "france",
+              "price": 1497,
+              "originalPrice": 1497,
+              "minimumPrice": 0,
+              "discount": false,
+              "priceIncludedVat": 1579,
+              "priceHasIncludedVat": false,
+              "taxAmount": 82,
+              "taxPercent": 5.5,
+              "originalTaxAmount": 82,
+              "originalPriceIncludedVat": 1579,
+              "appliedPromotion": null
+            }
+          },
+          "main_category": "Supermarché bio > Epicerie salée > Huile alimentaire bio > Huile de graines",
+          "seller": {
+            "name": "Greenweez",
+            "media": {
+              "src": "https://static.greenweez.com/marketplace/greenweez_black.png",
+              "type": "image"
+            }
+          },
+          "stats": {
+            "sales": {
+              "qty_28_avg": 14.46
+            },
+            "reviews": {
+              "reviews_nb": 6,
+              "reviews_score": 5,
+              "reviews_score_round": 5
+            },
+            "main_search_attribute": {
+              "main_search_cat": "huile"
+            },
+            "scoring": {
+              "pdt_score": 0,
+              "pdt_dft_score": 10057351042752490000,
+              "rank_offers": 1
+            }
+          },
+          "name": "Huile de chardon-marie vierge 25cl",
+          "capacity": {
+            "unit": "l",
+            "value": 0.25
+          },
+          "discount": {
+            "percent": 0
+          },
+          "objectID": "100149",
+          "_highlightResult": {
+            "labels": [
+              {
+                "name": {
+                  "value": "AB",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              {
+                "name": {
+                  "value": "Agriculture Biologique",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              {
+                "name": {
+                  "value": "Origine France",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            ],
+            "shop_data": {
+              "id": {
+                "value": "100149",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "variant": {
+                "identifiers": [
+                  {
+                    "value": "3291960012364",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                ],
+                "code": {
+                  "value": "2EMIL0166",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "product": {
+                  "legacyId": {
+                    "value": "86188",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "brand": {
+                    "name": {
+                      "value": "Emile Noel",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  },
+                  "id": {
+                    "value": "152743",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "code": {
+                    "value": "2EMIL0166",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "translations": {
+                    "fr_FR": {
+                      "shortDescription": {
+                        "value": "<p>Huile Vierge de __ais-highlight__Chardon__/ais-highlight__-__ais-highlight__Marie__/ais-highlight__ biologique. Huile adaptée à tous les régimes alimentaires. Riche en oméga 6 et vitamine E. Bouteille de 25cl</p>",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      },
+                      "name": {
+                        "value": "Huile de __ais-highlight__chardon__/ais-highlight__-__ais-highlight__marie__/ais-highlight__ vierge 25cl",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      }
+                    }
+                  },
+                  "mainTaxon": {
+                    "name": {
+                      "value": "Huile de graines",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  }
+                }
+              },
+              "sellerCatalog": {
+                "seller": {
+                  "name": {
+                    "value": "Greenweez",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              }
+            },
+            "stats": {
+              "main_search_attribute": {
+                "main_search_cat": {
+                  "value": "huile",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            }
+          }
+        },
+        {
+          "attributes": {
+            "calibre": null,
+            "fresh_product": false,
+            "products_fleg": false,
+            "products_package": false,
+            "bulk_only": false,
+            "defrost": false,
+            "consumable_product": false,
+            "allergen": null,
+            "variety": null,
+            "nutriscore": null,
+            "repairability_score": null,
+            "eco_tax": null,
+            "gift_card": false,
+            "donation": false,
+            "origin": null,
+            "poids": {
+              "attribute_code": "poids",
+              "attribute_label": "Poids",
+              "value_code": "0.09",
+              "label": "Poids"
+            },
+            "origine": {
+              "attribute_code": "origine",
+              "attribute_label": "Origine",
+              "value_code": "france",
+              "label": "Origine"
+            },
+            "contenance": {
+              "attribute_code": "contenance",
+              "attribute_label": "Contenance",
+              "value_code": "90",
+              "label": "Contenance"
+            },
+            "composition": {
+              "attribute_code": "composition",
+              "attribute_label": "composition",
+              "value_code": "(pour 1 gélule) 133,4mg l-glutathion réduit 98% (asie), 66,7mg d&apos;extrait de chardon-marie (80% silymarine), 66,7mg n-acetyl-cysteine, 59,5mg fibregum (fibres d&apos;acacia bio)*, 23,7mg acérola bio*, gélule d&apos;origine 100% végélale hpmc (hydroxypropylméthylcellulose) *ingrédients issus de l&apos;agriculture biologique non ue (soit 55.5% des ingrédients dorigine agricole  certifié par fr bio 01)",
+              "label": "Composition"
+            },
+            "fabrication": {
+              "attribute_code": "fabrication",
+              "attribute_label": "Fabrication",
+              "value_code": "france",
+              "label": "France"
+            },
+            "products_use": {
+              "attribute_code": "products_use",
+              "attribute_label": "Conseils d'utilisation",
+              "value_code": "3 gélules/jour pendant 2 mois<br />à renouveler tous les ans, une à deux fois dans lannée<br /><br />précautions : demandez conseil à un professionnel de santé avant de complémenter les enfants et les personnes jeunes.<br /><br /> conserver à température stable et modérée, à labri de la lumière, de lair et de lhumidité.  ne pas dépasser la dose journalière recommandée  dosages indiqués en cas de carence  ne se substitue pas à une alimentation diversifiée et équilibrée.  tenir hors de la portée des enfants.   femmes enceintes, consultez un professionnel de santé avant toute complémentation.  pour les personnes malades ou sous traitement demandez conseil à un professionnel de santé avant toute complémentation. ",
+              "label": "Conseils d'utilisation"
+            },
+            "caracteristiques": {
+              "attribute_code": "caracteristiques",
+              "attribute_label": "Caracteristiques",
+              "value_code": "la vitamine c contribue à la protection des cellules contre le stress oxydatif.",
+              "label": "Caracteristiques"
+            },
+            "type_de_contenance": {
+              "attribute_code": "type_de_contenance",
+              "attribute_label": "Type de contenance",
+              "value_code": "3",
+              "label": "Pièce"
+            },
+            "vegan": {
+              "attribute_code": "vegan",
+              "attribute_label": "Vegan",
+              "value_code": "oui",
+              "label": "Oui"
+            },
+            "allergenes": {
+              "attribute_code": "allergenes",
+              "attribute_label": "Allergènes",
+              "value_code": "non",
+              "label": "Allergènes"
+            },
+            "weight": 0.09,
+            "height": 0,
+            "length": 0,
+            "width": 0
+          },
+          "flags": {
+            "marketplace": true,
+            "top_sale": false,
+            "top_product_bio": false,
+            "top_product_eco": false,
+            "short_use-by_date": false,
+            "new": false,
+            "has_discount": false,
+            "available": true,
+            "committed_price": false,
+            "free_shipping": true,
+            "unique_offer": true,
+            "discount_short_use-by_date": false,
+            "discount_limited_quantity": false
+          },
+          "shop_data": {
+            "id": 90689,
+            "variant": {
+              "images": [
+                {
+                  "type": "variant",
+                  "path": "1INOL0010_0.jpg"
+                },
+                {
+                  "type": "variant",
+                  "path": "1INOL0010_1.jpg"
+                }
+              ],
+              "code": "1INOL0010",
+              "product": {
+                "legacyId": 204830,
+                "brand": {
+                  "name": "Laboratoire Inolab"
+                },
+                "id": 155328,
+                "slug": "glutathion-et-chardon-marie-complexe-detox"
+              }
+            },
+            "offerData": [
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/254394",
+                "@type": "OfferData",
+                "type": "delivery",
+                "mode": "standard",
+                "freeShippingThreshold": null,
+                "maxShippingDelay": 3,
+                "minShippingDelay": 3,
+                "maxTransportDelay": 5,
+                "minTransportDelay": 2,
+                "minShippingPrice": 0,
+                "maxDeliveryDelay": 8,
+                "minDeliveryDelay": 5,
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/254395",
+                "@type": "OfferData",
+                "type": "state",
+                "value": "Neuf",
+                "mutable": true
+              },
+              {
+                "@context": "/api/v2/contexts/OfferData",
+                "@id": "/api/v2/admin/offer-datas/254396",
+                "@type": "OfferData",
+                "type": "flags",
+                "flags": {
+                  "marketplace": true,
+                  "top_sale": false,
+                  "top_product_bio": false,
+                  "top_product_eco": false,
+                  "short_use-by_date": false,
+                  "new": false,
+                  "has_discount": false,
+                  "available": true,
+                  "committed_price": false,
+                  "free_shipping": true,
+                  "unique_offer": true,
+                  "discount_short_use-by_date": false,
+                  "discount_limited_quantity": false
+                },
+                "committedPrice": false,
+                "mutable": true
+              }
+            ],
+            "sellerCatalog": {
+              "seller": {
+                "name": "Laboratoire Inolab",
+                "slug": "laboratoire-inolab",
+                "logo": null
+              }
+            },
+            "onHand": 27,
+            "pricing": {
+              "channelCode": "france",
+              "price": 2895,
+              "originalPrice": 2895,
+              "minimumPrice": 0,
+              "discount": false,
+              "priceIncludedVat": 2895,
+              "priceHasIncludedVat": true,
+              "taxAmount": 0,
+              "taxPercent": 0,
+              "originalTaxAmount": 0,
+              "originalPriceIncludedVat": 2895,
+              "appliedPromotion": null
+            }
+          },
+          "main_category": "Supermarché bio > Santé > Complément alimentaire > Vitalité, énergie > Anti-oxydants",
+          "seller": {
+            "name": "Laboratoire Inolab",
+            "media": []
+          },
+          "stats": {
+            "sales": {
+              "qty_28_avg": 14.92
+            },
+            "reviews": {
+              "reviews_nb": 1,
+              "reviews_score": 5,
+              "reviews_score_round": 5
+            },
+            "main_search_attribute": {
+              "main_search_cat": ""
+            },
+            "scoring": {
+              "pdt_score": 0,
+              "pdt_dft_score": 3367798247405003000,
+              "rank_offers": 1
+            }
+          },
+          "name": "Glutathion et Chardon-Marie - Complexe détox",
+          "capacity": {
+            "unit": "pce",
+            "value": 90
+          },
+          "discount": {
+            "percent": 0
+          },
+          "objectID": "90689",
+          "_highlightResult": {
+            "shop_data": {
+              "id": {
+                "value": "90689",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "variant": {
+                "identifiers": [
+                  {
+                    "value": "3701150800232",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                ],
+                "code": {
+                  "value": "1INOL0010",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "product": {
+                  "legacyId": {
+                    "value": "204830",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "brand": {
+                    "name": {
+                      "value": "Laboratoire Inolab",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  },
+                  "id": {
+                    "value": "155328",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "code": {
+                    "value": "1INOL0010",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "translations": {
+                    "fr_FR": {
+                      "shortDescription": {
+                        "value": "Complément alimentaire anti-oxydant² détox¹ à base de glutathion réduit 98%, __ais-highlight__chardon__/ais-highlight__-__ais-highlight__marie__/ais-highlight__, N-Acétyl-cystéine et acérola bio.",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      },
+                      "name": {
+                        "value": "Glutathion et __ais-highlight__Chardon__/ais-highlight__-__ais-highlight__Marie__/ais-highlight__ - Complexe détox",
+                        "matchLevel": "full",
+                        "fullyHighlighted": false,
+                        "matchedWords": [
+                          "chardon",
+                          "marie"
+                        ]
+                      }
+                    }
+                  },
+                  "mainTaxon": {
+                    "name": {
+                      "value": "Anti-oxydants",
+                      "matchLevel": "none",
+                      "matchedWords": []
+                    }
+                  }
+                }
+              },
+              "sellerCatalog": {
+                "seller": {
+                  "name": {
+                    "value": "Laboratoire Inolab",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              }
+            },
+            "stats": {
+              "main_search_attribute": {
+                "main_search_cat": {
+                  "value": "",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              }
+            }
+          }
+        }
+      ],
+      "nbHits": 45,
+      "page": 0,
+      "nbPages": 8,
+      "hitsPerPage": 6,
+      "exhaustiveNbHits": true,
+      "exhaustiveTypo": true,
+      "exhaustive": {
+        "nbHits": true,
+        "typo": true
+      },
+      "query": "chardon marie",
+      "params": "attributesToRetrieve=%5B%22main_category%22%2C%22attributes%22%2C%22capacity%22%2C%22discount.percent%22%2C%22flags%22%2C%22ObjectID%22%2C%22name%22%2C%22options.color.available_colors%22%2C%22seller%22%2C%22shop_data.id%22%2C%22shop_data.variant.images%22%2C%22shop_data.variant.product.id%22%2C%22shop_data.variant.product.legacyId%22%2C%22shop_data.variant.product.slug%22%2C%22shop_data.variant.product.brand.name%22%2C%22shop_data.variant.code%22%2C%22shop_data.sellerCatalog.seller%22%2C%22shop_data.pricing%22%2C%22shop_data.offerData%22%2C%22shop_data.onHand%22%2C%22stats%22%5D&clickAnalytics=true&facets=%5B%5D&filters=has_parent_objectID%3D0&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&hitsPerPage=6&query=chardon%20marie&tagFilters=",
+      "index": "france_prod_offers_genepi_fr_FR",
+      "queryID": "d6b2a1836da9563eb73edc214a8592f8",
+      "renderingContent": {
+        "facetOrdering": {
+          "facets": {
+            "order": [
+              "categories.lvl0",
+              "categories.lvl1",
+              "categories.lvl2",
+              "categories.lvl3",
+              "flags.top_sale",
+              "flags.has_discount",
+              "flags.committed_price",
+              "flags.available",
+              "flags.new",
+              "brands.name",
+              "seller.name",
+              "shop_data.pricing.priceIncludedVat",
+              "discount.percent",
+              "stats.reviews.reviews_score_round",
+              "labels.name"
+            ]
+          },
+          "values": {
+            "brands.name": {
+              "sortRemainingBy": "count"
+            },
+            "categories.lvl0": {
+              "sortRemainingBy": "count"
+            },
+            "categories.lvl1": {
+              "sortRemainingBy": "count"
+            },
+            "categories.lvl2": {
+              "sortRemainingBy": "count"
+            },
+            "categories.lvl3": {
+              "sortRemainingBy": "count"
+            },
+            "discount.percent": {
+              "sortRemainingBy": "count"
+            },
+            "flags.available": {
+              "sortRemainingBy": "count"
+            },
+            "flags.committed_price": {
+              "sortRemainingBy": "count"
+            },
+            "flags.has_discount": {
+              "sortRemainingBy": "count"
+            },
+            "flags.new": {
+              "sortRemainingBy": "count"
+            },
+            "flags.top_sale": {
+              "sortRemainingBy": "count"
+            },
+            "seller.name": {
+              "sortRemainingBy": "count"
+            },
+            "shop_data.pricing.priceIncludedVat": {
+              "sortRemainingBy": "count"
+            },
+            "stats.reviews.reviews_score_round": {
+              "sortRemainingBy": "count"
+            }
+          }
+        }
+      },
+      "processingTimeMS": 10,
+      "processingTimingsMS": {
+        "afterFetch": {
+          "format": {
+            "total": 3
+          },
+          "total": 5
+        },
+        "extractDocsToPromote": 2,
+        "fetch": {
+          "total": 1
+        },
+        "request": {
+          "roundTrip": 19
+        },
+        "total": 10
+      },
+      "serverTimeMS": 10
+    },
+    {
+      "hits": [],
+      "nbHits": 0,
+      "page": 0,
+      "nbPages": 0,
+      "hitsPerPage": 6,
+      "exhaustiveNbHits": true,
+      "exhaustiveTypo": true,
+      "exhaustive": {
+        "nbHits": true,
+        "typo": true
+      },
+      "query": "chardon marie",
+      "params": "attributesToRetrieve=%5B%22name%22%2C%22slug%22%5D&clickAnalytics=true&facets=%5B%5D&filters=&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&hitsPerPage=6&query=chardon%20marie&tagFilters=",
+      "index": "france_prod_brands_genepi_fr_FR",
+      "queryID": "2607243d2182aa20c1fb5b0b8a6684bb",
+      "renderingContent": {},
+      "processingTimeMS": 1,
+      "processingTimingsMS": {
+        "request": {
+          "roundTrip": 19
+        }
+      },
+      "serverTimeMS": 11
+    },
+    {
+      "hits": [],
+      "nbHits": 0,
+      "page": 0,
+      "nbPages": 0,
+      "hitsPerPage": 6,
+      "exhaustiveNbHits": true,
+      "exhaustiveTypo": true,
+      "exhaustive": {
+        "nbHits": true,
+        "typo": true
+      },
+      "query": "chardon marie",
+      "params": "attributesToRetrieve=%5B%22parent%22%2C%22name%22%2C%22slug%22%2C%22level%22%5D&clickAnalytics=true&facets=%5B%5D&filters=&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&hitsPerPage=6&query=chardon%20marie&tagFilters=",
+      "index": "france_prod_categories_genepi_fr_FR",
+      "queryID": "4a77d54bd35fc3e6c5288c3c2f92fc16",
+      "renderingContent": {},
+      "processingTimeMS": 1,
+      "processingTimingsMS": {
+        "request": {
+          "roundTrip": 19
+        }
+      },
+      "serverTimeMS": 11
+    }
+  ]
+}

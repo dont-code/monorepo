@@ -1,0 +1,57 @@
+[
+  {
+    "En-têtes de la requête (2,124 Ko)": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+        },
+        {
+          "name": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "Cookie",
+          "value": "Queue-it-bc294b2c-26ea-4825-9abe-aeb020e0fc60=WasRedirected=false&i=638043014207994142; Queue-it=u=f0b5979b-ac78-4698-9a4b-fc7e2fe19ef0; QueueITAccepted-SDFrts345E-V3_frprdfnaccom=EventId%3Dfrprdfnaccom%26QueueId%3Dbc294b2c-26ea-4825-9abe-aeb020e0fc60%26RedirectType%3Dsafetynet%26IssueTime%3D1668704845%26Hash%3Dbf8854918d06429d1afd8f1d5a3a5e9881796b46abba25785ebed3193fdeee64; datadome=5unvldJdLcRL3chjm~T2oVG~kRJNjC~chi~dkhaG4iXz6P54vhjy6Lqua_oLov~UF55FzCDL1TvZys7k52eEbRON22mBA9XhbjraV1d5MpZrdikgxhbwbRVVDUei6njF; ORGN=FnacAff; OrderInSession=0; SDMTemplateSearch=list; ItemPerPagelistTemplateSearch=20; fd_vls_address=None; UID=0920ac977-df77-4eaa-9806-f268a0c73e7b; SID=c51b2a2b-e4b0-4dea-819b-652468e08dec; VID=8cc3f549-6179-42f1-af69-5d9d1eabb869; kameleoonVisitorCode=_js_dfdwodf5brsgsnh4; test=V120221117187290.8689139235336979; RT=\"z=1&dm=localhost&si=4tej43a6ae3&ss=lalbs69w&sl=1&tt=0&obo=1&ld=a8r&r=e816802a645030c3555e392f23ce0090&ul=a8s&hd=acr\"; s_fid=79A962C002BE7773-2D26759021F1380A; s_cc=true; s_sq=fnaccomprod%3D%2526c.%2526a.%2526activitymap.%2526page%253DResultat%252520Recherche%252520Tous%252520produits%2526link%253DACCEPTER%2526region%253Donetrust-button-group%2526pageIDType%253D1%2526.activitymap%2526.a%2526.c%2526pid%253DResultat%252520Recherche%252520Tous%252520produits%2526pidt%253D1%2526oid%253DACCEPTER%2526oidt%253D3%2526ot%253DSUBMIT; _gcl_au=1.1.1277075314.1668704853; _uetsid=76372870668d11edb3c7dda6f3d7c0f2; _uetvid=71e7207064fa11ed9c92bdd48222d07d; cto_pxsig=9MtrlMEV9H_c8JpHSlTsFw; _fbp=fb.0.1668704854099.171874434"
+        },
+        {
+          "name": "Host",
+          "value": "localhost:3000"
+        },
+        {
+          "name": "Sec-Fetch-Dest",
+          "value": "document"
+        },
+        {
+          "name": "Sec-Fetch-Mode",
+          "value": "navigate"
+        },
+        {
+          "name": "Sec-Fetch-Site",
+          "value": "none"
+        },
+        {
+          "name": "Sec-Fetch-User",
+          "value": "?1"
+        },
+        {
+          "name": "Upgrade-Insecure-Requests",
+          "value": "1"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+        }
+      ]
+    }
+  }
+
+]

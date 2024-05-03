@@ -1,0 +1,63 @@
+{
+  "$schema": "https://dont-code.net/schemas/v1/repository-schema.json",
+  "name": "Dev Repository",
+  "description": "Repository provided by Dont-code offering all defaults plugins running locally",
+  "1webSocketUrl": "ws://test.dont-code.net/demo/preview",
+  "1storeApiUrl": "https://test.dont-code.net/demo/data",
+  "1projectApiUrl": "https://test.dont-code.net/demo/project",
+  "1documentApiUrl": "https://test.dont-code.net/demo/documents",
+
+  "webSocketUrl": "ws://localhost:8081/preview",
+  "storeApiUrl": "http://localhost:8084/data",
+  "projectApiUrl": "http://localhost:8083/project",
+  "documentApiUrl": "http://localhost:8084/documents",
+
+  "plugins": [
+    {
+      "id": "Basic",
+      "display-name": "Basic plugin for editing entities",
+      "version": "1.0.0",
+      "info": {
+        "remote-entry":"http://localhost:3000/remoteEntry.mjs"
+      },
+      "config": {}
+    },
+    {
+      "id": "Fields",
+      "display-name": "Additional editors for entity properties",
+      "version": "1.0.0",
+      "info": {
+        "remote-entry":"http://localhost:3000/remoteEntry.mjs"
+      },
+      "config": {}
+    },
+    {
+      "id": "Rest",
+      "display-name": "Plugins to support datasources from Rest API",
+      "version": "1.0.0",
+      "info": {
+        "remote-entry":"http://localhost:3001/remoteEntry.mjs"
+      },
+      "config": {}
+    },
+    {
+      "id": "Report",
+      "display-name": "Plugins to generate and display reports",
+      "version": "1.0.0",
+      "info": {
+        "remote-entry":"http://localhost:3002/remoteEntry.mjs"
+      },
+      "config": {}
+    },
+    {
+      "id": "Commerce",
+      "display-name": "Plugins to get prices from shops",
+      "version": "1.0.0",
+      "info": {
+        "remote-entry":"http://localhost:3003/remoteEntry.mjs"
+      },
+      "config": {}
+    }
+
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "report": "libs/report",
+    "report-tester": "apps/report-tester",
+    "report-tester-e2e": "apps/report-tester-e2e"
+  }
+}

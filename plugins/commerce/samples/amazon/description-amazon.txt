@@ -1,0 +1,66 @@
+
+https://www.amazon.fr/s?k=haier+h2f220wf&i=aps&ref=nb_sb_ss_recent_1_0_recent&crid=3K99XBXMP48FX&sprefix=%2Caps%2C118
+{
+	"GET": {
+		"scheme": "https",
+		"host": "www.amazon.fr",
+		"filename": "/s",
+		"query": {
+			"k": "haier h2f220wf",
+			"i": "aps",
+			"ref": "nb_sb_ss_recent_1_0_recent",
+			"crid": "3K99XBXMP48FX",
+			"sprefix": ",aps,118"
+		},
+		"remote": {
+			"Adresse": "18.164.49.201:443"
+		}
+	}
+}
+
+Search: https://www.amazon.fr/s?k=chardon%20marie
+{
+	"GET": {
+		"scheme": "https",
+		"host": "www.amazon.fr",
+		"filename": "/s",
+		"query": {
+			"__mk_fr_FR": "ÅMÅŽÕÑ",
+			"crid": "3LGPN65O63PFB",
+			"i": "aps",
+			"k": "télépĥone doro 8100",
+			"ref": "nb_sb_noss_1",
+			"sprefix": "téléphone doro 8100,aps,72",
+			"url": "search-alias=aps"
+		},
+		"remote": {
+			"Adresse": "52.84.172.113:443"
+		}
+	}
+}
+
+Search for
+data-component-type="s-search-result" , ignore data-component-type=""  (Video link)
+
+Click:
+{
+	"GET": {
+		"scheme": "https",
+		"host": "www.amazon.fr",
+		"filename": "/sspa/click",
+		"query": {
+			"ie": "UTF8",
+			"spc": "MTo0OTkxODczNjk0NDU2MDMzOjE2Nzk5MjQxMjY6c3BfYXRmOjIwMDMzNDU1MDk1NDk4OjowOjo",
+			"url": "/Doro-8100-Smartphone-R%C3%A9sistant-Reconnaissance/dp/B09S3XTSPT/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3LGPN65O63PFB&keywords=t%C3%A9l%C3%A9phone+doro+8100&qid=1679924126&sprefix=t%C3%A9l%C3%A9phone+doro+8100%2Caps%2C72&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+		},
+		"remote": {
+			"Adresse": "52.84.172.113:443"
+		}
+	}
+}
+ = https://www.amazon.fr/sspa/click?ie=UTF8&spc=MTo0OTkxODczNjk0NDU2MDMzOjE2Nzk5MjQxMjY6c3BfYXRmOjIwMDMzNDU1MDk1NDk4OjowOjo&url=%2FDoro-8100-Smartphone-R%25C3%25A9sistant-Reconnaissance%2Fdp%2FB09S3XTSPT%2Fref%3Dsr_1_1_sspa%3F__mk_fr_FR%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3LGPN65O63PFB%26keywords%3Dt%25C3%25A9l%25C3%25A9phone%2Bdoro%2B8100%26qid%3D1679924126%26sprefix%3Dt%25C3%25A9l%25C3%25A9phone%2Bdoro%2B8100%252Caps%252C72%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+
+Search for <div data-asin="
+
+Product url:
+https://www.amazon.fr/Doro-8100-Smartphone-R%C3%A9sistant-Reconnaissance/dp/B09S3XTSPT/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3LGPN65O63PFB&keywords=t%C3%A9l%C3%A9phone+doro+8100&qid=1679923103&sprefix=t%C3%A9l%C3%A9phone+doro+8100%2Caps%2C72&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1

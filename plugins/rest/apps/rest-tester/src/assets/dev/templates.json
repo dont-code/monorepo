@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Create Empty Entity",
+    "type": "ADD",
+    "position": "creation/entities/a",
+    "value": {
+      "name": "A Name"
+    }
+  },
+  {
+    "name": "Create Test Online",
+    "sequence": [
+      {
+        "position": "creation/sources/a",
+        "type": "ADD",
+        "value": {
+          "name": "PluginOnlineSource",
+          "type": "Rest",
+          "url": "https://www.omdbapi.com/?apikey=5e2ca9f7&t=Inception"
+        }
+      },
+      {
+        "position": "creation/entities/b",
+        "type": "ADD",
+        "value": {
+          "name": "Online Test",
+          "from": "PluginOnlineSource",
+          "fields": {
+            "aa": {
+              "name": "Title",
+              "type": "Text"
+            },
+            "ab": {
+              "name": "Director",
+              "type": "Text"
+            },
+            "ac": {
+              "name": "Year",
+              "type": "Number"
+            },
+            "ad": {
+              "name": "imdbRating",
+              "type": "Number"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Create Test Offline",
+    "sequence": [
+      {
+        "position": "creation/sources/b",
+        "type": "ADD",
+        "value": {
+          "name": "PluginOfflineSource",
+          "type": "Rest",
+          "url": "/assets/proxy/api/omdbapi"
+        }
+      },
+      {
+        "position": "creation/entities/c",
+        "type": "ADD",
+        "value": {
+          "name": "Offline Test",
+          "from": "PluginOfflineSource",
+          "fields": {
+            "aa": {
+              "name": "Title",
+              "type": "Text"
+            },
+            "ab": {
+              "name": "Director",
+              "type": "Text"
+            },
+            "ac": {
+              "name": "Year",
+              "type": "Number"
+            },
+            "ad": {
+              "name": "imdbRating",
+              "type": "Number"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Empty Application",
+    "type": "RESET",
+    "position": "creation",
+    "value": null
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "seed": "libs/seed",
+    "seed-tester": "apps/seed-tester",
+    "seed-tester-e2e": "apps/seed-tester-e2e"
+  }
+}

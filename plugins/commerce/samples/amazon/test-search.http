@@ -1,0 +1,12 @@
+GET https://www.amazon.fr/s?__mk_fr_FR=ÅMÅŽÕÑ&crid=3LGPN65O63PFB&i=aps&k=télépĥone doro 8100&ref=nb_sb_noss_1&url=search-alias=aps
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+
+###
+GET https://corsproxy.io/?https://www.amazon.fr/s?__mk_fr_FR=ÅMÅŽÕÑ&crid=3LGPN65O63PFB&i=aps&k=télépĥone%20doro%208100&ref=nb_sb_noss_1&url=search-alias=aps
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br

@@ -1,0 +1,117 @@
+{
+  "typeId": "searchResult",
+  "context": {
+    "terms": "lugat",
+    "termsOrigin": "lugat",
+    "scopes": null,
+    "spotlight": [],
+    "presentedProducts": [
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-bresil-cerrado-mineiro-1kg-p-95629.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-guatemala-huehuetenango-250g-cafes-lugat-p-39670.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-blend-italien-250g-p-531.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-blend-italien-1kg-p-94032.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-blend-pacifique-250g-p-55714.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-grains-ethiopie-moka-yirgacheffe-250g-cafes-lugat-p-6643.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-melange-gourmet-250g-p-39530.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-ethiopie-moka-nekemte-4x250g-p-43395.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-old-fashioned-250g-p-25752.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-guatemala-huehuetenango-4x250g-p-40710.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-Altura-4x250g-p-43555.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-bio-cafes-lugat-melange-1kg-p-41790.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/coffret-blend-cafes-lugat-cafes-grains-250g-p-16996.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-blend-pacifique-1kg-p-56780.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-blend-pacifique-1kg-p-81675.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-bresil-rose-diamond-250g-p-12940.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-bresil-cerrado-mineiro-250g-p-39765.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-black-forest-250g-p-17125.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-melange-gourmet-4x250g-p-40855.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-grains-inde-malabar-250g-cafes-lugat-p-7346.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-ethiopie-moka-sidama-nyala-250g-p-39700.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-blend-pacifique-10kg-p-82668.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-red-candy-1kg-p-40950.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-perou-cafetales-cocla-1kg-p-70097.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-red-candy-250g-p-39560.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-black-forest-1kg-p-17992.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-grains-ethiopie-moka-guracho-200g-grand-cafes-lugat-p-120417.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-costa-rica-finca-alfaro-250g-p-55594.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-mirador-bourbon-tigre-p-123213.html"
+      },
+      {
+        "link": "https://www.maxicoffee.com/cafe-en-grain-cafes-lugat-melange-eden-1kg-p-56715.html"
+      }
+    ],
+    "total": 233,
+    "inputSource": "keyboard"
+  },
+  "userIds": {
+    "id": "25ac67e4-ed34-435a-81be-02e1a8dc99d7",
+    "previousId": null,
+    "custId": null,
+    "isAuthenticated": false
+  },
+  "trackFingerPrint": {
+    "tracks": [
+      "35af905a-9f76-4d68-bc22-b07ff60a14d4"
+    ],
+    "environmentId": "333"
+  },
+  "key": "1678526446579-0-KeyHit",
+  "parentKey": "1678526446579-0-KeyHit"
+}

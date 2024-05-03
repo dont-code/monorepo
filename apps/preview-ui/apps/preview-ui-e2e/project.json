@@ -1,0 +1,30 @@
+{
+  "name": "preview-ui-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/preview-ui-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/preview-ui-e2e/cypress.config.js",
+        "tsConfig": "apps/preview-ui-e2e/tsconfig.e2e.json",
+        "devServerTarget": "preview-ui:serve:next"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "preview-ui:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": ["apps/preview-ui-e2e/tsconfig.e2e.json"],
+        "exclude": ["**/node_modules/**", "!apps/preview-ui-e2e/**/*"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["preview-ui"]
+}

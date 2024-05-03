@@ -1,0 +1,8 @@
+<ng-template #inlineView >{{displayableValue()}}</ng-template>
+<ng-template #fullEditView>
+  <ng-container *ngIf="form" [formGroup]="form">
+    <span class="p-float-label">
+      <p-dropdown [options]="shopTypes" name="shop" [formControlName]="name" placeholder="Please select a Shop" class="w-full" (onChange)="valueChanged ($event)"></p-dropdown>
+    </span>
+  </ng-container>
+</ng-template>

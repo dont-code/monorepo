@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "rest": "libs/rest",
+    "rest-tester": "apps/rest-tester",
+    "rest-tester-e2e": "apps/rest-tester-e2e"
+  }
+}

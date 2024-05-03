@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Test Seed Field",
+    "sequence": [
+      {
+        "position": "creation/entities/a",
+        "type": "ADD",
+        "value": {
+          "name": "Seed Field"
+        }
+      },
+      {
+        "position": "creation/entities/a/fields",
+        "type": "ADD",
+        "value": {
+          "aa": {
+            "name": "Test",
+            "type": "Seed Field"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Test Seeded Entity",
+    "type": "ADD",
+    "position": "creation/entities/b",
+    "value": {
+      "name": "Seeded",
+      "seed": "Maybe"
+    }
+  },
+  {
+    "name": "Test Other Entity",
+    "sequence": [
+      {
+        "position": "creation/entities/c/name",
+        "type": "ADD",
+        "value": "Not Seeded",
+        "seed": "No"
+      },
+      {
+        "position": "creation/entities/c/fields/a",
+        "type": "ADD",
+        "value": {
+          "name": "id",
+          "type": "Text"
+        }
+      },
+      {
+        "position": "creation/entities/c/fields/b",
+        "type": "ADD",
+        "value": {
+          "name": "check",
+          "type": "Boolean"
+        }
+      },
+      {
+        "position": "creation/entities/c/fields/c",
+        "type": "ADD",
+        "value": {
+          "name": "count",
+          "type": "Number"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Empty Application",
+    "type": "RESET",
+    "position": "creation",
+    "value": null
+  }
+]

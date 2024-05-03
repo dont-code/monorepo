@@ -1,0 +1,120 @@
+DIRECT: https://www.newpharma.fr/ajax/autocomplete.html?q=chardon+marie&withCategories=true&withBrands=true
+{
+	"GET": {
+		"scheme": "https",
+		"host": "www.newpharma.fr",
+		"filename": "/ajax/autocomplete.html",
+		"query": {
+			"q": "chardon marie",
+			"withCategories": "true",
+			"withBrands": "true"
+		},
+		"remote": {
+			"Adresse": "104.18.30.31:443"
+		}
+	}
+}
+
+{
+	"En-têtes de la requête (3,347 Ko)": {
+		"headers": [
+			{
+				"name": "Accept",
+				"value": "application/json, text/plain, */*"
+			},
+			{
+				"name": "Accept-Encoding",
+				"value": "gzip, deflate, br"
+			},
+			{
+				"name": "Accept-Language",
+				"value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+			},
+			{
+				"name": "Alt-Used",
+				"value": "www.newpharma.fr"
+			},
+			{
+				"name": "Connection",
+				"value": "keep-alive"
+			},
+			{
+				"name": "Cookie",
+				"value": "scarab.profile=%22839122%7C1675777935%22; visitor_unique_id=qdSfgbIuk0eyMmvrnA1qVZmKqv0YX0VC; __cf_bm=C9I5eoeka3.hofApB5dc7WLI6GuSGVBN_JHdb6ZJTlc-1692001031-0-AVZ2Avt/vEryTVoZph/zTbN2SBl2fsx86Q2G94vV8KQ8BB4EYvmNqurhorgOS7ovX3tQrfSJ7idYEPbx9FPdfWA=; cf_clearance=NrWbyQp5gZq0RQr9vBjm.H9hvzdo8DrmKOaJrGS6JJU-1692001069-0-1-e0c8e23c.34817b6e.7f636d5e-160.2.1692001069; cookiesession1=678A8C36GHIJKLMNOPQRSVWXYZAB844B; gdpr-agree-cookie=1; gdpr-consent-cookie-level2=1; gdpr-consent-cookie-level3=1; _pk_id.4.fc06=95b62ec0f774e62e.1692001127.; _pk_ses.4.fc06=1; _gcl_au=1.1.920924294.1692001163; _fbp=fb.1.1692001163472.1679985162; PHPSESSID=jmf4s5v3tipstei67t392tdgah; algolia_feat_checksum=72abec44cbe7650d5cba3c1f3dba6b65; algolia_feat=A; CurrencySymbolAB_checksum=8f74a2854381213a61ced54623ca3739; CurrencySymbolAB=B; popular_and_recommended_products_checksum=1e078c20aadaa6558658bf0ea2cb4671; popular_and_recommended_products=B; recommender_products_checksum=b48b4847748b9cfb2c67dec815011203; recommender_products=B; patientProfile_checksum=fc3cfc52442255908ab190f0a0ccc9da; patientProfile=A; DisableAssociatedProducts_checksum=c43f143f53bd39681bdc2e3dafbf1e90; DisableAssociatedProducts=A; DisablePopularProducts_checksum=61093927067753b7b1731deeecadcaa2; DisablePopularProducts=A; DisableTopPromoAction_checksum=dc27c049cee3ceb5aa195ac4a8fab3fe; DisableTopPromoAction=A; DisableHomepageRecommender_checksum=d0086fc2f46acfa09b562dee55e3dd23; DisableHomepageRecommender=A; bfcBasket_checksum=665cc517426d40df319b9b7989bb8cbf; bfcBasket=A; price_discount_checksum=5ecb3e06ba5ee2b9c6defee59f748e9f; price_discount=B; NewCustomersTopBannerDisplay_checksum=4564233850a8400b61f315f01d05cd96; NewCustomersTopBannerDisplay=A; Adhese_checksum=dd613c6357e782df38dcc22eac445562; Adhese=A; SlidersUsingAjax_checksum=64a45817b187556c53b568047aed20f8; SlidersUsingAjax=A; ShippingDHLHome_checksum=575b7a3215a66f947a55e16a7e56313c; ShippingDHLHome=B; ShippingDHLPup_checksum=72b5c085319dec7e82546bcc8c1b5ec0; ShippingDHLPup=B; DeliveryCountries_checksum=51fb89b5a9a153226aed9b11a0f527f5; DeliveryCountries=A; ReorderAwardsOnBasketPage_checksum=7bf46c538a9421bcdcc9cfba3a108ee6; ReorderAwardsOnBasketPage=C; Pricing_checksum=2efa9516bec41a346fa2890913c0faf5; Pricing=A; ShowSmartBusinessPopup_checksum=aee20d7a880eca2a54cfef0a75f1edaf; ShowSmartBusinessPopup=B; EkomiRatingProductPage_checksum=48313e7127868110a3b323cb3d7a3562; EkomiRatingProductPage=A; home_buy_again_checksum=1f65460545e0dd53db42422b6e174bc8; home_buy_again=A; WebV=12; __fo_s=i; _uetsid=65f7ada03a7a11eebdeeed845522a206; _uetvid=21091b306c3611edbb74dbcd0e1d2ac0; _rpai_id.newpharma.fc06=7fd043b9502ace39.1692001210.1.1692001210.1692001210.; _rpai_ses.newpharma.fc06=*"
+			},
+			{
+				"name": "Host",
+				"value": "www.newpharma.fr"
+			},
+			{
+				"name": "New-Pharma-Csrf-Token",
+				"value": "C6rqffb51cR4ijjifBMbeTmRbAiwNEl678lxdIOArAZTsaOK3HKREFA8OVc9"
+			},
+			{
+				"name": "Referer",
+				"value": "https://www.newpharma.fr/"
+			},
+			{
+				"name": "Sec-Fetch-Dest",
+				"value": "empty"
+			},
+			{
+				"name": "Sec-Fetch-Mode",
+				"value": "cors"
+			},
+			{
+				"name": "Sec-Fetch-Site",
+				"value": "same-origin"
+			},
+			{
+				"name": "User-Agent",
+				"value": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0"
+			},
+			{
+				"name": "X-Requested-With",
+				"value": "XMLHttpRequest"
+			}
+		]
+	}
+}
+
+
+OR Search:   https://www.newpharma.fr/search-results/search.html?q=chardon marie
+
+          <a class="details__title js-product-detail-row js-product-click"
+             data-id="514710"
+             data-position="1"
+             data-queryid="7787cb04d9bc962ebd495d8eb4622b20"
+             data-sortfield=""
+             data-sortdirection="asc"
+             data-algoliatrack="1"           href="https://www.newpharma.fr/pileje/514710/pileje-phytostandard-chardon-marie-gelules-vegetales-20.html"
+             title="PiLeJe Phytostandard Chardon Marie Gélules Végétales 20">
+            PiLeJe Phytostandard <span class="search_highlight">Chardon</span> <span class="search_highlight">Marie</span> Gélules Végétales 20
+          </a>
+
+AND price:
+                    <button
+                      data-content_ids="[514710]"
+                      data-content_name="PiLeJe Phytostandard {highlight_start}Chardon{highlight_end} {highlight_start}Marie{highlight_end} Gélules Végétales 20"
+                      data-content_type="product"
+                      data-contents="[{"id":514710,"quantity":1}]"
+                    data-currency="EUR"
+                    data-value="11.49"
+                    data-queryid="7787cb04d9bc962ebd495d8eb4622b20"
+                    data-id="514710"
+                    data-search-filters=""
+                    data-algoliatrack="1"                                    class="button button-orange button-icon-left bht-btn-add-to-cart js-button-fbPixel-addtocart  js-product-addtocart"
+                    type="submit"
+                    onclick="">
+
+Title: Get first   <a class="details__title js-product-detail-row js-product-click"
+                        title="A.Vogel Chardon-Marie Digestion Extrait De Plante Flacon 50ml">
+
+Price: Get first            <div class="c-price__sale c-price__sale--permanent">
+                              <div>
+                                <span>12,<sup>20</sup></span>&nbsp;
+                                <span class="currency"></span>
+                              </div>
+                            </div>
+
+

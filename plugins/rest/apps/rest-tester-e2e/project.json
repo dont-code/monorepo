@@ -1,0 +1,29 @@
+{
+  "name": "rest-tester-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/rest-tester-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/rest-tester-e2e/cypress.config.js",
+        "tsConfig": "apps/rest-tester-e2e/tsconfig.e2e.json",
+        "devServerTarget": "rest-tester:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "rest-tester:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/rest-tester-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["rest-tester"]
+}

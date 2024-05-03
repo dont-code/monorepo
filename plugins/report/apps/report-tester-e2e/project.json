@@ -1,0 +1,29 @@
+{
+  "name": "report-tester-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/report-tester-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/report-tester-e2e/cypress.config.js",
+        "tsConfig": "apps/report-tester-e2e/tsconfig.e2e.json",
+        "devServerTarget": "report-tester:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "report-tester:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/report-tester-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["report-tester"]
+}

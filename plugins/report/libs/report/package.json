@@ -1,0 +1,21 @@
+{
+  "name": "@dontcode/plugin-report",
+  "version": "1.6.0",
+  "peerDependencies": {
+    "@angular/common": "^15.1.2",
+    "@angular/core": "^15.1.2",
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primeng": "^15.1.1",
+    "chart.js": "^4.2.0",
+    "chartjs-adapter-date-std": "^0.1.8",
+    "chartjs-plugin-autocolors-typescript": "^0.0.8",
+    "rxjs": "^7.8.0",
+    "core-js": "^3.27.2",
+    "@dontcode/core": "^1.0.0",
+    "@dontcode/plugin-common": "^1.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
+}

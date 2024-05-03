@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {BaseAppComponent} from '@dontcode/plugin-sandbox';
+import {BaseAppComponent} from '@dontcode/sandbox';
 
 @Component({
   selector: 'dontcode-tester-root',

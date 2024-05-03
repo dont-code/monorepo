@@ -1,0 +1,29 @@
+{
+  "name": "seed-tester-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/seed-tester-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/seed-tester-e2e/cypress.config.js",
+        "tsConfig": "apps/seed-tester-e2e/tsconfig.e2e.json",
+        "devServerTarget": "seed-tester:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "seed-tester:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/seed-tester-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["seed-tester"]
+}

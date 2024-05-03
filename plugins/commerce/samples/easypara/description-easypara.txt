@@ -1,0 +1,91 @@
+Query: https://www.easypara.fr/catalogsearch/result/?q=chardon%20marie
+
+Search:     var ecommerceObjects = {"currencyCode":"EUR","impressions":[...,{"name":"Extrait de plante fra\u00eeche Chardon Marie 50ml A.Vogel France","id":"3035620435212","price":"10.33","brand":"A.Vogel France","category":"MenuV3","list":"Search Result","position":6},...]};
+
+window.algoliaConfig = {"instant":{"enabled":true,"selector":".columns .column.main","isAddToCartEnabled":true,"addToCartParams":{"action":"https:\/\/www.easypara.fr\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cuZWFzeXBhcmEuZnIvY2F0YWxvZ3NlYXJjaC9yZXN1bHQvP3E9Y2hhcmRvbiUyMG1hcmll\/","formKey":"KJUN8v5TriwE2bSU"},"infiniteScrollEnabled":false,"urlTrackedParameters":["query","attribute:*","index","page"]},"autocomplete":{"enabled":true,"selector":".algolia-search-input","sections":[{"name":"manufacturer","label":"Marques","hitsPerPage":"6"}],"nbOfProductsSuggestions":6,"nbOfCategoriesSuggestions":4,"nbOfQueriesSuggestions":5,"isDebugEnabled":false},"landingPage":{"query":"","configuration":"[]"},"extensionVersion":"3.6.0","applicationId":"JHU6ZVKSFY","indexName":"prod_magento2_fr","apiKey":"ODk4Y2JiMjAyYWIxNjI1NGJmYmQzNDQyYjBkMGViMDE4N2ZmYmMwZTUwYWFjNTJhNTlkMDBlNWFmYzAxZmJiYXRhZ0ZpbHRlcnM9","attributeFilter":[],"facets":[{"attribute":"price","type":"slider","label":"Prix","searchable":"2","create_rule":"2"},{"attribute":"categories","type":"conjunctive","label":"Cat\u00e9gories","searchable":"2","create_rule":"2"},{"attribute":"filter_virtual_category","type":"disjunctive","label":"Univers","searchable":"2","create_rule":"2"},{"attribute":"manufacturer","type":"disjunctive","label":"Marques","searchable":"1","create_rule":"2"},{"attribute":"product_rating","type":"disjunctive","label":"Notes","searchable":"2","create_rule":"2"},{"attribute":"filter_age_baby","type":"conjunctive","label":"Alimentation b\u00e9b\u00e9","searchable":"2","create_rule":"2"},{"attribute":"filter_baby_teats_shape","type":"conjunctive","label":"Forme des t\u00e9tines de sucettes","searchable":"2","create_rule":"2"},{"attribute":"filter_feminine_care","type":"conjunctive","label":"Soins f\u00e9minins","searchable":"2","create_rule":"2"},{"attribute":"filter_foot","type":"conjunctive","label":"Pieds","searchable":"2","create_rule":"2"},{"attribute":"filter_gynaecology","type":"conjunctive","label":"Gyn\u00e9cologie","searchable":"2","create_rule":"2"},{"attribute":"filter_hair_color","type":"conjunctive","label":"Couleurs de cheveux","searchable":"2","create_rule":"2"},{"attribute":"filter_hair_needs","type":"conjunctive","label":"Besoin de cheveux","searchable":"2","create_rule":"2"},{"attribute":"filter_hair_type","type":"conjunctive","label":"Types de cheveux","searchable":"2","create_rule":"2"},{"attribute":"filter_level_of_spf","type":"conjunctive","label":"Indices de protection","searchable":"2","create_rule":"2"},{"attribute":"filter_mosquito_repellents","type":"conjunctive","label":"Anti moustiques","searchable":"2","create_rule":"2"},{"attribute":"filter_part_of_body","type":"conjunctive","label":"Body","searchable":"2","create_rule":"2"},{"attribute":"filter_product_size","type":"conjunctive","label":"Format","searchable":"2","create_rule":"2"},{"attribute":"filter_texture","type":"conjunctive","label":"Texture","searchable":"2","create_rule":"2"},{"attribute":"filter_type_of_hygiene","type":"conjunctive","label":"Hygi\u00e8ne","searchable":"2","create_rule":"2"},{"attribute":"filter_type_of_milk","type":"conjunctive","label":"Lait","searchable":"2","create_rule":"2"},{"attribute":"filter_type_of_shaving","type":"conjunctive","label":"Rasage","searchable":"2","create_rule":"2"},{"attribute":"filter_type_of_toothbrushes","type":"conjunctive","label":"Brosses \u00e0 dents","searchable":"2","create_rule":"2"},{"attribute":"filter_type_of_toothpastes","type":"conjunctive","label":"Dentifrices","searchable":"2","create_rule":"2"},{"attribute":"filter_veterinary","type":"conjunctive","label":"Animal","searchable":"2","create_rule":"2"},{"attribute":"filter_wash","type":"conjunctive","label":"B\u00e9b\u00e9","searchable":"2","create_rule":"2"}],"areCategoriesInFacets":true,"hitsPerPage":24,"sortingIndices":[{"attribute":"created_at","sort":"desc","sortLabel":"Nouveaut\u00e9s","name":"prod_magento2_fr_products_created_at_desc","label":"Nouveaut\u00e9s","ranking":["desc(created_at)","typo","geo","words","filters","proximity","attribute","exact","custom"]},{"attribute":"price","sort":"asc","sortLabel":"Prix le plus bas","name":"prod_magento2_fr_products_price_default_asc","label":"Prix le plus bas","ranking":["asc(price.EUR.default)","typo","geo","words","filters","proximity","attribute","exact","custom"]},{"attribute":"price","sort":"desc","sortLabel":"Prix le plus haut","name":"prod_magento2_fr_products_price_default_desc","label":"Prix le plus haut","ranking":["desc(price.EUR.default)","typo","geo","words","filters","proximity","attribute","exact","custom"]}],"isSearchPage":true,"isCategoryPage":false,"isLandingPage":false,"removeBranding":true,"productId":null,"priceKey":".EUR.default","currencyCode":"EUR","currencySymbol":"\u20ac","priceFormat":{"pattern":"%s\u00a0\u20ac","precision":2,"requiredPrecision":2,"decimalSymbol":",","groupSymbol":"\u202f","groupLength":3,"integerRequired":false},"maxValuesPerFacet":10,"autofocus":true,"request":{"query":"chardon marie","refinementKey":"","refinementValue":"","categoryId":"","landingPageId":"","path":"","level":""},"showCatsNotIncludedInNavigation":false,"showSuggestionsOnNoResultsPage":true,"baseUrl":"https:\/\/www.easypara.fr","popularQueries":["acide-glycolique","liniment","dentifrice","cerave","gel hydroalcoolique","deodorant","eau micellaire","serum physiologique","Masque ","ALOE VERA"],"useAdaptiveImage":false,"urls":{"logo":"https:\/\/www.easypara.fr\/static\/version1663190390\/frontend\/Easysoft\/easypara\/fr_FR\/Algolia_AlgoliaSearch\/images\/search-by-algolia.svg"},"ccAnalytics":{"enabled":false,"ISSelector":".ais-Hits-item a.result, .ais-InfiniteHits-item a.result","conversionAnalyticsMode":null,"addToCartSelector":".action.primary.tocart","orderedProductIds":[]},"isPersonalizationEnabled":false,"personalization":{"enabled":false,"viewedEvents":{"viewProduct":{"eventName":"Viewed Product","enabled":false,"method":"viewedObjectIDs"}},"clickedEvents":{"productClicked":{"eventName":"Product Clicked","enabled":false,"selector":".ais-Hits-item a.result, .ais-InfiniteHits-item a.result","method":"clickedObjectIDs"},"productRecommended":{"eventName":"Recommended Product Clicked","enabled":false,"selector":".products-upsell .product-item","method":"clickedObjectIDs"}},"filterClicked":{"eventName":"Filter Clicked","enabled":false,"method":"clickedFilters"}},"analytics":{"enabled":false,"delay":"3000","triggerOnUiInteraction":"1","pushInitialSearch":"0"},"now":1663545600,"queue":{"isEnabled":true,"nbOfJobsToRun":100,"retryLimit":3,"nbOfElementsPerIndexingJob":200},"isPreventBackendRenderingEnabled":false,"areOutOfStockOptionsDisplayed":false,"translations":{"to":"\u00e0","or":"ou","go":"Aller","popularQueries":"Essayez une de ces recherches","seeAll":"Voir tous les produits","allDepartments":"Tous les d\u00e9partements","seeIn":"Voir les produits dans","orIn":"ou dans","noProducts":"Nous avons cherch\u00e9 partout mais ... nous n\u2019avons pas trouv\u00e9 de r\u00e9sultat pour votre recherche","noResults":"Aucun r\u00e9sultat","refine":"Filtrer","selectedFilters":"Filtres selectionn\u00e9s","clearAll":"Tout retirer","previousPage":"Page pr\u00e9c\u00e9dente","nextPage":"Page suivante","searchFor":"Chercher des produits","relevance":"Popularit\u00e9","categories":"Cat\u00e9gories","products":"Produits","searchBy":"Chercher par","searchForFacetValuesPlaceholder":"Chercher une option","showMore":"Voir plus de produits","suggestions":"Suggestions"},"isBazaarvoiceEnabled":true,"pager":{"stepsFirstPage":[1,2,4,9,19],"stepsDefault":[-10,-1,0,1,2,3,10]}};
+
+Then Requete:
+https://jhu6zvksfy-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia+for+JavaScript+%283.35.1%29%3B+Browser%3B+Magento2+integration+%283.6.0%29%3B+autocomplete.js+0.38.0&x-algolia-application-id=JHU6ZVKSFY&x-algolia-api-key=YTYyYzkyNzgyZDliZTZlMDk1OGE1MDQwNjRkYWY1ZmY4ZTE5OWZhYmU4ZGUyNTM2NDFjNmU4YjllNWMwNmJmNXRhZ0ZpbHRlcnM9
+{
+	"POST": {
+		"scheme": "https",
+		"host": "jhu6zvksfy-dsn.algolia.net",
+		"filename": "/1/indexes/*/queries",
+		"query": {
+			"x-algolia-agent": "Algolia for JavaScript (3.35.1); Browser; Magento2 integration (3.6.0); autocomplete.js 0.38.0",
+			"x-algolia-application-id": "JHU6ZVKSFY",
+			"x-algolia-api-key": "YTYyYzkyNzgyZDliZTZlMDk1OGE1MDQwNjRkYWY1ZmY4ZTE5OWZhYmU4ZGUyNTM2NDFjNmU4YjllNWMwNmJmNXRhZ0ZpbHRlcnM9"
+		},
+		"remote": {
+			"Adresse": "5.79.77.137:443"
+		}
+	}
+}
+with Content:
+{
+	"{\"requests\":[{\"indexName\":\"prod_magento2_fr_products\",\"params\":\"query": "chardon marie",
+	"hitsPerPage": [
+		"6",
+		"6",
+		"4"
+	],
+	"analyticsTags": [
+		"autocomplete",
+		"autocomplete",
+		"autocomplete"
+	],
+	"clickAnalytics": [
+		"true",
+		"true\"},{\"indexName\":\"prod_magento2_fr_categories\",\"params\":\"query",
+		"true"
+	],
+	"facets": "[\"categories.level0\"]",
+	"numericFilters": [
+		"visibility_search=1",
+		"include_in_menu=1\"}]}"
+	],
+	"ruleContexts": "[\"magento_filters\",\"\"]\"},{\"indexName\":\"prod_magento2_fr_section_manufacturer\",\"params\":\"query"
+}
+
+
+/*https://jhu6zvksfy-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(3.35.1)%3B%20Browser%3B%20instantsearch.js%20(4.15.0)%3B%20Magento2%20integration%20(3.6.0)%3B%20JS%20Helper%20(3.4.4)&x-algolia-application-id=JHU6ZVKSFY&x-algolia-api-key=ODk4Y2JiMjAyYWIxNjI1NGJmYmQzNDQyYjBkMGViMDE4N2ZmYmMwZTUwYWFjNTJhNTlkMDBlNWFmYzAxZmJiYXRhZ0ZpbHRlcnM9
+
+  {
+    "POST": {
+      "scheme": "https",
+      "host": "jhu6zvksfy-dsn.algolia.net",
+      "filename": "/1/indexes/*/queries",
+      "query": {
+        "x-algolia-agent": "Algolia for JavaScript (3.35.1); Browser; instantsearch.js (4.15.0); Magento2 integration (3.6.0); JS Helper (3.4.4)",
+        "x-algolia-application-id": "JHU6ZVKSFY",
+        "x-algolia-api-key": "ODk4Y2JiMjAyYWIxNjI1NGJmYmQzNDQyYjBkMGViMDE4N2ZmYmMwZTUwYWFjNTJhNTlkMDBlNWFmYzAxZmJiYXRhZ0ZpbHRlcnM9"
+      },
+      "remote": {
+        "Adresse": "151.80.20.4:443"
+      }
+    }
+  }
+
+With Params:
+{"requests":[{"indexName":"prod_magento2_fr_products","params":"highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&ruleContexts=%5B%22magento_filters%22%5D&hitsPerPage=24&query=chardon%20marie&page=0&maxValuesPerFacet=20&facets=%5B%22filter_age_baby%22%2C%22filter_baby_teats_shape%22%2C%22filter_feminine_care%22%2C%22filter_foot%22%2C%22filter_gynaecology%22%2C%22filter_hair_color%22%2C%22filter_hair_needs%22%2C%22filter_hair_type%22%2C%22filter_level_of_spf%22%2C%22filter_mosquito_repellents%22%2C%22filter_part_of_body%22%2C%22filter_product_size%22%2C%22filter_texture%22%2C%22filter_type_of_hygiene%22%2C%22filter_type_of_milk%22%2C%22filter_type_of_shaving%22%2C%22filter_type_of_toothbrushes%22%2C%22filter_type_of_toothpastes%22%2C%22filter_veterinary%22%2C%22filter_wash%22%2C%22price.EUR.default%22%2C%22filter_virtual_category%22%2C%22manufacturer%22%2C%22product_rating%22%2C%22categories.level0%22%5D&tagFilters=&numericFilters=%5B%22visibility_search%3D1%22%5D"}]}
+= {
+	"{\"requests\":[{\"indexName\":\"prod_magento2_fr_products\",\"params\":\"highlightPreTag": "__ais-highlight__",
+	"highlightPostTag": "__/ais-highlight__",
+	"ruleContexts": "[\"magento_filters\"]",
+	"hitsPerPage": "24",
+	"query": "chardon marie",
+	"page": "0",
+	"maxValuesPerFacet": "20",
+	"facets": "[\"filter_age_baby\",\"filter_baby_teats_shape\",\"filter_feminine_care\",\"filter_foot\",\"filter_gynaecology\",\"filter_hair_color\",\"filter_hair_needs\",\"filter_hair_type\",\"filter_level_of_spf\",\"filter_mosquito_repellents\",\"filter_part_of_body\",\"filter_product_size\",\"filter_texture\",\"filter_type_of_hygiene\",\"filter_type_of_milk\",\"filter_type_of_shaving\",\"filter_type_of_toothbrushes\",\"filter_type_of_toothpastes\",\"filter_veterinary\",\"filter_wash\",\"price.EUR.default\",\"filter_virtual_category\",\"manufacturer\",\"product_rating\",\"categories.level0\"]",
+	"tagFilters": "",
+	"numericFilters": "[\"visibility_search=1\"]\"}]}"
+}*/
+
+
+Product: get https://www.easypara.fr/extrait-de-plante-fraiche-chardon-marie-50ml-a-vogel-france.html
+
+    Then get <span class="price-container price-final_price tax weee">
+        <span id="product-price-97485" data-price-amount="10.898151" data-price-type="finalPrice" class="price-wrapper " data-test="product-price-finalPrice"><span class="price">10,90&nbsp;€</span></span>
+      </span>
+
+

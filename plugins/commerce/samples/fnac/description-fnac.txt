@@ -1,0 +1,10 @@
+
+First call:
+
+
+
+https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=doro+8080+smartphone&sft=1&sa=0
+
+Get product:
+https://www.fnac.com/mp43280553/DORO-8080-4G-smartphone-Memoire-interne-32-Go-microSD-slot-5-7-1440-x-720-pixels-rear-camera-16-MP-blanc/w-4?oref=a7c1a8d6-48b9-71ad-e734-0d88831bf2cb
+

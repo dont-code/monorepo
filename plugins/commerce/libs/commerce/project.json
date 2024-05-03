@@ -1,0 +1,44 @@
+{
+  "name": "commerce",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/commerce/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/commerce"],
+      "options": {
+        "project": "libs/commerce/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": false
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/commerce/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/commerce/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/commerce"],
+      "options": {
+        "jestConfig": "libs/commerce/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/commerce/src/**/*.ts",
+          "libs/commerce/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

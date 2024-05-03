@@ -1,0 +1,41 @@
+{
+  "name": "seed",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/seed/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/seed"],
+      "options": {
+        "project": "libs/seed/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": false
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/seed/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/seed/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/seed"],
+      "options": {
+        "jestConfig": "libs/seed/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/seed/src/**/*.ts", "libs/seed/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

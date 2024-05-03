@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Cdiscount</title>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CDiscount">
+  <meta property="og:url" content="https://www.cdiscount.com/">
+  <meta property="og:title" content="Cdiscount.com">
+  <meta property="og:description"
+        content="Achat sur Internet a prix discount de DVD et de produits culturels (livre et musique), informatiques et high Tech (image et son, televiseur LCD, ecran plasma, telephone portable, camescope, developpement photo numerique). Achat d electromenager et de petit electromenager. Vente de pret-a-porter pour homme et femme.">
+  <meta property="og:image" content="https://i2.cdscdn.com/resources/RWD/header/nLogo.png">
+  <meta property="og:locale" content="fr_FR">
+  <script>function getChallengeFromUrl() {
+    return window.location.search.match(new RegExp("[?&](challenge=[a-zA-Z0-9-_]*(?=([&#]|$)))"))
+  }
+
+  function buildUrlWithParams() {
+    var hash = window.location.hash;
+    var prefix = "?";
+    if (window.location.search.match(new RegExp("^\\?"))) prefix = "&";
+    return window.location.href.replace(hash, "") + prefix + "challenge=JmNaL4p84LHEfek6eFD6LaLIDQxejLsskKWXlWHbHo6Kdvk-kmOrq8C7tKIuMu5zB-UdhbvNurVqXmr9EolmsXan8NdPb-Zy0d1sAetWNMlhr51QGQQR_dkeKmTRTQWNpjb4ti6QkuRW64bPRWQVgrNOvOyYZVRi6WbmDRHzzE-cuM1RPfKMiWKyT1T8By1Co1sCyw5uMBpbfmUeKcLR9PSMQyiPMPWzSDj3sOtE43c" + hash
+  }
+
+  function reloadAndCheckChallenge(redirectUrl) {
+    var http = new XMLHttpRequest;
+    var url = "/.well-known/baleen/challengejs/check?challenge=JmNaL4p84LHEfek6eFD6LaLIDQxejLsskKWXlWHbHo6Kdvk-kmOrq8C7tKIuMu5zB-UdhbvNurVqXmr9EolmsXan8NdPb-Zy0d1sAetWNMlhr51QGQQR_dkeKmTRTQWNpjb4ti6QkuRW64bPRWQVgrNOvOyYZVRi6WbmDRHzzE-cuM1RPfKMiWKyT1T8By1Co1sCyw5uMBpbfmUeKcLR9PSMQyiPMPWzSDj3sOtE43c";
+    http.open("POST", url);
+    http.send("bot_category=unknown&request_fate=challengejs&tracking_id=&rule_id=");
+    setTimeout((function () {
+      if (redirectUrl) window.location = redirectUrl; else window.location.reload()
+    }), 2)
+  }
+
+  function sendInQuery() {
+    var matchArray = getChallengeFromUrl();
+    if (!matchArray) {
+      reloadAndCheckChallenge(buildUrlWithParams())
+    } else {
+      setTimeout((function () {
+        var replacedUrl = window.location.href.replace(matchArray[1], "challenge=JmNaL4p84LHEfek6eFD6LaLIDQxejLsskKWXlWHbHo6Kdvk-kmOrq8C7tKIuMu5zB-UdhbvNurVqXmr9EolmsXan8NdPb-Zy0d1sAetWNMlhr51QGQQR_dkeKmTRTQWNpjb4ti6QkuRW64bPRWQVgrNOvOyYZVRi6WbmDRHzzE-cuM1RPfKMiWKyT1T8By1Co1sCyw5uMBpbfmUeKcLR9PSMQyiPMPWzSDj3sOtE43c");
+        reloadAndCheckChallenge(replacedUrl)
+      }), 1e3)
+    }
+  }
+
+  function isCookieEnabled() {
+    try {
+      document.cookie = "test_baleen_cookies_enabled=1";
+      var ret = document.cookie.indexOf("test_baleen_cookies_enabled=") !== -1;
+      document.cookie = "test_baleen_cookies_enabled=1; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+      return ret
+    } catch (e) {
+      return false
+    }
+  }
+
+  if (isCookieEnabled()) {
+    document.cookie = "challenge=JmNaL4p84LHEfek6eFD6LaLIDQxejLsskKWXlWHbHo6Kdvk-kmOrq8C7tKIuMu5zB-UdhbvNurVqXmr9EolmsXan8NdPb-Zy0d1sAetWNMlhr51QGQQR_dkeKmTRTQWNpjb4ti6QkuRW64bPRWQVgrNOvOyYZVRi6WbmDRHzzE-cuM1RPfKMiWKyT1T8By1Co1sCyw5uMBpbfmUeKcLR9PSMQyiPMPWzSDj3sOtE43c; max-age=900; domain=.cdiscount.com; path=/; Secure";
+    var match = document.cookie.match(new RegExp("(^| )challenge=([^;]+)"));
+    if (match) {
+      reloadAndCheckChallenge()
+    } else {
+      sendInQuery()
+    }
+  } else {
+    sendInQuery()
+  }
+  </script>
+  <meta name="viewport" content="width=device-width">
+  <style>@media screen and (min-width: 576px) {
+    .container {
+      max-width: 500px
+    }
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto
+  }
+
+  body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column
+  }
+
+  .header {
+    width: 100vw;
+    background-color: #293647;
+    margin-bottom: 5vh;
+    padding: 10px 0
+  }
+
+  .header-image {
+    margin: auto;
+    display: block
+  }
+
+  .white-square {
+    background-color: #fff;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    margin: auto
+  }
+
+  @media screen and (min-width: 576px) {
+    .white-square {
+      padding: 2rem 1.2rem
+    }
+  }
+
+  .welcome {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+    color: #293647;
+    margin: auto
+  }
+
+  @media screen and (max-width: 576px) {
+    .welcome {
+      flex-direction: column
+    }
+  }
+
+  .welcome-on {
+    margin: auto
+  }
+
+  .logo {
+    margin-left: 10px
+  }
+
+  .button {
+    background-color: #0f6dc6;
+    border: none;
+    padding: .6rem 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none
+  }
+
+  .button-container {
+    text-align: center
+  }
+
+  p {
+    margin-bottom: 2rem
+  }</style>
+</head>
+<body>
+<noscript>
+  <div class="header"><img class="header-image" src="https://i2.cdscdn.com/resources/RWD/header/nLogo2019.png"></div>
+  <div class="container">
+    <div class="white-square">
+      <div class="welcome">
+        <div class="welcome-on"><span>Bienvenue sur</span></div>
+        <div class="logo"><img src="https://i2.cdscdn.com/RWD/header/Logo.png"></div>
+      </div>
+      <p>Le JavaScript n'est pas activé sur votre navigateur. Pour vous permettre de naviguer correctement sur
+        Cdiscount, il est nécessaire que le JavaScript soit activé. Vous pouvez consulter la page avec la marche à
+        suivre :</p>
+      <div class="button-container"><a class="button" href="/edito/aide-js.html">Comment activer le javascript</a></div>
+    </div>
+  </div>
+</noscript>
+</body>
+</html>

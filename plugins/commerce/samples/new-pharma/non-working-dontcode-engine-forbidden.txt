@@ -1,0 +1,81 @@
+Using path from url parameter:  https://www.newpharma.fr/search-results/search.html?q=Chardon%20Marie
+lojwbzycz4yd9bu1ui8: Removing Host header
+lojwbzycz4yd9bu1ui8: Changing connection from close to keep-alive
+lojwbzycz4yd9bu1ui8: Changing sec-fetch-site from none to same-site
+lojwbzycz4yd9bu1ui8: Sending request:  {
+url: 'https://www.newpharma.fr/search-results/search.html?q=Chardon%20Marie',
+method: 'GET',
+headers: {
+connection: 'keep-alive',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
+accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+'accept-language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+'accept-encoding': 'gzip, deflate, br',
+'upgrade-insecure-requests': '1',
+'sec-fetch-dest': 'document',
+'sec-fetch-mode': 'navigate',
+'sec-fetch-site': 'same-site',
+'sec-fetch-user': '?1',
+cookie: 's_fid=33655AE4D0740F4B-39740F2E15F342AA; app_vi=34214400%7C; s_nr=1694859168262-New; s_pv=Captcha%20baleen; SSOwAuthUser=papou; SSOwAuthHash=4be233254e2560ee07d94052ffaea644e1a52fcfea82bd5cfcf338949f7437697f887211ee6a5d37ddec74f755d3cf6a97f3bae6757e55e683bf1471e4ae4690; SSOwAuthExpire=1699696225.313; AEC=Ackid1SMzltpD1_Bc1do7kBAlQnH9stc5daEZaf1kqzEnofoWTWJxNI2_w; CONSENT=PENDING+753',
+authorization: 'Basic cGFwb3U6JDVhcHdwIzEkWzFN',
+'remote-user': 'papou',
+email: 'papou@shared.collin.best',
+name: 'GÃ©rard Collin',
+'auth-user': 'papou'
+},
+maxRedirects: 0,
+validateStatus: [Function (anonymous)],
+responseType: 'stream',
+decompress: false
+}
+lojwbzycz4yd9bu1ui8: Received response:  {
+status: 403,
+message: 'Forbidden',
+url: 'https://www.newpharma.fr/search-results/search.html?q=Chardon%20Marie',
+method: 'get',
+headers: Object [AxiosHeaders] {
+Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+'Content-Type': undefined,
+connection: 'keep-alive',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
+'accept-language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+'accept-encoding': 'gzip, deflate, br',
+'upgrade-insecure-requests': '1',
+'sec-fetch-dest': 'document',
+'sec-fetch-mode': 'navigate',
+'sec-fetch-site': 'same-site',
+'sec-fetch-user': '?1',
+cookie: 's_fid=33655AE4D0740F4B-39740F2E15F342AA; app_vi=34214400%7C; s_nr=1694859168262-New; s_pv=Captcha%20baleen; SSOwAuthUser=papou; SSOwAuthHash=4be233254e2560ee07d94052ffaea644e1a52fcfea82bd5cfcf338949f7437697f887211ee6a5d37ddec74f755d3cf6a97f3bae6757e55e683bf1471e4ae4690; SSOwAuthExpire=1699696225.313; AEC=Ackid1SMzltpD1_Bc1do7kBAlQnH9stc5daEZaf1kqzEnofoWTWJxNI2_w; CONSENT=PENDING+753',
+authorization: 'Basic cGFwb3U6JDVhcHdwIzEkWzFN',
+'remote-user': 'papou',
+email: 'papou@shared.collin.best',
+name: 'GÃ©rard Collin',
+'auth-user': 'papou'
+}
+}
+lojwbzycz4yd9bu1ui8: Replaced cookie __cf_bm=fmumGkxbifURzID1bDxLNkbzphzVI9GcF8TBSOAXn_I-1699093386-0-ASSSyL9qolcigtrv0pK0u6b/QLapniBsyMftNT9GdpSo4id/ITZWzIQAGmuIygaeDaagNLNCXL3iG97dnl0wl/s=; path=/; expires=Sat,04-Nov-23 10:53:06 GMT; domain=.newpharma.fr; HttpOnly; Secure; SameSite=None to __cf_bm=fmumGkxbifURzID1bDxLNkbzphzVI9GcF8TBSOAXn_I-1699093386-0-ASSSyL9qolcigtrv0pK0u6b/QLapniBsyMftNT9GdpSo4id/ITZWzIQAGmuIygaeDaagNLNCXL3iG97dnl0wl/s=; Expires=Sat, 04 Nov 2023 10:53:06 GMT; Path=/; HttpOnly; SameSite=None
+lojwbzycz4yd9bu1ui8: Sending response:  {
+status: 403,
+message: 'Forbidden',
+url: '/proxy/debug?url=https%253A%252F%252Fwww.newpharma.fr%252Fsearch-results%252Fsearch.html%253Fq%253DChardon%252520Marie',
+method: 'GET',
+headers: {
+host: 'shared.collin.best',
+connection: 'close',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
+accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+'accept-language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+'accept-encoding': 'gzip, deflate, br',
+'upgrade-insecure-requests': '1',
+'sec-fetch-dest': 'document',
+'sec-fetch-mode': 'navigate',
+'sec-fetch-site': 'none',
+'sec-fetch-user': '?1',
+cookie: 's_fid=33655AE4D0740F4B-39740F2E15F342AA; app_vi=34214400%7C; s_nr=1694859168262-New; s_pv=Captcha%20baleen; SSOwAuthUser=papou; SSOwAuthHash=4be233254e2560ee07d94052ffaea644e1a52fcfea82bd5cfcf338949f7437697f887211ee6a5d37ddec74f755d3cf6a97f3bae6757e55e683bf1471e4ae4690; SSOwAuthExpire=1699696225.313; AEC=Ackid1SMzltpD1_Bc1do7kBAlQnH9stc5daEZaf1kqzEnofoWTWJxNI2_w; CONSENT=PENDING+753',
+authorization: 'Basic cGFwb3U6JDVhcHdwIzEkWzFN',
+'remote-user': 'papou',
+email: 'papou@shared.collin.best',
+name: 'GÃ©rard Collin',
+'auth-user': 'papou'
+}
+}

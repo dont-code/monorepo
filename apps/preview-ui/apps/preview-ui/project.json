@@ -1,0 +1,154 @@
+{
+  "name": "preview-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/preview-ui/src",
+  "prefix": "preview-ui",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/preview-ui",
+        "index": "apps/preview-ui/src/index.html",
+        "main": "apps/preview-ui/src/main.ts",
+        "polyfills": "apps/preview-ui/src/polyfills.ts",
+        "tsConfig": "apps/preview-ui/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "vendorChunk": true,
+        "extractLicenses": false,
+        "buildOptimizer": false,
+        "optimization": false,
+        "namedChunks": true,
+        "sourceMap": {
+          "scripts": true,
+          "styles": true,
+          "hidden": false,
+          "vendor": true
+        },
+        "assets": [
+          "apps/preview-ui/src/favicon.ico",
+          "apps/preview-ui/src/assets",
+          {
+            "input": "./node_modules/@dontcode/sandbox/assets",
+            "glob": "**/*",
+            "output": "assets"
+          }
+        ],
+        "styles": [
+          "apps/preview-ui/src/styles.scss",
+          "./node_modules/primeflex/primeflex.css",
+          "./node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "./node_modules/primeng/resources/primeng.min.css",
+          "./node_modules/primeicons/primeicons.css"
+        ],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/preview-ui/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "next": {
+          "fileReplacements": [
+            {
+              "replace": "apps/preview-ui/src/environments/environment.ts",
+              "with": "apps/preview-ui/src/environments/environment.next.ts"
+            }
+          ]
+        },
+        "yunohost": {
+          "fileReplacements": [
+            {
+              "replace": "apps/preview-ui/src/environments/environment.ts",
+              "with": "apps/preview-ui/src/environments/environment.yunohost.ts"
+            }
+          ]
+        },
+        "production": {
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "buildOptimizer": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "1.5mb",
+              "maximumError": "2.5mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/preview-ui/src/environments/environment.ts",
+              "with": "apps/preview-ui/src/environments/environment.prod.ts"
+            }
+          ],
+          "customWebpackConfig": {
+            "path": "apps/preview-ui/webpack.prod.config.js"
+          }
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/angular:webpack-dev-server",
+      "configurations": {
+        "next": {
+          "browserTarget": "preview-ui:build:next"
+        },
+        "production": {
+          "browserTarget": "preview-ui:build:production"
+        },
+        "development": {
+          "browserTarget": "preview-ui:build:development"
+        },
+        "yunohost": {
+          "browserTarget": "preview-ui:build:yunohost"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 5001,
+        "publicHost": "http://localhost:5001"
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "preview-ui:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/preview-ui/src/**/*.ts",
+          "apps/preview-ui/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/preview-ui"],
+      "options": {
+        "jestConfig": "apps/preview-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "serve-mfe": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx serve preview-ui"]
+      }
+    }
+  },
+  "tags": []
+}

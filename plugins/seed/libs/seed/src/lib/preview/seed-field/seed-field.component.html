@@ -1,0 +1,6 @@
+<ng-template #inlineView >{{value}}</ng-template>
+<ng-template #fullEditView>
+  <ng-container *ngIf="form" [formGroup]="form">
+    <p-dropdown [name]="name" [formControlName]="name" [options]="seeds" optionLabel="name" optionValue="code" placeholder="Please select your favorite seed"></p-dropdown>
+  </ng-container>
+</ng-template>

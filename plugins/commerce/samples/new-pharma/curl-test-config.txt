@@ -1,0 +1,16 @@
+--request GET
+--url https://www.newpharma.fr/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1?ray=76f535b5bad922af
+--compressed
+--cookie-jar cookie-jar.txt
+--dump-header headers.txt
+--header "Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+--header "Accept-Encoding:gzip, deflate, br"
+--header "Accept-Language:fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+--header "Connection:keep-alive"
+--header "Host:www.newpharma.fr"
+--header "User-Agent:Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+--header "Sec-Fetch-Dest:document"
+--header "Sec-Fetch-Mode:navigate"
+--header "Sec-Fetch-Site:none"
+--header "Sec-Fetch-User:?1"
+--header "Upgrade-Insecure-Requests:1"

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Online Shops",
+    "sequence": [
+      {
+        "position": "creation/entities/a",
+        "type": "ADD",
+        "value": {
+          "name": "Online Shop"
+        }
+      },
+      {
+        "position": "creation/entities/a/fields",
+        "type": "ADD",
+        "value": {
+          "aa": {
+            "name": "Shop",
+            "type": "Text"
+          },
+          "ab": {
+            "name": "Type",
+            "type": "Shop type"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Product Price",
+    "sequence": [
+      {
+        "position": "creation/entities/b",
+        "type": "ADD",
+        "value": {
+          "name": "Product"
+        }
+      },
+      {
+        "position": "creation/entities/b/fields",
+        "type": "ADD",
+        "value": {
+          "aa": {
+            "name": "Name",
+            "type": "Text"
+          },
+          "ab": {
+            "name": "Price",
+            "type": "Price"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Multiple prices",
+    "sequence": [
+      {
+        "position": "creation/entities/c",
+        "type": "ADD",
+        "value": {
+          "name": "MultiPriced Product"
+        }
+      },
+      {
+        "position": "creation/entities/c/fields",
+        "type": "ADD",
+        "value": {
+          "ca": {
+            "name": "Name",
+            "type": "Text"
+          },
+          "cb": {
+            "name": "Fnac",
+            "type": "Price"
+          },
+          "cc": {
+            "name": "GreatShop",
+            "type": "Price"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Empty Application",
+    "type": "RESET",
+    "position": "creation",
+    "value": null
+  }
+]

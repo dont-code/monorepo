@@ -6,7 +6,6 @@ import { DefaultViewerComponent } from './dynamic/components/default-viewer.comp
 import {PluginCommonModule} from "@dontcode/plugin-common";
 import {ReactiveFormsModule} from "@angular/forms";
 import {InputTextModule} from "primeng/inputtext";
-import { RepositorySchema } from '@dontcode/core';
 
 
 @NgModule({
@@ -31,3 +30,4 @@ export * from './change/change.module';
 export * from './plugins/remote-plugin-loader.service';
 export * from './command/command.module';
 export * from './plugins/global-plugin-loader';
+export * from './definitions';

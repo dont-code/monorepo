@@ -1,0 +1,41 @@
+<dtcde-dynamic></dtcde-dynamic>
+<ng-template #fullView>
+  <p-table [value]="cleanedTableData" [columns]="cols" rowGroupMode="subheader" [groupRowsBy]="groupRowsBy">
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th id="header-{{col.header}}" *ngFor="let col of columns" [pSortableColumn]="col.field">
+          {{col.header}} <p-sortIcon [field]="col.field"></p-sortIcon>
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr>
+        <td *ngFor="let col of columns">
+          <ng-container *ngIf="col.component">
+            <ng-container *ngTemplateOutlet="templateOf(col, rowData[col.field])"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="!col.component"><span pTooltip="{{rowData[col.field] | beautifier}}">{{rowData[col.field] | beautifier : 50}}</span></ng-container>
+        </td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="groupheader" let-rowData let-columns="columns">
+      <tr *ngIf="areGroupsDefined()" pRowGroupHeader class="rowgroup-header font-bold">
+        <td [colSpan]="columns.length" ><span>{{rowData[groupRowsBy!]}}</span></td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="groupfooter" let-rowData let-columns="columns">
+      <tr *ngIf="areGroupsDefined()" class="rowgroup-footer font-italic">
+        <td *ngFor="let col of columns">
+          <ng-container *ngFor="let value of retrieveGroupedByValuesFor (rowData[groupRowsBy!], col.field)">
+            <ng-container *ngIf="isTemplate(col, value.forAggregate.operation)">
+              <div>{{value.forAggregate.operation.toString()}}:&nbsp;<ng-container *ngTemplateOutlet="templateOf(col, value.value)"></ng-container></div>
+            </ng-container>
+            <ng-container *ngIf="!isTemplate(col, value.forAggregate.operation)">
+              <div pTooltip="{{value.forAggregate.operation.toString()}}:&nbsp;{{value.value | beautifier}}">{{value.forAggregate.operation.toString()}}:&nbsp;{{value.value | beautifier : 50}}</div>
+             </ng-container>
+          </ng-container>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</ng-template>

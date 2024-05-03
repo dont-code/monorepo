@@ -1,0 +1,8 @@
+<div *ngIf="mainTab()">
+  <ng-container *ngIf="!testMode">
+    <dontcode-sandbox-main></dontcode-sandbox-main>
+  </ng-container>
+  <ng-container *ngIf="testMode">
+  </ng-container>
+</div>
+<div *ngIf="!mainTab()"><router-outlet></router-outlet></div>

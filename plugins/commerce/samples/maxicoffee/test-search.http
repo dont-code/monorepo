@@ -1,0 +1,33 @@
+POST https://na.search.sensefuel.live/searchf/4147d2a1-7a21-4697-8a4c-0e25183f3ce9
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Origin: https://www.maxicoffee.com
+Connection: keep-alive
+Referer: https://www.maxicoffee.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+
+{"acp":{},"suggest":{},"key":"1678529428545-0-AskResult","parentKey":"1678529428545-0-AskResult","terms":{"expression":"lugat grains","inputSource":"keyboard","intentDetection":{}},"items":{"from":0,"size":30,"bypassSpellcheck":false},"prefixQuery":{},"filters":{},"scopes":[],"spotlights":[],"sort":null,"needShortcuts":true,"userIds":{"id":"25ac67e4-ed34-435a-81be-02e1a8dc99d7","previousId":null,"custId":null,"isAuthenticated":false},"trackFingerPrint":{"tracks":["35af905a-9f76-4d68-bc22-b07ff60a14d4"],"environmentId":"333"},"sellerId":"France métropolitaine","kickerContents":{"size":6},"contents":{"from":0,"size":30,"playOnIntent":["nlu|content"]},"references":{"size":32}}
+
+###
+# With userId = null OK !
+# Without tracks = empty "trackFingerPrint":{"tracks":[],"environmentId":"333"} = OK !
+# With key = Random and parentKey = null "key":"1678529428523-0-AskResult","parentKey":null = OK !
+POST https://na.search.sensefuel.live/searchf/4147d2a1-7a21-4697-8a4c-0e25183f3ce9
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Origin: https://www.maxicoffee.com
+Connection: keep-alive
+Referer: https://www.maxicoffee.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+
+{"acp":{},"suggest":{},"key":"1678529428523-0-AskResult","parentKey":null,"terms":{"expression":"lugat grains","inputSource":"keyboard","intentDetection":{}},"trackFingerPrint":{"tracks":[],"environmentId":"333"},"items":{"from":0,"size":30,"bypassSpellcheck":false},"prefixQuery":{},"filters":{},"scopes":[],"spotlights":[],"sort":null,"needShortcuts":true,"userIds":{"id":null,"previousId":null,"custId":null,"isAuthenticated":false},"sellerId":"France métropolitaine","kickerContents":{"size":6},"contents":{"from":0,"size":30,"playOnIntent":["nlu|content"]},"references":{"size":32}}

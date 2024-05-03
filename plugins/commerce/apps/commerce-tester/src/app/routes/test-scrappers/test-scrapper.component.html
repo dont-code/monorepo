@@ -1,0 +1,6 @@
+<p>{{productName}} @ {{shopName}} <p-button (onClick)="checkPrice()">Check Price</p-button></p>
+<ng-container *ngIf="displayPrice"><p>Price:<p-inputNumber mode="currency" [currency]="price.cost?.currencyCode??''" [ngModel]="price.cost?.amount"></p-inputNumber></p></ng-container>
+<ng-container *ngIf="priceError!==null">
+    <ng-container *ngIf="url"><p>Original Url: <a [href]="url" target="_blank">{{url}}</a></p></ng-container>
+    Error: <textarea cols="80" pInputTextarea>{{displayableError()}}</textarea>
+</ng-container>

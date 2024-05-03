@@ -1,0 +1,45 @@
+
+# @no-redirect
+GET https://www.fnac.com
+Accept: text/html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Connection: Keep-alive
+
+###
+
+# @no-redirect
+GET https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro%208080%20Plus
+Accept: text/html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Connection: Keep-alive
+Host: www.fnac.com
+Cookie: QueueITAccepted-SDFrts345E-V3_frprdfnaccom=EventId%3Dfrprdfnaccom%26QueueId%3D545173b5-fccc-4910-8af7-8985b7d77b2d%26RedirectType%3Dsafetynet%26IssueTime%3D1668360704%26Hash%3D0378e0de65cddeab67a54671a123bb747b394b7bd405a7ac872e910d858d06f0
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: None
+Sec-Fetch-User: ?1
+TE: trailers
+Upgrade-Insecure-Requests: 1
+
+###
+# @no-redirect
+GET https://queue.fnac.com/?c=fnacdarty&e=frprdfnaccom&ver=v3-javascript-3.7.10&cver=140&man=FR%20PRD%20FNAC.COM&t=https%3A%2F%2Fwww.fnac.com%2FSearchResult%2FResultList.aspx%3FSearch%3DDoro%2B8080%2BPlus&kupver=akamai-3.0.9
+Accept: text/html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Connection: Keep-alive
+Host: queue.fnac.com
+
+###
+GET https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro+8080+Plus&queueittoken=e_frprdfnaccom%7Eq_545173b5-fccc-4910-8af7-8985b7d77b2d%7Ets_1668360884%7Ece_true%7Ert_safetynet%7Eh_277426899d55b1f774e1cf205c93e1c7f59db45b70bf4def2d376e053dfd59c4
+Accept: text/html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Connection: Keep-alive
+Host: www.fnac.com

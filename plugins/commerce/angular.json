@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "commerce": "libs/commerce",
+    "commerce-tester": "apps/commerce-tester",
+    "commerce-tester-e2e": "apps/commerce-tester-e2e"
+  }
+}

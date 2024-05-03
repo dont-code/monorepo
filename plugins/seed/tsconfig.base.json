@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@dontcode/core": ["node_modules/@dontcode/core"],
+      "@dontcode/plugin-common": ["node_modules/@dontcode/plugin-common"],
+      "@dontcode/plugin-seed": ["libs/seed/src/index.ts"],
+      "@dontcode/sandbox": ["node_modules/@dontcode/sandbox"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

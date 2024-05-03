@@ -1,0 +1,145 @@
+{
+  "name": "commerce-tester",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/commerce-tester/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/commerce-tester",
+        "index": "apps/commerce-tester/src/index.html",
+        "main": "apps/commerce-tester/src/main.ts",
+        "polyfills": "apps/commerce-tester/src/polyfills.ts",
+        "tsConfig": "apps/commerce-tester/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "vendorChunk": true,
+        "extractLicenses": false,
+        "buildOptimizer": false,
+        "optimization": false,
+        "namedChunks": true,
+        "sourceMap": {
+          "scripts": true,
+          "styles": true,
+          "hidden": false,
+          "vendor": true
+        },
+        "assets": [
+          "apps/commerce-tester/src/favicon.ico",
+          "apps/commerce-tester/src/assets",
+          {
+            "input": "node_modules/@dontcode/sandbox/assets",
+            "glob": "**/*",
+            "output": "assets"
+          }
+        ],
+        "styles": [
+          "apps/commerce-tester/src/styles.scss",
+          "./node_modules/primeng/resources/primeng.min.css",
+          "./node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "./node_modules/primeflex/primeflex.min.css",
+          "./node_modules/primeicons/primeicons.css"
+        ],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/commerce-tester/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "buildOptimizer": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/commerce-tester/src/environments/environment.ts",
+              "with": "apps/commerce-tester/src/environments/environment.prod.ts"
+            }
+          ],
+          "customWebpackConfig": {
+            "path": "apps/commerce-tester/webpack.prod.config.js"
+          }
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/angular:webpack-dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "commerce-tester:build:production"
+        },
+        "development": {
+          "browserTarget": "commerce-tester:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 3003,
+        "publicHost": "http://localhost:3003"
+      }
+    },
+    "extract-i18n": {
+      "executor": "ngx-build-plus:extract-i18n",
+      "options": {
+        "browserTarget": "commerce-tester:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/commerce-tester/src/**/*.ts",
+          "apps/commerce-tester/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/commerce-tester"
+      ],
+      "options": {
+        "jestConfig": "apps/commerce-tester/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "commerce-tester:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "commerce-tester:build:development"
+        },
+        "production": {
+          "buildTarget": "commerce-tester:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

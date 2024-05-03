@@ -1,0 +1,18 @@
+<dtcde-dynamic></dtcde-dynamic>
+<h1>Report {{title}}</h1>
+<div class="p-fluid">
+  <div class="field grid" *ngFor="let field of getSubFields()">
+    <div *ngIf="field.type==='Table'" class="col-12">
+      <ng-container *ngTemplateOutlet="subFieldFullViewTemplate(field); context:{ fieldType:field.type}"></ng-container>
+    </div>
+    <div *ngIf="field.type!=='Table'" class="col-12 md:col-6">
+      <ng-container *ngTemplateOutlet="subFieldFullViewTemplate(field); context:{ fieldType:field.type}"></ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-template #defaultdisplay let-type="fieldType">
+  <div class="col-12 md:col-10">
+    No components for {{type}}
+  </div>
+</ng-template>

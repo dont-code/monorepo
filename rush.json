@@ -433,8 +433,38 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@dontcode/plugin-rest",
+      "projectFolder": "plugins/rest",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@dontcode/plugin-report",
+      "projectFolder": "plugins/report",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@dontcode/plugin-commerce",
+      "projectFolder": "plugins/commerce",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@dontcode/plugin-seed",
+      "projectFolder": "plugins/seed",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@dontcode/plugin-std-tester",
       "projectFolder": "plugins/standard-deploy",
+      "reviewCategory": "production",
+      "shouldPublish": false
+      },
+    {
+      "packageName": "@dontcode/preview-ui",
+      "projectFolder": "apps/preview-ui",
       "reviewCategory": "production",
       "shouldPublish": false
       }

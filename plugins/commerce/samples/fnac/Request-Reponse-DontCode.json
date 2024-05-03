@@ -1,0 +1,72 @@
+[
+  {
+    "GET": {
+      "scheme": "http",
+      "host": "localhost:3000",
+      "filename": "/proxy/log/https://www.fnac.com/SearchResult/ResultList.aspx",
+      "query": {
+        "SCat": "0",
+        "Search": "Doro 8080 plus",
+        "sft": "1",
+        "sa": "0"
+      },
+      "remote": {
+        "Adresse": "127.0.0.1:3000"
+      }
+    }
+  },
+  {
+    "En-têtes de la requête (1,052 Ko)": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "text/html"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+        },
+        {
+          "name": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "Cookie",
+          "value": "Queue-it-token=e_frprdfnaccom~q_bc294b2c-26ea-4825-9abe-aeb020e0fc60~ts_1668704800~ce_true~rt_safetynet~h_98e73af0e22456e0e2d060141a25a9d40c4bf0c2b265ef7d6aa1480df19c75d5; Queue-it-bc294b2c-26ea-4825-9abe-aeb020e0fc60=WasRedirected=false&i=638043014207994142; Queue-it=u=f0b5979b-ac78-4698-9a4b-fc7e2fe19ef0; QueueITAccepted-SDFrts345E-V3_frprdfnaccom=EventId%3Dfrprdfnaccom%26QueueId%3Dbc294b2c-26ea-4825-9abe-aeb020e0fc60%26RedirectType%3Dsafetynet%26IssueTime%3D1668704620%26Hash%3Da38ddbd8dd0b5a9827326d9979aed38f07488f8fc711b7d1b1640f42e5d503d0"
+        },
+        {
+          "name": "Host",
+          "value": "localhost:3000"
+        },
+        {
+          "name": "Origin",
+          "value": "http://localhost:3003"
+        },
+        {
+          "name": "Referer",
+          "value": "http://localhost:3003/"
+        },
+        {
+          "name": "Sec-Fetch-Dest",
+          "value": "empty"
+        },
+        {
+          "name": "Sec-Fetch-Mode",
+          "value": "cors"
+        },
+        {
+          "name": "Sec-Fetch-Site",
+          "value": "cross-site"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+        }
+      ]
+    }
+  }
+]

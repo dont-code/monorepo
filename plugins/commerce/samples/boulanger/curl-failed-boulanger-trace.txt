@@ -1,0 +1,642 @@
+== Info:   Trying 23.65.198.49:443...
+== Info: Connected to www.boulanger.com (23.65.198.49) port 443 (#0)
+== Info: ALPN, offering h2
+== Info: ALPN, offering http/1.1
+== Info: successfully set certificate verify locations:
+== Info:  CAfile: /etc/ssl/certs/ca-certificates.crt
+== Info:  CApath: /etc/ssl/certs
+=> Send SSL data, 5 bytes (0x5)
+0000: 16 03 01 02 00                                  .....
+== Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+=> Send SSL data, 512 bytes (0x200)
+0000: 01 00 01 fc 03 03 42 e2 0f ea da cb 32 52 70 7c ......B.....2Rp|
+0010: 20 97 4c a4 a7 bd 54 7b db af af 4e 3e ed 88 52  .L...T{...N>..R
+0020: c5 7d be d0 21 85 20 59 df ec 59 37 82 6d 34 c0 .}..!. Y..Y7.m4.
+0030: c0 6c 5e 8b 3b e8 d2 74 71 07 46 71 8c ed ed 8c .l^.;..tq.Fq....
+0040: 73 7f fa 2b 28 95 24 00 3e 13 02 13 03 13 01 c0 s.+(.$.>.......
+0050: 2c c0 30 00 9f cc a9 cc a8 cc aa c0 2b c0 2f 00 ,.0.........+./.
+0060: 9e c0 24 c0 28 00 6b c0 23 c0 27 00 67 c0 0a c0 ..$.(.k.#.'.g...
+0070: 14 00 39 c0 09 c0 13 00 33 00 9d 00 9c 00 3d 00 ..9.....3.....=.
+0080: 3c 00 35 00 2f 00 ff 01 00 01 75 00 00 00 16 00 <.5./.....u.....
+0090: 14 00 00 11 77 77 77 2e 62 6f 75 6c 61 6e 67 65 ....www.boulange
+00a0: 72 2e 63 6f 6d 00 0b 00 04 03 00 01 02 00 0a 00 r.com...........
+00b0: 0c 00 0a 00 1d 00 17 00 1e 00 19 00 18 33 74 00 .............3t.
+00c0: 00 00 10 00 0e 00 0c 02 68 32 08 68 74 74 70 2f ........h2.http/
+00d0: 31 2e 31 00 16 00 00 00 17 00 00 00 31 00 00 00 1.1.........1...
+00e0: 0d 00 2a 00 28 04 03 05 03 06 03 08 07 08 08 08 ..*.(...........
+00f0: 09 08 0a 08 0b 08 04 08 05 08 06 04 01 05 01 06 ................
+0100: 01 03 03 03 01 03 02 04 02 05 02 06 02 00 2b 00 ..............+.
+0110: 05 04 03 04 03 03 00 2d 00 02 01 01 00 33 00 26 .......-.....3.&
+0120: 00 24 00 1d 00 20 50 e2 4b 68 05 c2 c6 66 5d aa .$... P.Kh...f].
+0130: ae 6b 39 9d 4b df b0 68 e9 a2 c8 94 48 df eb f1 .k9.K..h....H...
+0140: 18 47 f3 cf 3d 3b 00 15 00 b6 00 00 00 00 00 00 .G..=;..........
+0150: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+0160: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+0170: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+0180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+0190: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+01a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+01b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+01c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+01d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+01e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+01f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+<= Recv SSL data, 5 bytes (0x5)
+0000: 16 03 03 00 7a                                  ....z
+== Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+<= Recv SSL data, 122 bytes (0x7a)
+0000: 02 00 00 76 03 03 cc d9 1d b9 99 ff 0f 70 22 4e ...v.........p"N
+0010: 75 90 cb 9c 39 4b 1d e6 c1 f6 b7 c2 74 ff ec b7 u...9K......t...
+0020: 74 0c e3 c7 a7 72 20 59 df ec 59 37 82 6d 34 c0 t....r Y..Y7.m4.
+0030: c0 6c 5e 8b 3b e8 d2 74 71 07 46 71 8c ed ed 8c .l^.;..tq.Fq....
+0040: 73 7f fa 2b 28 95 24 13 02 00 00 2e 00 2b 00 02 s.+(.$......+..
+0050: 03 04 00 33 00 24 00 1d 00 20 b0 5a 5f 0a 9c d4 ...3.$... .Z_...
+0060: bd 58 7a b0 1d b8 a6 aa da 54 a2 3d 5a 7a a3 7d .Xz......T.=Zz.}
+0070: 63 87 d5 73 ec 4e cf 6a 1f 0d                   c..s.N.j..
+<= Recv SSL data, 5 bytes (0x5)
+0000: 14 03 03 00 01                                  .....
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 2e                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+<= Recv SSL data, 29 bytes (0x1d)
+0000: 08 00 00 19 00 17 00 00 00 00 00 0a 00 06 00 04 ................
+0010: 00 17 00 1d 00 10 00 05 00 03 02 68 32          ...........h2
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 16 04                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+<= Recv SSL data, 5619 bytes (0x15f3)
+0000: 0b 00 15 ef 00 00 15 eb 00 11 27 30 82 11 23 30 ..........'0..#0
+0010: 82 10 0b a0 03 02 01 02 02 10 08 3e dd f3 2b d0 ...........>..+.
+0020: 79 c4 1f dd 01 3c 33 e7 a7 b2 30 0d 06 09 2a 86 y....<3...0...*.
+0030: 48 86 f7 0d 01 01 0b 05 00 30 75 31 0b 30 09 06 H........0u1.0..
+0040: 03 55 04 06 13 02 55 53 31 15 30 13 06 03 55 04 .U....US1.0...U.
+0050: 0a 13 0c 44 69 67 69 43 65 72 74 20 49 6e 63 31 ...DigiCert Inc1
+0060: 19 30 17 06 03 55 04 0b 13 10 77 77 77 2e 64 69 .0...U....www.di
+0070: 67 69 63 65 72 74 2e 63 6f 6d 31 34 30 32 06 03 gicert.com1402..
+0080: 55 04 03 13 2b 44 69 67 69 43 65 72 74 20 53 48 U...+DigiCert SH
+0090: 41 32 20 45 78 74 65 6e 64 65 64 20 56 61 6c 69 A2 Extended Vali
+00a0: 64 61 74 69 6f 6e 20 53 65 72 76 65 72 20 43 41 dation Server CA
+00b0: 30 1e 17 0d 32 32 31 30 32 36 30 30 30 30 30 30 0...221026000000
+00c0: 5a 17 0d 32 33 30 35 32 30 32 33 35 39 35 39 5a Z..230520235959Z
+00d0: 30 81 f3 31 13 30 11 06 0b 2b 06 01 04 01 82 37 0..1.0...+.....7
+00e0: 3c 02 01 03 13 02 46 52 31 20 30 1e 06 0b 2b 06 <.....FR1 0...+.
+00f0: 01 04 01 82 37 3c 02 01 02 13 0f 48 61 75 74 73 ....7<.....Hauts
+0100: 2d 64 65 2d 46 72 61 6e 63 65 31 16 30 14 06 0b -de-France1.0...
+0110: 2b 06 01 04 01 82 37 3c 02 01 01 13 05 4c 69 6c +.....7<.....Lil
+0120: 6c 65 31 1d 30 1b 06 03 55 04 0f 0c 14 50 72 69 le1.0...U....Pri
+0130: 76 61 74 65 20 4f 72 67 61 6e 69 7a 61 74 69 6f vate Organizatio
+0140: 6e 31 14 30 12 06 03 55 04 05 13 0b 33 34 37 20 n1.0...U....347 
+0150: 33 38 34 20 35 37 30 31 0b 30 09 06 03 55 04 06 384 5701.0...U..
+0160: 13 02 46 52 31 18 30 16 06 03 55 04 08 13 0f 48 ..FR1.0...U....H
+0170: 61 75 74 73 2d 64 65 2d 46 72 61 6e 63 65 31 10 auts-de-France1.
+0180: 30 0e 06 03 55 04 07 13 07 4c 65 73 71 75 69 6e 0...U....Lesquin
+0190: 31 16 30 14 06 03 55 04 0a 13 0d 42 6f 75 6c 61 1.0...U....Boula
+01a0: 6e 67 65 72 20 53 2e 41 31 1c 30 1a 06 03 55 04 nger S.A1.0...U.
+01b0: 03 13 13 73 65 63 75 72 65 2e 62 6f 75 6c 61 6e ...secure.boulan
+01c0: 67 65 72 2e 66 72 30 82 01 22 30 0d 06 09 2a 86 ger.fr0.."0...*.
+01d0: 48 86 f7 0d 01 01 01 05 00 03 82 01 0f 00 30 82 H.............0.
+01e0: 01 0a 02 82 01 01 00 d8 03 98 70 cc 6b 73 22 3c ..........p.ks"<
+01f0: a8 a5 63 3f 08 6d 11 54 49 7e 5b a7 91 5c 3c ff ..c?.m.TI~[..\<.
+0200: 96 6c 09 a9 56 81 52 dd af 20 70 05 e5 41 c9 2e .l..V.R.. p..A..
+0210: 41 66 bd 95 22 c8 a6 9e ef 47 84 df 67 1a 89 07 Af.."....G..g...
+0220: 40 40 2e fd 99 58 5c e5 e1 0f c4 89 ca 47 33 ff @@...X\......G3.
+0230: 25 bc 58 1d 66 70 f0 69 a1 06 53 72 6a 3a 25 f8 %.X.fp.i..Srj:%.
+0240: 2b 34 d6 14 82 c0 e2 98 9f 4f 3e dc 04 82 e1 39 +4.......O>....9
+0250: bc bd 5a e8 2f d0 37 f9 2c e2 99 30 f4 b5 97 d5 ..Z./.7.,..0....
+0260: 14 85 61 ec eb c8 2b ce da 34 98 59 d0 32 07 7e ..a...+..4.Y.2.~
+0270: 4e c6 6b 7f cc cf f6 a2 e6 85 5c 8f fb 9b 82 65 N.k......\....e
+0280: ce a3 a5 14 81 32 67 16 83 c0 c0 e4 58 b1 69 0e .....2g.....X.i.
+0290: 87 8e 51 e0 fa 0c 56 4d 1d 50 d8 c6 8d c6 13 8e ..Q...VM.P......
+02a0: db f5 cd eb 76 ee 3e 2e b0 3f 45 83 a5 60 e9 e8 ....v.>..?E..`..
+02b0: f0 f3 e6 c3 ca 2a 5c 7f 32 b1 fa 4e 57 77 0e 67 .....*\2..NWw.g
+02c0: 13 96 16 ba dc f3 6c f5 8f 52 b2 64 a8 64 c7 03 ......l..R.d.d..
+02d0: db b1 b9 15 e9 a2 a6 bb 24 09 06 67 f3 e0 34 8a ........$..g..4.
+02e0: 3a f4 ab 60 be ab 67 02 03 01 00 01 a3 82 0d 2e :..`..g.........
+02f0: 30 82 0d 2a 30 1f 06 03 55 1d 23 04 18 30 16 80 0..*0...U.#..0..
+0300: 14 3d d3 50 a5 d6 a0 ad ee f3 4a 60 0a 65 d3 21 .=.P......J`.e.!
+0310: d4 f8 f8 d6 0f 30 1d 06 03 55 1d 0e 04 16 04 14 .....0...U......
+0320: 18 21 10 ca db bb 99 11 2e 5e c7 a1 17 54 fa 83 .!.......^...T..
+0330: cf 8b 06 1e 30 82 09 db 06 03 55 1d 11 04 82 09 ....0.....U.....
+0340: d2 30 82 09 ce 82 13 73 65 63 75 72 65 2e 62 6f .0.....secure.bo
+0350: 75 6c 61 6e 67 65 72 2e 66 72 82 0f 77 77 77 2e ulanger.fr..www.
+0360: 70 72 6f 62 79 70 72 6f 2e 66 72 82 0c 77 77 77 probypro.fr..www
+0370: 2e 6c 6f 6b 65 6f 2e 66 72 82 19 77 77 77 2e 6c .lokeo.fr..www.l
+0380: 6f 63 61 74 69 6f 6e 2e 62 6f 75 6c 61 6e 67 65 ocation.boulange
+0390: 72 2e 66 72 82 1a 77 77 77 2e 6c 6f 63 61 74 69 r.fr..www.locati
+03a0: 6f 6e 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d on.boulanger.com
+03b0: 82 0e 77 77 77 2e 68 61 70 70 79 33 64 2e 66 72 ..www.happy3d.fr
+03c0: 82 1a 77 77 77 2e 66 6f 6e 64 61 74 69 6f 6e 2d ..www.fondation-
+03d0: 62 6f 75 6c 61 6e 67 65 72 2e 66 72 82 1d 77 77 boulanger.fr..ww
+03e0: 77 2e 62 6f 75 6c 61 6e 67 65 72 63 75 73 74 6f w.boulangercusto
+03f0: 6d 65 72 63 61 72 65 2e 63 6f 6d 82 19 77 77 77 mercare.com..www
+0400: 2e 62 6f 75 6c 61 6e 67 65 72 62 75 73 69 6e 65 .boulangerbusine
+0410: 73 73 2e 63 6f 6d 82 14 77 77 77 2e 62 6f 75 6c ss.com..www.boul
+0420: 61 6e 67 65 72 2e 76 69 73 69 6f 6e 82 12 77 77 anger.vision..ww
+0430: 77 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d w.boulanger.team
+0440: 82 13 77 77 77 2e 62 6f 75 6c 61 6e 67 65 72 2e ..www.boulanger.
+0450: 67 72 6f 75 70 82 10 77 77 77 2e 62 6f 75 6c 61 group..www.boula
+0460: 6e 67 65 72 2e 66 72 82 11 77 77 77 2e 62 6f 75 nger.fr..www.bou
+0470: 6c 61 6e 67 65 72 2e 63 6f 6d 82 0b 77 77 77 2e langer.com..www.
+0480: 62 64 6f 6d 2e 66 72 82 10 77 73 2e 62 6f 75 6c bdom.fr..ws.boul
+0490: 61 6e 67 65 72 2e 63 6f 6d 82 16 77 65 62 76 69 anger.com..webvi
+04a0: 65 77 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 63 ew.boulanger.tec
+04b0: 68 82 13 76 65 6e 74 65 2e 62 6f 75 6c 61 6e 67 h..vente.boulang
+04c0: 65 72 2e 63 6f 6d 82 0e 73 65 72 76 61 6c 2e 62 er.com..serval.b
+04d0: 64 6f 6d 2e 66 72 82 14 73 65 63 75 72 65 2e 62 dom.fr..secure.b
+04e0: 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 1a 73 65 oulanger.com..se
+04f0: 63 75 72 65 2d 6d 6f 62 69 6c 65 2e 62 6f 75 6c cure-mobile.boul
+0500: 61 6e 67 65 72 2e 66 72 82 1b 73 65 63 75 72 65 anger.fr..secure
+0510: 2d 6d 6f 62 69 6c 65 2e 62 6f 75 6c 61 6e 67 65 -mobile.boulange
+0520: 72 2e 63 6f 6d 82 17 73 65 63 75 72 65 2d 61 70 r.com..secure-ap
+0530: 69 2e 62 6f 75 6c 61 6e 67 65 72 2e 66 72 82 18 i.boulanger.fr..
+0540: 73 65 63 75 72 65 2d 61 70 69 2e 62 6f 75 6c 61 secure-api.boula
+0550: 6e 67 65 72 2e 63 6f 6d 82 18 73 61 76 77 65 62 nger.com..savweb
+0560: 2e 62 6f 75 6c 61 6e 67 65 72 2e 73 79 73 74 65 .boulanger.syste
+0570: 6d 73 82 19 73 61 76 2d 77 65 62 2e 62 6f 75 6c ms..sav-web.boul
+0580: 61 6e 67 65 72 2e 73 79 73 74 65 6d 73 82 14 72 anger.systems..r
+0590: 61 63 68 61 74 2e 62 6f 75 6c 61 6e 67 65 72 2e achat.boulanger.
+05a0: 63 6f 6d 82 12 70 77 64 2e 62 6f 75 6c 61 6e 67 com..pwd.boulang
+05b0: 65 72 2e 74 65 61 6d 82 19 70 72 69 76 61 74 65 er.team..private
+05c0: 2e 61 70 69 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 .api.boulanger.c
+05d0: 6f 6d 82 32 70 72 65 76 69 65 77 2e 70 70 72 64 om.2preview.pprd
+05e0: 2e 6d 61 72 6b 65 74 70 6c 61 63 65 2d 62 61 63 .marketplace-bac
+05f0: 6b 6f 66 66 69 63 65 2e 62 6f 75 6c 61 6e 67 65 koffice.boulange
+0600: 72 2e 74 65 61 6d 82 24 70 72 65 76 69 65 77 2e r.team.$preview.
+0610: 70 70 72 64 2e 6c 69 76 65 70 65 72 66 2e 62 6f pprd.liveperf.bo
+0620: 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 21 70 72 ulanger.team.!pr
+0630: 65 76 69 65 77 2e 70 70 72 64 2e 68 65 6c 6c 6f eview.pprd.hello
+0640: 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 .boulanger.team.
+0650: 2a 70 72 65 76 69 65 77 2e 70 70 72 64 2e 66 72 *preview.pprd.fr
+0660: 6f 6e 74 2d 63 6f 6d 6d 65 72 63 65 2e 62 6f 75 ont-commerce.bou
+0670: 6c 61 6e 67 65 72 2e 74 65 61 6d 82 23 70 72 65 langer.team.#pre
+0680: 76 69 65 77 2e 70 70 72 64 2e 65 74 69 63 6b 65 view.pprd.eticke
+0690: 74 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d t.boulanger.team
+06a0: 82 2d 70 72 65 76 69 65 77 2e 6d 61 72 6b 65 74 .-preview.market
+06b0: 70 6c 61 63 65 2d 62 61 63 6b 6f 66 66 69 63 65 place-backoffice
+06c0: 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 .boulanger.team.
+06d0: 1c 70 72 65 76 69 65 77 2e 68 65 6c 6c 6f 2e 62 .preview.hello.b
+06e0: 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 25 70 oulanger.team.%p
+06f0: 72 65 76 69 65 77 2e 66 72 6f 6e 74 2d 63 6f 6d review.front-com
+0700: 6d 65 72 63 65 2e 62 6f 75 6c 61 6e 67 65 72 2e merce.boulanger.
+0710: 74 65 61 6d 82 1e 70 72 65 76 69 65 77 2e 65 74 team..preview.et
+0720: 69 63 6b 65 74 2e 62 6f 75 6c 61 6e 67 65 72 2e icket.boulanger.
+0730: 74 65 61 6d 82 17 70 70 72 64 2e 77 77 77 33 2e team..pprd.www3.
+0740: 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 17 70 boulanger.com..p
+0750: 70 72 64 2e 77 77 77 32 2e 62 6f 75 6c 61 6e 67 prd.www2.boulang
+0760: 65 72 2e 63 6f 6d 82 17 70 70 72 64 2e 77 77 77 er.com..pprd.www
+0770: 31 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 1.boulanger.com.
+0780: 19 70 70 72 64 2e 77 77 77 2e 62 6f 75 6c 61 6e .pprd.www.boulan
+0790: 67 65 72 2e 76 69 73 69 6f 6e 82 16 70 70 72 64 ger.vision..pprd
+07a0: 2e 77 77 77 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 .www.boulanger.c
+07b0: 6f 6d 82 1e 70 70 72 64 2e 70 72 69 76 61 74 65 om..pprd.private
+07c0: 2e 61 70 69 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 .api.boulanger.c
+07d0: 6f 6d 82 2a 70 70 72 64 2e 6d 61 72 6b 65 74 70 om.*pprd.marketp
+07e0: 6c 61 63 65 2d 62 61 63 6b 6f 66 66 69 63 65 2e lace-backoffice.
+07f0: 62 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 15 boulanger.team..
+0800: 70 70 72 64 2e 6d 33 2e 62 6f 75 6c 61 6e 67 65 pprd.m3.boulange
+0810: 72 2e 63 6f 6d 82 15 70 70 72 64 2e 6d 32 2e 62 r.com..pprd.m2.b
+0820: 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 15 70 70 oulanger.com..pp
+0830: 72 64 2e 6d 31 2e 62 6f 75 6c 61 6e 67 65 72 2e rd.m1.boulanger.
+0840: 63 6f 6d 82 14 70 70 72 64 2e 6d 2e 62 6f 75 6c com..pprd.m.boul
+0850: 61 6e 67 65 72 2e 63 6f 6d 82 1c 70 70 72 64 2e anger.com..pprd.
+0860: 6c 69 76 65 70 65 72 66 2e 62 6f 75 6c 61 6e 67 liveperf.boulang
+0870: 65 72 2e 74 65 61 6d 82 19 70 70 72 64 2e 68 65 er.team..pprd.he
+0880: 6c 6c 6f 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 llo.boulanger.te
+0890: 61 6d 82 22 70 70 72 64 2e 66 72 6f 6e 74 2d 63 am."pprd.front-c
+08a0: 6f 6d 6d 65 72 63 65 2e 62 6f 75 6c 61 6e 67 65 ommerce.boulange
+08b0: 72 2e 74 65 61 6d 82 1b 70 70 72 64 2e 65 74 69 r.team..pprd.eti
+08c0: 63 6b 65 74 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 cket.boulanger.t
+08d0: 65 61 6d 82 20 70 70 72 64 2e 61 70 70 73 2d 77 eam. pprd.apps-w
+08e0: 65 62 76 69 65 77 2e 62 6f 75 6c 61 6e 67 65 72 ebview.boulanger
+08f0: 2e 74 65 63 68 82 16 70 70 72 64 2e 61 70 69 2e .tech..pprd.api.
+0900: 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 15 70 boulanger.com..p
+0910: 70 72 64 2e 61 6d 2e 62 6f 75 6c 61 6e 67 65 72 prd.am.boulanger
+0920: 2e 63 6f 6d 82 1a 70 6c 75 6d 65 2e 73 6f 75 72 .com..plume.sour
+0930: 63 69 6e 67 63 72 65 61 74 69 6f 6e 2e 63 6f 6d cingcreation.com
+0940: 82 13 6d 65 64 69 61 2e 62 6f 75 6c 61 6e 67 65 ..media.boulange
+0950: 72 2e 63 6f 6d 82 25 6d 61 72 6b 65 74 70 6c 61 r.com.%marketpla
+0960: 63 65 2d 62 61 63 6b 6f 66 66 69 63 65 2e 62 6f ce-backoffice.bo
+0970: 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 16 6d 61 ulanger.team..ma
+0980: 67 61 73 69 6e 73 2e 62 6f 75 6c 61 6e 67 65 72 gasins.boulanger
+0990: 2e 63 6f 6d 82 0e 6d 2e 62 6f 75 6c 61 6e 67 65 .com..m.boulange
+09a0: 72 2e 66 72 82 0f 6d 2e 62 6f 75 6c 61 6e 67 65 r.fr..m.boulange
+09b0: 72 2e 63 6f 6d 82 15 6c 6f 63 61 74 69 6f 6e 2e r.com..location.
+09c0: 62 6f 75 6c 61 6e 67 65 72 2e 66 72 82 16 6c 6f boulanger.fr..lo
+09d0: 63 61 74 69 6f 6e 2e 62 6f 75 6c 61 6e 67 65 72 cation.boulanger
+09e0: 2e 63 6f 6d 82 17 6c 69 76 65 70 65 72 66 2e 62 .com..liveperf.b
+09f0: 6f 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 17 69 oulanger.team..i
+0a00: 6e 66 6f 34 36 32 33 2e 62 6f 75 6c 61 6e 67 65 nfo4623.boulange
+0a10: 72 2e 74 65 61 6d 82 14 68 65 6c 6c 6f 2e 62 6f r.team..hello.bo
+0a20: 75 6c 61 6e 67 65 72 2e 74 65 61 6d 82 0a 68 61 ulanger.team..ha
+0a30: 70 70 79 33 64 2e 66 72 82 1d 66 72 6f 6e 74 2d ppy3d.fr..front-
+0a40: 63 6f 6d 6d 65 72 63 65 2e 62 6f 75 6c 61 6e 67 commerce.boulang
+0a50: 65 72 2e 74 65 61 6d 82 19 66 6f 72 6d 75 6c 61 er.team..formula
+0a60: 69 72 65 73 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 ires.boulanger.c
+0a70: 6f 6d 82 16 65 74 69 63 6b 65 74 2e 62 6f 75 6c om..eticket.boul
+0a80: 61 6e 67 65 72 2e 74 65 61 6d 82 19 65 6c 6c 61 anger.team..ella
+0a90: 2e 73 6f 75 72 63 69 6e 67 63 72 65 61 74 69 6f .sourcingcreatio
+0aa0: 6e 2e 63 6f 6d 82 17 65 64 69 74 6f 72 69 61 6c n.com..editorial
+0ab0: 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 1e .boulanger.com..
+0ac0: 64 65 73 69 67 6e 73 79 73 74 65 6d 2e 62 6f 75 designsystem.bou
+0ad0: 6c 61 6e 67 65 72 2e 73 79 73 74 65 6d 73 82 18 langer.systems..
+0ae0: 64 65 63 6f 75 76 65 72 74 65 2e 62 6f 75 6c 61 decouverte.boula
+0af0: 6e 67 65 72 2e 63 6f 6d 82 1e 63 6f 6d 6d 6f 6e nger.com..common
+0b00: 2e 69 70 61 61 73 2e 62 6f 75 6c 61 6e 67 65 72 .ipaas.boulanger
+0b10: 2e 73 79 73 74 65 6d 73 82 19 63 6f 6d 6d 65 75 .systems..commeu
+0b20: 6e 63 68 65 66 2e 62 6f 75 6c 61 6e 67 65 72 2e nchef.boulanger.
+0b30: 63 6f 6d 82 16 62 72 65 76 69 65 77 2e 62 6f 75 com..breview.bou
+0b40: 6c 61 6e 67 65 72 2e 74 65 61 6d 82 14 62 70 72 langer.team..bpr
+0b50: 6f 64 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 65 61 od.boulanger.tea
+0b60: 6d 82 0f 62 6f 75 6c 61 6e 67 65 72 2e 67 72 6f m..boulanger.gro
+0b70: 75 70 82 24 62 6f 2d 6f 63 74 72 6f 69 2e 6c 6f up.$bo-octroi.lo
+0b80: 63 61 74 69 6f 6e 2e 62 6f 75 6c 61 6e 67 65 72 cation.boulanger
+0b90: 2e 73 79 73 74 65 6d 73 82 13 62 65 74 61 33 2e .systems..beta3.
+0ba0: 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 13 62 boulanger.com..b
+0bb0: 65 74 61 32 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 eta2.boulanger.c
+0bc0: 6f 6d 82 13 62 65 74 61 31 2e 62 6f 75 6c 61 6e om..beta1.boulan
+0bd0: 67 65 72 2e 63 6f 6d 82 15 62 65 74 61 2e 6d 33 ger.com..beta.m3
+0be0: 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 15 .boulanger.com..
+0bf0: 62 65 74 61 2e 6d 32 2e 62 6f 75 6c 61 6e 67 65 beta.m2.boulange
+0c00: 72 2e 63 6f 6d 82 15 62 65 74 61 2e 6d 31 2e 62 r.com..beta.m1.b
+0c10: 6f 75 6c 61 6e 67 65 72 2e 63 6f 6d 82 14 62 65 oulanger.com..be
+0c20: 74 61 2e 6d 2e 62 6f 75 6c 61 6e 67 65 72 2e 63 ta.m.boulanger.c
+0c30: 6f 6d 82 12 62 65 74 61 2e 62 6f 75 6c 61 6e 67 om..beta.boulang
+0c40: 65 72 2e 63 6f 6d 82 20 62 61 63 6b 6f 66 66 69 er.com. backoffi
+0c50: 63 65 2e 70 72 65 2e 62 6f 75 6c 61 6e 67 65 72 ce.pre.boulanger
+0c60: 2e 73 79 73 74 65 6d 73 82 1c 62 61 63 6b 6f 66 .systems..backof
+0c70: 66 69 63 65 2e 62 6f 75 6c 61 6e 67 65 72 2e 73 fice.boulanger.s
+0c80: 79 73 74 65 6d 73 82 1c 62 34 70 61 72 74 6e 65 ystems..b4partne
+0c90: 72 73 2e 62 6f 75 6c 61 6e 67 65 72 2e 73 79 73 rs.boulanger.sys
+0ca0: 74 65 6d 73 82 12 62 34 63 6f 2e 62 6f 75 6c 61 tems..b4co.boula
+0cb0: 6e 67 65 72 2e 63 6f 6d 82 1b 61 70 70 73 2d 77 nger.com..apps-w
+0cc0: 65 62 76 69 65 77 2e 62 6f 75 6c 61 6e 67 65 72 ebview.boulanger
+0cd0: 2e 74 65 63 68 82 11 61 70 69 2e 62 6f 75 6c 61 .tech..api.boula
+0ce0: 6e 67 65 72 2e 63 6f 6d 82 14 61 6d 2e 62 6f 75 nger.com..am.bou
+0cf0: 6c 61 6e 67 65 72 2e 73 79 73 74 65 6d 73 82 13 langer.systems..
+0d00: 34 36 32 33 2e 62 6f 75 6c 61 6e 67 65 72 2e 74 4623.boulanger.t
+0d10: 65 61 6d 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03 eam0...U........
+0d20: 02 05 a0 30 1d 06 03 55 1d 25 04 16 30 14 06 08 ...0...U.%..0...
+0d30: 2b 06 01 05 05 07 03 01 06 08 2b 06 01 05 05 07 +.........+.....
+0d40: 03 02 30 75 06 03 55 1d 1f 04 6e 30 6c 30 34 a0 ..0u..U...n0l04.
+0d50: 32 a0 30 86 2e 68 74 74 70 3a 2f 2f 63 72 6c 33 2.0..http://crl3
+0d60: 2e 64 69 67 69 63 65 72 74 2e 63 6f 6d 2f 73 68 .digicert.com/sh
+0d70: 61 32 2d 65 76 2d 73 65 72 76 65 72 2d 67 33 2e a2-ev-server-g3.
+0d80: 63 72 6c 30 34 a0 32 a0 30 86 2e 68 74 74 70 3a crl04.2.0..http:
+0d90: 2f 2f 63 72 6c 34 2e 64 69 67 69 63 65 72 74 2e //crl4.digicert.
+0da0: 63 6f 6d 2f 73 68 61 32 2d 65 76 2d 73 65 72 76 com/sha2-ev-serv
+0db0: 65 72 2d 67 33 2e 63 72 6c 30 4a 06 03 55 1d 20 er-g3.crl0J..U. 
+0dc0: 04 43 30 41 30 0b 06 09 60 86 48 01 86 fd 6c 02 .C0A0...`.H...l.
+0dd0: 01 30 32 06 05 67 81 0c 01 01 30 29 30 27 06 08 .02..g....0)0'..
+0de0: 2b 06 01 05 05 07 02 01 16 1b 68 74 74 70 3a 2f +.........http:/
+0df0: 2f 77 77 77 2e 64 69 67 69 63 65 72 74 2e 63 6f /www.digicert.co
+0e00: 6d 2f 43 50 53 30 81 88 06 08 2b 06 01 05 05 07 m/CPS0....+.....
+0e10: 01 01 04 7c 30 7a 30 24 06 08 2b 06 01 05 05 07 ...|0z0$..+.....
+0e20: 30 01 86 18 68 74 74 70 3a 2f 2f 6f 63 73 70 2e 0...http://ocsp.
+0e30: 64 69 67 69 63 65 72 74 2e 63 6f 6d 30 52 06 08 digicert.com0R..
+0e40: 2b 06 01 05 05 07 30 02 86 46 68 74 74 70 3a 2f +.....0..Fhttp:/
+0e50: 2f 63 61 63 65 72 74 73 2e 64 69 67 69 63 65 72 /cacerts.digicer
+0e60: 74 2e 63 6f 6d 2f 44 69 67 69 43 65 72 74 53 48 t.com/DigiCertSH
+0e70: 41 32 45 78 74 65 6e 64 65 64 56 61 6c 69 64 61 A2ExtendedValida
+0e80: 74 69 6f 6e 53 65 72 76 65 72 43 41 2e 63 72 74 tionServerCA.crt
+0e90: 30 09 06 03 55 1d 13 04 02 30 00 30 82 01 7f 06 0...U....0.0...
+0ea0: 0a 2b 06 01 04 01 d6 79 02 04 02 04 82 01 6f 04 .+.....y......o.
+0eb0: 82 01 6b 01 69 00 76 00 e8 3e d0 da 3e f5 06 35 ..k.i.v..>..>..5
+0ec0: 32 e7 57 28 bc 89 6b c9 03 d3 cb d1 11 6b ec eb 2.W(..k......k..
+0ed0: 69 e1 77 7d 6d 06 bd 6e 00 00 01 84 13 3c 85 c5 i.w}m..n.....<..
+0ee0: 00 00 04 03 00 47 30 45 02 21 00 e1 83 90 31 e4 .....G0E.!....1.
+0ef0: 3f e2 9f 05 60 6d 5f 71 53 a4 18 89 2a 03 a3 52 ?...`m_qS...*..R
+0f00: 79 21 19 7a 19 83 3b 9b 40 a2 39 02 20 78 87 69 y!.z..;.@.9. x.i
+0f10: 8d 73 16 d6 5e 84 14 8b 40 b0 9c 37 9e 64 f2 23 .s..^...@..7.d.#
+0f20: 92 c3 81 e4 0a cb 18 9a 78 bb b2 c4 47 00 77 00 ........x...G.w.
+0f30: b7 3e fb 24 df 9c 4d ba 75 f2 39 c5 ba 58 f4 6c .>.$..M.u.9..X.l
+0f40: 5d fc 42 cf 7a 9f 35 c4 9e 1d 09 81 25 ed b4 99 ].B.z.5.....%...
+0f50: 00 00 01 84 13 3c 85 a0 00 00 04 03 00 48 30 46 .....<.......H0F
+0f60: 02 21 00 d3 b0 8e 1e a0 4a d9 dc c9 a2 f2 7a f6 .!......J.....z.
+0f70: c2 84 93 a1 be 89 fc b0 b2 95 5d f0 27 81 41 ad ..........].'.A.
+0f80: a8 a0 89 02 21 00 93 3f 5f 5e cc 26 1f f4 48 55 ....!..?_^.&..HU
+0f90: 75 c4 53 4b 95 7d 7f f6 67 25 46 d0 27 da ec d7 u.SK.}.g%F.'...
+0fa0: 52 b2 c7 12 7a 92 00 76 00 55 81 d4 c2 16 90 36 R...z..v.U.....6
+0fb0: 01 4a ea 0b 9b 57 3c 53 f0 c0 e4 38 78 70 25 08 .J...W<S...8xp%.
+0fc0: 17 2f a3 aa 1d 07 13 d3 0c 00 00 01 84 13 3c 86 ./............<.
+0fd0: af 00 00 04 03 00 47 30 45 02 20 6b 81 68 cd cb ......G0E. k.h..
+0fe0: eb 8a d8 3c ac ec b4 c0 72 03 3b 59 c5 7d 4b 33 ...<....r.;Y.}K3
+0ff0: 88 ef de 93 56 92 ac 90 db e5 18 02 21 00 d2 d5 ....V.......!...
+1000: a7 b1 55 4b 1f b2 4f f2 07 3e 63 09 ab 19 a4 c3 ..UK..O..>c.....
+1010: 28 7a d9 76 a8 37 09 17 e6 13 64 7e a2 e8 30 0d (z.v.7....d~..0.
+1020: 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 03 82 01 ..*.H...........
+1030: 01 00 98 72 77 80 1a 85 60 3b 73 38 f6 74 e2 78 ...rw...`;s8.t.x
+1040: 97 87 05 f2 9a 2e f5 04 5e 89 a4 54 9c 82 76 bb ........^..T..v.
+1050: 6b c9 38 88 ac 10 41 4e f3 14 89 60 be 51 29 95 k.8...AN...`.Q).
+1060: cd 47 62 4e 0e 57 d4 30 37 9a f5 18 23 e8 f0 2a .GbN.W.07...#..*
+1070: d3 db 72 43 c3 18 be 0a db d0 74 bd 7d 65 6f d7 ..rC......t.}eo.
+1080: 87 8b cd 7c d0 ec 60 96 24 f9 f1 61 04 5f d1 31 ...|..`.$..a._.1
+1090: b3 07 06 1d 5f 69 d9 fc 11 ec b7 5a e8 8a 8e 22 ...._i.....Z..."
+10a0: 24 5b c2 78 cf b7 03 53 98 e7 ee 38 83 3f 10 94 $[.x...S...8.?..
+10b0: 3a b3 84 ef b8 7b 27 24 78 ff 2a f4 78 1a 5e 5f :....{'$x.*.x.^_
+10c0: f7 35 83 fc b4 58 dd 4f ed 10 05 6b fe 29 de b3 .5...X.O...k.)..
+10d0: a0 b9 10 bf c2 50 29 a0 f4 c4 df 10 af b9 c9 f9 .....P).........
+10e0: 77 59 54 a6 3b a5 62 d7 a5 a1 4a a4 de 78 09 9b wYT.;.b...J..x..
+10f0: c2 e4 89 40 e5 89 0f 7c 6c ce a2 0a 0e 75 59 56 ...@...|l....uYV
+1100: 93 86 6c c8 81 cb 5f 10 08 b9 d4 fb a4 a3 dc 7e ..l..._........~
+1110: b9 7d 08 e9 01 33 ae 77 88 9e af a7 da b3 07 cb .}...3.w........
+1120: 77 ac 4f 4d 1e a9 d1 9c 71 41 b9 20 02 26 22 33 w.OM....qA. .&"3
+1130: 1c 58 00 00 00 04 ba 30 82 04 b6 30 82 03 9e a0 .X.....0...0....
+1140: 03 02 01 02 02 10 0c 79 a9 44 b0 8c 11 95 20 92 .......y.D.... .
+1150: 61 5f e2 6b 1d 83 30 0d 06 09 2a 86 48 86 f7 0d a_.k..0...*.H...
+1160: 01 01 0b 05 00 30 6c 31 0b 30 09 06 03 55 04 06 .....0l1.0...U..
+1170: 13 02 55 53 31 15 30 13 06 03 55 04 0a 13 0c 44 ..US1.0...U....D
+1180: 69 67 69 43 65 72 74 20 49 6e 63 31 19 30 17 06 igiCert Inc1.0..
+1190: 03 55 04 0b 13 10 77 77 77 2e 64 69 67 69 63 65 .U....www.digice
+11a0: 72 74 2e 63 6f 6d 31 2b 30 29 06 03 55 04 03 13 rt.com1+0)..U...
+11b0: 22 44 69 67 69 43 65 72 74 20 48 69 67 68 20 41 "DigiCert High A
+11c0: 73 73 75 72 61 6e 63 65 20 45 56 20 52 6f 6f 74 ssurance EV Root
+11d0: 20 43 41 30 1e 17 0d 31 33 31 30 32 32 31 32 30  CA0...131022120
+11e0: 30 30 30 5a 17 0d 32 38 31 30 32 32 31 32 30 30 000Z..2810221200
+11f0: 30 30 5a 30 75 31 0b 30 09 06 03 55 04 06 13 02 00Z0u1.0...U....
+1200: 55 53 31 15 30 13 06 03 55 04 0a 13 0c 44 69 67 US1.0...U....Dig
+1210: 69 43 65 72 74 20 49 6e 63 31 19 30 17 06 03 55 iCert Inc1.0...U
+1220: 04 0b 13 10 77 77 77 2e 64 69 67 69 63 65 72 74 ....www.digicert
+1230: 2e 63 6f 6d 31 34 30 32 06 03 55 04 03 13 2b 44 .com1402..U...+D
+1240: 69 67 69 43 65 72 74 20 53 48 41 32 20 45 78 74 igiCert SHA2 Ext
+1250: 65 6e 64 65 64 20 56 61 6c 69 64 61 74 69 6f 6e ended Validation
+1260: 20 53 65 72 76 65 72 20 43 41 30 82 01 22 30 0d  Server CA0.."0.
+1270: 06 09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 01 ..*.H...........
+1280: 0f 00 30 82 01 0a 02 82 01 01 00 d7 53 a4 04 51 ..0.........S..Q
+1290: f8 99 a6 16 48 4b 67 27 aa 93 49 d0 39 ed 0c b0 ....HKg'..I.9...
+12a0: b0 00 87 f1 67 28 86 85 8c 8e 63 da bc b1 40 38 ....g(....c...@8
+12b0: e2 d3 f5 ec a5 05 18 b8 3d 3e c5 99 17 32 ec 18 ........=>...2..
+12c0: 8c fa f1 0c a6 64 21 85 cb 07 10 34 b0 52 88 2b .....d!....4.R.+
+12d0: 1f 68 9b d2 b1 8f 12 b0 b3 d2 e7 88 1f 1f ef 38 .h.............8
+12e0: 77 54 53 5f 80 79 3f 2e 1a aa a8 1e 4b 2b 0d ab wTS_.y?.....K+..
+12f0: b7 63 b9 35 b7 7d 14 bc 59 4b df 51 4a d2 a1 e2 .c.5.}..YK.QJ...
+1300: 0c e2 90 82 87 6a ae ea d7 64 d6 98 55 e8 fd af .....j...d..U...
+1310: 1a 50 6c 54 bc 11 f2 fd 4a f2 9d bb 7f 0e f4 d5 .PlT....J......
+1320: be 8e 16 89 12 55 d8 c0 71 34 ee f6 dc 2d ec c4 .....U..q4...-..
+1330: 87 25 86 8d d8 21 e4 b0 4d 0c 89 dc 39 26 17 dd .%...!..M...9&..
+1340: f6 d7 94 85 d8 04 21 70 9d 6f 6f ff 5c ba 19 e1 ......!p.oo.\...
+1350: 45 cb 56 57 28 7e 1c 0d 41 57 aa b7 b8 27 bb b1 E.VW(~..AW...'..
+1360: e4 fa 2a ef 21 23 75 1a ad 2d 9b 86 35 8c 9c 77 ..*.!#u..-..5..w
+1370: b5 73 ad d8 94 2d e4 f3 0c 9d ee c1 4e 62 7e 17 .s...-......Nb~.
+1380: c0 71 9e 2c de f1 f9 10 28 19 33 02 03 01 00 01 .q.,....(.3.....
+1390: a3 82 01 49 30 82 01 45 30 12 06 03 55 1d 13 01 ...I0..E0...U...
+13a0: 01 ff 04 08 30 06 01 01 ff 02 01 00 30 0e 06 03 ....0.......0...
+13b0: 55 1d 0f 01 01 ff 04 04 03 02 01 86 30 1d 06 03 U...........0...
+13c0: 55 1d 25 04 16 30 14 06 08 2b 06 01 05 05 07 03 U.%..0...+......
+13d0: 01 06 08 2b 06 01 05 05 07 03 02 30 34 06 08 2b ...+.......04..+
+13e0: 06 01 05 05 07 01 01 04 28 30 26 30 24 06 08 2b ........(0&0$..+
+13f0: 06 01 05 05 07 30 01 86 18 68 74 74 70 3a 2f 2f .....0...http://
+1400: 6f 63 73 70 2e 64 69 67 69 63 65 72 74 2e 63 6f ocsp.digicert.co
+1410: 6d 30 4b 06 03 55 1d 1f 04 44 30 42 30 40 a0 3e m0K..U...D0B0@.>
+1420: a0 3c 86 3a 68 74 74 70 3a 2f 2f 63 72 6c 34 2e .<.:http://crl4.
+1430: 64 69 67 69 63 65 72 74 2e 63 6f 6d 2f 44 69 67 digicert.com/Dig
+1440: 69 43 65 72 74 48 69 67 68 41 73 73 75 72 61 6e iCertHighAssuran
+1450: 63 65 45 56 52 6f 6f 74 43 41 2e 63 72 6c 30 3d ceEVRootCA.crl0=
+1460: 06 03 55 1d 20 04 36 30 34 30 32 06 04 55 1d 20 ..U. .60402..U. 
+1470: 00 30 2a 30 28 06 08 2b 06 01 05 05 07 02 01 16 .0*0(..+........
+1480: 1c 68 74 74 70 73 3a 2f 2f 77 77 77 2e 64 69 67 .https://www.dig
+1490: 69 63 65 72 74 2e 63 6f 6d 2f 43 50 53 30 1d 06 icert.com/CPS0..
+14a0: 03 55 1d 0e 04 16 04 14 3d d3 50 a5 d6 a0 ad ee .U......=.P.....
+14b0: f3 4a 60 0a 65 d3 21 d4 f8 f8 d6 0f 30 1f 06 03 .J`.e.!.....0...
+14c0: 55 1d 23 04 18 30 16 80 14 b1 3e c3 69 03 f8 bf U.#..0....>.i...
+14d0: 47 01 d4 98 26 1a 08 02 ef 63 64 2b c3 30 0d 06 G...&....cd+.0..
+14e0: 09 2a 86 48 86 f7 0d 01 01 0b 05 00 03 82 01 01 .*.H............
+14f0: 00 9d b6 d0 90 86 e1 86 02 ed c5 a0 f0 34 1c 74 .............4.t
+1500: c1 8d 76 cc 86 0a a8 f0 4a 8a 42 d6 3f c8 a9 4d ..v.....J.B.?..M
+1510: ad 7c 08 ad e6 b6 50 b8 a2 1a 4d 88 07 b1 29 21 .|....P...M...)!
+1520: dc e7 da c6 3c 21 e0 e3 11 49 70 ac 7a 1d 01 a4 ....<!...Ip.z...
+1530: ca 11 3a 57 ab 7d 57 2a 40 74 fd d3 1d 85 18 50 ..:W.}W*@t.....P
+1540: df 57 47 75 a1 7d 55 20 2e 47 37 50 72 8c 7f 82 .WGu.}U .G7Pr..
+1550: 1b d2 62 8f 2d 03 5a da c3 c8 a1 ce 2c 52 a2 00 ..b.-.Z.....,R..
+1560: 63 eb 73 ba 71 c8 49 27 23 97 64 85 9e 38 0e ad c.s.q.I'#.d..8..
+1570: 63 68 3c ba 52 81 58 79 a3 2c 0c df de 6d eb 31 ch<.R.Xy.,...m.1
+1580: f2 ba a0 7c 6c f1 2c d4 e1 bd 77 84 37 03 ce 32 ...|l.,...w.7..2
+1590: b5 c8 9a 81 1a 4a 92 4e 3b 46 9a 85 fe 83 a2 f9 .....J.N;F......
+15a0: 9e 8c a3 cc 0d 5e b3 3d cf 04 78 8f 14 14 7b 32 .....^.=..x...{2
+15b0: 9c c7 00 a6 5c c4 b5 a1 55 8d 5a 56 68 a4 22 70 ....\...U.ZVh."p
+15c0: aa 3c 81 71 d9 9d a8 45 3b f4 e5 f6 a2 51 dd c7 .<.q...E;....Q..
+15d0: 7b 62 e8 6f 0c 74 eb b8 da f8 bf 87 0d 79 50 91 {b.o.t.......yP.
+15e0: 90 9b 18 3b 91 59 27 f1 35 28 13 ab 26 7e d5 f7 ...;.Y'.5(..&~..
+15f0: 7a 00 00                                        z..
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 01 19                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+<= Recv SSL data, 264 bytes (0x108)
+0000: 0f 00 01 04 08 04 01 00 c9 64 b0 77 4c 35 03 f3 .........d.wL5..
+0010: f2 fe d0 b0 fa cb 69 b8 cf 53 85 ff ed 27 0b 27 ......i..S...'.'
+0020: 2c 06 ca 0d bf b0 89 39 62 05 1c 62 3f 6a c1 e0 ,......9b..b?j..
+0030: 11 2d 24 df f5 7c a6 f2 20 b1 a9 72 4d ab 95 c9 .-$..|.. ..rM...
+0040: 52 98 13 b2 5a d1 20 97 30 28 fb 1f 4e 47 91 0c R...Z. .0(..NG..
+0050: a2 e3 46 c9 42 31 54 63 52 98 e2 1b 95 b4 71 16 ..F.B1TcR.....q.
+0060: 97 81 b2 08 61 53 eb 4f c0 fa 5a c2 24 6c f5 1d ....aS.O..Z.$l..
+0070: 67 36 10 e6 90 5a 79 65 5d 67 fd 45 8b 96 ea a5 g6...Zye]g.E....
+0080: 8b 14 8e 2b 43 17 a6 fb 68 79 68 0d 8e e2 f3 dc ...+C...hyh.....
+0090: b7 5f 63 b7 13 28 15 4d 56 0d 39 e9 bb f8 63 7e ._c..(.MV.9...c~
+00a0: 44 5d 71 0c 59 d1 d2 e0 7b 2a 9f f3 3e c5 89 5b D]q.Y...{*..>..[
+00b0: ba 9d ca fd 47 74 40 b9 77 da da 4c 31 38 07 7e ....Gt@.w..L18.~
+00c0: 07 bd 82 ea a8 8f 18 81 95 25 70 d7 81 ad a5 53 .........%p....S
+00d0: f7 1d e1 3d 48 63 38 8d 31 8b 70 d6 af 77 aa 50 ...=Hc8.1.p..w.P
+00e0: da 30 6a 1f 83 f2 84 8d cb 30 47 4f b4 82 2f 74 .0j......0GO../t
+00f0: 59 9f f7 35 d4 49 8a 58 57 04 cd d7 00 90 cf 82 Y..5.I.XW.......
+0100: 0f 1d c6 6e 66 fe 8e 92                         ...nf...
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 45                                  ....E
+<= Recv SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+<= Recv SSL data, 52 bytes (0x34)
+0000: 14 00 00 30 a4 3a 4e 84 e4 8b 73 a9 d2 26 f9 e9 ...0.:N...s..&..
+0010: b5 58 bb c4 cf 1c 62 11 85 9d 52 3a c6 80 47 10 .X....b...R:..G.
+0020: 80 e2 51 78 e4 db 53 80 d4 ab 82 e2 82 1d d7 e3 ..Qx..S.........
+0030: 92 31 6f 0d                                     .1o.
+=> Send SSL data, 5 bytes (0x5)
+0000: 14 03 03 00 01                                  .....
+== Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+=> Send SSL data, 1 bytes (0x1)
+0000: 01                                              .
+=> Send SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 45                                  ....E
+=> Send SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+=> Send SSL data, 52 bytes (0x34)
+0000: 14 00 00 30 f3 6d e9 20 3f 7e a4 34 97 20 7c 17 ...0.m. ?~.4. |.
+0010: f8 a9 2f 0f 2b 48 07 54 fe b1 bc 92 13 4c d3 26 ../.+H.T.....L.&
+0020: 87 1c d2 d9 bf 8e 3c b0 e9 f3 e4 40 82 3b 01 23 ......<....@.;.#
+0030: bd 95 55 72                                     ..Ur
+== Info: SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+== Info: ALPN, server accepted to use h2
+== Info: Server certificate:
+== Info:  subject: jurisdictionC=FR; jurisdictionST=Hauts-de-France; jurisdictionL=Lille; businessCategory=Private Organization; serialNumber=347 384 570; C=FR; ST=Hauts-de-France; L=Lesquin; O=Boulanger S.A; CN=secure.boulanger.fr
+== Info:  start date: Oct 26 00:00:00 2022 GMT
+== Info:  expire date: May 20 23:59:59 2023 GMT
+== Info:  subjectAltName: host "www.boulanger.com" matched cert's "www.boulanger.com"
+== Info:  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 Extended Validation Server CA
+== Info:  SSL certificate verify ok.
+== Info: Using HTTP2, server supports multi-use
+== Info: Connection state changed (HTTP/2 confirmed)
+== Info: Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+=> Send SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 29                                  ....)
+=> Send SSL data, 1 bytes (0x1)
+0000: 17                                              .
+=> Send SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 2c                                  ....,
+=> Send SSL data, 1 bytes (0x1)
+0000: 17                                              .
+=> Send SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 1e                                  .....
+=> Send SSL data, 1 bytes (0x1)
+0000: 17                                              .
+== Info: Using Stream ID: 1 (easy handle 0x56380075f2e0)
+=> Send SSL data, 5 bytes (0x5)
+0000: 17 03 03 01 38                                  ....8
+=> Send SSL data, 1 bytes (0x1)
+0000: 17                                              .
+=> Send header, 472 bytes (0x1d8)
+0000: 47 45 54 20 2f 20 48 54 54 50 2f 32 0d 0a 48 6f GET / HTTP/2..Ho
+0010: 73 74 3a 20 77 77 77 2e 62 6f 75 6c 61 6e 67 65 st: www.boulange
+0020: 72 2e 63 6f 6d 0d 0a 75 73 65 72 2d 61 67 65 6e r.com..user-agen
+0030: 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 t: Mozilla/5.0 (
+0040: 58 31 31 3b 20 4c 69 6e 75 78 20 78 38 36 5f 36 X11; Linux x86_6
+0050: 34 3b 20 72 76 3a 31 30 39 2e 30 29 20 47 65 63 4; rv:109.0) Gec
+0060: 6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69 72 65 ko/20100101 Fire
+0070: 66 6f 78 2f 31 31 30 2e 30 0d 0a 61 63 63 65 70 fox/110.0..accep
+0080: 74 3a 20 74 65 78 74 2f 68 74 6d 6c 2c 61 70 70 t: text/html,app
+0090: 6c 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b 78 lication/xhtml+x
+00a0: 6d 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 ml,application/x
+00b0: 6d 6c 3b 71 3d 30 2e 39 2c 69 6d 61 67 65 2f 61 ml;q=0.9,image/a
+00c0: 76 69 66 2c 69 6d 61 67 65 2f 77 65 62 70 2c 2a vif,image/webp,*
+00d0: 2f 2a 3b 71 3d 30 2e 38 0d 0a 61 63 63 65 70 74 /*;q=0.8..accept
+00e0: 2d 6c 61 6e 67 75 61 67 65 3a 20 66 72 2c 66 72 -language: fr,fr
+00f0: 2d 46 52 3b 71 3d 30 2e 38 2c 65 6e 2d 55 53 3b -FR;q=0.8,en-US;
+0100: 71 3d 30 2e 35 2c 65 6e 3b 71 3d 30 2e 33 0d 0a q=0.5,en;q=0.3..
+0110: 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a accept-encoding:
+0120: 20 67 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c 20  gzip, deflate, 
+0130: 62 72 0d 0a 63 6f 6e 6e 65 63 74 69 6f 6e 3a 20 br..connection: 
+0140: 6b 65 65 70 2d 61 6c 69 76 65 0d 0a 75 70 67 72 keep-alive..upgr
+0150: 61 64 65 2d 69 6e 73 65 63 75 72 65 2d 72 65 71 ade-insecure-req
+0160: 75 65 73 74 73 3a 20 31 0d 0a 73 65 63 2d 66 65 uests: 1..sec-fe
+0170: 74 63 68 2d 64 65 73 74 3a 20 64 6f 63 75 6d 65 tch-dest: docume
+0180: 6e 74 0d 0a 73 65 63 2d 66 65 74 63 68 2d 6d 6f nt..sec-fetch-mo
+0190: 64 65 3a 20 6e 61 76 69 67 61 74 65 0d 0a 73 65 de: navigate..se
+01a0: 63 2d 66 65 74 63 68 2d 73 69 74 65 3a 20 6e 6f c-fetch-site: no
+01b0: 6e 65 0d 0a 73 65 63 2d 66 65 74 63 68 2d 75 73 ne..sec-fetch-us
+01c0: 65 72 3a 20 3f 31 0d 0a 74 65 3a 20 74 72 61 69 er: ?1..te: trai
+01d0: 6c 65 72 73 0d 0a 0d 0a                         lers....
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 01 1a                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+<= Recv SSL data, 265 bytes (0x109)
+0000: 04 00 01 05 00 01 44 9c 93 63 75 97 08 00 00 00 ......D..cu.....
+0010: 00 00 00 00 00 00 f0 00 00 1f e0 65 ed d0 ff 93 ...........e....
+0020: 9e 1a d6 80 a0 c1 91 df d0 4f 9f f8 a2 45 23 c4 .........O...E#.
+0030: 82 63 c5 55 7d f2 8b 33 b7 91 44 57 29 b4 75 05 .c.U}..3..DW).u.
+0040: a6 07 97 1d b5 94 48 fa 0c e6 90 47 53 c8 d0 9a ......H....GS...
+0050: d4 ca 0f 91 28 63 a7 bf 15 9d 14 aa a8 d6 4a 2b ....(c........J+
+0060: 96 b4 4e c1 08 a1 6c 79 de 44 91 20 64 00 63 6f ..N...ly.D. d.co
+0070: 1f 15 8f b2 1d cf 24 b6 e7 0a c3 4e 70 5b bd ef ......$....Np[..
+0080: c3 51 8a 8a 59 ab 66 d1 5a 91 b5 30 14 24 5c b7 .Q..Y.f.Z..0.$\.
+0090: 5c ca d0 16 d4 3c 95 66 41 ab c0 0a 89 03 1f 26 \....<.fA......&
+00a0: d1 a0 04 e0 9a a5 8e 37 0e ba 26 1f 1a 74 ee 61 .......7..&..t.a
+00b0: 18 b6 4f 4b 5a a2 75 2b f2 aa 6f ab 67 41 75 54 ..OKZ.u+..o.gAuT
+00c0: 2d 3d 09 14 55 50 b1 3a 55 83 f7 2e 0a 01 c1 98 -=..UP.:U.......
+00d0: 81 44 93 9f 76 56 c0 79 05 da 6d d9 c4 9f e0 3d .D..vV.y..m....=
+00e0: 72 7e 5a e0 fc eb 01 62 a9 ef 46 fc 9e 09 8a 87 r~Z....b..F.....
+00f0: ca 91 24 d8 66 64 32 27 24 59 d0 8f eb f4 d7 b4 ..$.fd2'$Y......
+0100: 4f 89 27 3f 4e 0c 45 00 00                      O.'?N.E..
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 01 1a                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 16                                              .
+== Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+<= Recv SSL data, 265 bytes (0x109)
+0000: 04 00 01 05 00 01 44 9c e8 61 55 a2 08 00 00 00 ......D..aU.....
+0010: 00 00 00 00 01 00 f0 00 00 1f e0 65 ed d0 ff 93 ...........e....
+0020: 9e 1a d6 80 a0 c1 91 11 4f 8f 2f a0 b0 91 02 4c ........O./....L
+0030: fd 28 71 f2 32 c4 69 18 fc ed 88 e2 c7 c3 ea 45 .(q.2.i........E
+0040: 1c 11 50 15 a4 29 ff 06 d7 ef 91 7b 1f 6b 2c 0d ..P..).....{.k,.
+0050: 65 3c c8 6f 5d 24 ce 3d 44 4c 76 24 65 84 19 11 e<.o]$.=DLv$e...
+0060: c5 ff f6 75 e5 09 65 3b fe c4 f7 2a 7e 3d 69 73 ...u..e;...*~=is
+0070: f7 fe 1f 22 03 7f 73 a7 44 0c bf d2 04 47 41 6a ...".s.D....GAj
+0080: 7e e6 86 1c 3d a0 13 ce 2f 66 0d 81 a7 2a 12 6f ~...=.../f...*.o
+0090: 34 c9 c3 d0 0a c6 3d 4f 2c 99 41 94 7a c0 0c da 4.....=O,.A.z...
+00a0: f8 1e f5 ac 9d cd 1c bb 4f 1b ef c0 19 26 f7 da ........O....&..
+00b0: 34 a5 ff fe 25 d5 1f fd 7b 8b 5c 5c bc ab 5f f6 4...%...{.\\.._.
+00c0: cc c4 9b a6 6f f7 45 2b 42 9e f6 89 0f 6e a5 31 ....o.E+B....n.1
+00d0: 55 9c 46 55 84 5e df 9a 4c 7d aa 2d 8f f8 0c 92 U.FU.^..L}.-....
+00e0: ae 69 c2 0c 00 45 d0 35 b5 79 8a e0 4f cc a0 ce .i...E.5.y..O...
+00f0: ef 4a 02 ff ea 54 25 75 e3 7c 9d fe 02 a8 60 2a .J...T%u.|....`*
+0100: ff cf 13 5e 22 e4 83 00 00                      ...^"....
+== Info: old SSL session ID is stale, removing
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 38                                  ....8
+<= Recv SSL data, 1 bytes (0x1)
+0000: 17                                              .
+== Info: Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+=> Send SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 1a                                  .....
+=> Send SSL data, 1 bytes (0x1)
+0000: 17                                              .
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 1a                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 17                                              .
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 78                                  ....x
+<= Recv SSL data, 1 bytes (0x1)
+0000: 17                                              .
+<= Recv header, 13 bytes (0xd)
+0000: 48 54 54 50 2f 32 20 34 30 30 20 0d 0a          HTTP/2 400 ..
+<= Recv header, 21 bytes (0x15)
+0000: 73 65 72 76 65 72 3a 20 41 6b 61 6d 61 69 47 48 server: AkamaiGH
+0010: 6f 73 74 0d 0a                                  ost..
+<= Recv header, 19 bytes (0x13)
+0000: 6d 69 6d 65 2d 76 65 72 73 69 6f 6e 3a 20 31 2e mime-version: 1.
+0010: 30 0d 0a                                        0..
+<= Recv header, 25 bytes (0x19)
+0000: 63 6f 6e 74 65 6e 74 2d 74 79 70 65 3a 20 74 65 content-type: te
+0010: 78 74 2f 68 74 6d 6c 0d 0a                      xt/html..
+<= Recv header, 21 bytes (0x15)
+0000: 63 6f 6e 74 65 6e 74 2d 6c 65 6e 67 74 68 3a 20 content-length: 
+0010: 32 30 38 0d 0a                                  208..
+<= Recv header, 40 bytes (0x28)
+0000: 65 78 70 69 72 65 73 3a 20 53 75 6e 2c 20 30 35 expires: Sun, 05
+0010: 20 4d 61 72 20 32 30 32 33 20 31 38 3a 33 34 3a  Mar 2023 18:34:
+0020: 32 35 20 47 4d 54 0d 0a                         25 GMT..
+<= Recv header, 37 bytes (0x25)
+0000: 64 61 74 65 3a 20 53 75 6e 2c 20 30 35 20 4d 61 date: Sun, 05 Ma
+0010: 72 20 32 30 32 33 20 31 38 3a 33 34 3a 32 35 20 r 2023 18:34:25 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 ea                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 17                                              .
+<= Recv data, 208 bytes (0xd0)
+0000: 3c 48 54 4d 4c 3e 3c 48 45 41 44 3e 0a 3c 54 49 <HTML><HEAD>.<TI
+0010: 54 4c 45 3e 49 6e 76 61 6c 69 64 20 55 52 4c 3c TLE>Invalid URL<
+0020: 2f 54 49 54 4c 45 3e 0a 3c 2f 48 45 41 44 3e 3c /TITLE>.</HEAD><
+0030: 42 4f 44 59 3e 0a 3c 48 31 3e 49 6e 76 61 6c 69 BODY>.<H1>Invali
+0040: 64 20 55 52 4c 3c 2f 48 31 3e 0a 54 68 65 20 72 d URL</H1>.The r
+0050: 65 71 75 65 73 74 65 64 20 55 52 4c 20 22 26 23 equested URL "&#
+0060: 39 31 3b 6e 6f 26 23 33 32 3b 55 52 4c 26 23 39 91;no&#32;URL&#9
+0070: 33 3b 22 2c 20 69 73 20 69 6e 76 61 6c 69 64 2e 3;", is invalid.
+0080: 3c 70 3e 0a 52 65 66 65 72 65 6e 63 65 26 23 33 <p>.Reference&#3
+0090: 32 3b 26 23 33 35 3b 39 26 23 34 36 3b 35 36 35 2;&#35;9&#46;565
+00a0: 37 63 38 31 37 26 23 34 36 3b 31 36 37 38 30 34 7c817&#46;167804
+00b0: 31 32 36 35 26 23 34 36 3b 32 63 32 65 36 64 31 1265&#46;2c2e6d1
+00c0: 0a 3c 2f 42 4f 44 59 3e 3c 2f 48 54 4d 4c 3e 0a .</BODY></HTML>.
+<= Recv SSL data, 5 bytes (0x5)
+0000: 17 03 03 00 1a                                  .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: 17                                              .
+== Info: Connection #0 to host www.boulanger.com left intact

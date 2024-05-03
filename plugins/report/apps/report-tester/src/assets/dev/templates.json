@@ -1,0 +1,246 @@
+[
+  {
+    "name": "Define test data",
+    "sequence": [
+      {
+        "position": "creation/entities/a",
+        "type": "ADD",
+        "value": {
+          "name": "Basic Entity"
+        }
+      },
+      {
+        "position": "creation/entities/a/fields",
+        "type": "ADD",
+        "value": {
+          "aa": {
+            "name": "Name",
+            "type": "Text"
+          },
+          "ab": {
+            "name": "Type",
+            "type": "Text"
+          },
+          "ac": {
+            "name": "Value",
+            "type": "Number"
+          },
+          "ad": {
+            "name": "From",
+            "type": "Date"
+          },
+          "ae": {
+            "name": "Amount",
+            "type": "Euro"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Test Basic Reports",
+    "sequence": [
+      {
+        "position": "creation/reports/e",
+        "type": "ADD",
+        "value": {
+          "title": "Basic Reports",
+          "for": "Basic Entity",
+          "as": {
+            "ee": {
+              "type": "Pie",
+              "of": "Value",
+              "title": "Values"
+            },
+            "ef": {
+              "type": "Bar",
+              "of": "Amount",
+              "by": "From",
+              "title": "Amount"
+            },
+            "eg": {
+              "type": "Table"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Add graph by type",
+    "sequence": [
+      {
+        "position": "creation/reports/e/as",
+        "type": "ADD",
+        "value": {
+          "eh": {
+            "type": "Bar",
+            "of": "Value",
+            "by": "Type",
+            "title": "Value by Type"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Simple Table",
+    "sequence": [
+      {
+        "position": "creation/reports/f",
+        "type": "ADD",
+        "value": {
+          "title": "Simple Table Report",
+          "for": "Basic Entity",
+          "as": {
+           "fa": {
+              "type": "Table",
+             "title": "Infos"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "GroupedBy Table",
+    "sequence": [
+      {
+        "position": "creation/reports/g",
+        "type": "ADD",
+        "value": {
+          "title": "Complex Table Reports",
+          "for": "Basic Entity",
+          "groupedBy": {
+            "ga": {
+              "label": "By Type",
+              "of": "Type",
+              "display": {
+                "gaa":{
+                  "operation": "Sum",
+                  "of": "Value",
+                  "label": "Sum"
+                },
+                "gab":{
+                  "operation": "Minimum",
+                  "of": "Amount",
+                  "label": "Min cost"
+                  }
+                }
+              }
+            },
+          "as": {
+            "gb": {
+              "type": "Table",
+              "title": "Infos"
+            },
+            "gh": {
+              "type": "Bar",
+              "of": "Value",
+              "by": "Type",
+              "title": "Grouped values by Type"
+            }
+  
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Cross GroupedBy Table",
+    "sequence": [
+      {
+        "position": "creation/entities/b",
+        "type": "ADD",
+        "value": {
+          "name": "Cross Entity"
+        }
+      },
+      {
+        "position": "creation/entities/b/fields",
+        "type": "ADD",
+        "value": {
+          "ba": {
+            "name": "Name",
+            "type": "Text"
+          },
+          "bb": {
+            "name": "Type",
+            "type": "Text"
+          },
+          "bc": {
+            "name": "Shop1",
+            "type": "Euro"
+          },
+          "bd": {
+            "name": "Shop2",
+            "type": "Euro"
+          },
+          "be": {
+            "name": "Shop3",
+            "type": "Euro"
+          }
+        }
+      },
+      {
+        "position": "creation/reports/h",
+        "type": "ADD",
+        "value": {
+          "title": "Cross Table Reports",
+          "for": "Cross Entity",
+          "groupedBy": {
+            "ha": {
+              "label": "By Shop",
+              "of": "Euro",
+              "show": "OnlyLowest",
+              "display": {
+                "haa":{
+                  "operation": "Count",
+                  "of": "Name",
+                  "label": "#"
+                },
+                "hab":{
+                  "operation": "Sum",
+                  "of": "Shop1",
+                  "label": "Shop1"
+                },
+                "hac":{
+                  "operation": "Sum",
+                  "of": "Shop2",
+                  "label": "Shop2"
+                },
+                "had":{
+                  "operation": "Sum",
+                  "of": "Shop3",
+                  "label": "Shop3"
+                }
+              }
+            }
+          },
+          "as": {
+            "gb": {
+              "type": "Table",
+              "title": "Shopping cart"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Switch graphs position",
+    "sequence": [
+      {
+        "position": "creation/reports/e/as/eg",
+        "type": "MOVE",
+        "value": "ef"
+      }
+    ]
+  },
+  {
+    "name": "Empty Application",
+    "type": "RESET",
+    "position": "creation",
+    "value": null
+  }
+]

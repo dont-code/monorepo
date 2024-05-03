@@ -1,0 +1,123 @@
+Using path from url parameter:  https://www.newpharma.fr/search-results/search.html?q=Chardon%20Marie
+lojw2uwdgqlmft5h1ra: Removing Host header
+lojw2uwdgqlmft5h1ra: Changing connection from close to keep-alive
+lojw2uwdgqlmft5h1ra: Changing origin from http://localhost:3003 to https://www.newpharma.fr
+lojw2uwdgqlmft5h1ra: Changing referer from http://localhost:3003/ to https://www.newpharma.fr/
+lojw2uwdgqlmft5h1ra: Changing sec-fetch-site from cross-site to same-site
+lojw2uwdgqlmft5h1ra: Sending request:  {
+url: 'https://www.newpharma.fr/search-results/search.html?q=Chardon%20Marie',
+method: 'GET',
+headers: {
+connection: 'keep-alive',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
+accept: 'application/json, text/plain, */*',
+'accept-language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+'accept-encoding': 'gzip, deflate, br',
+origin: 'https://www.newpharma.fr',
+referer: 'https://www.newpharma.fr/',
+'sec-fetch-dest': 'empty',
+'sec-fetch-mode': 'cors',
+'sec-fetch-site': 'same-site'
+},
+maxRedirects: 0,
+validateStatus: [Function (anonymous)],
+responseType: 'stream',
+decompress: false
+}
+
+Puppeteer old Headless deprecation warning:
+In the near feature `headless: true` will default to the new Headless mode
+for Chrome instead of the old Headless implementation. For more
+information, please see https://developer.chrome.com/articles/new-headless/.
+Consider opting in early by passing `headless: "new"` to `puppeteer.launch()`
+If you encounter any bugs, please report them to https://github.com/puppeteer/puppeteer/issues/new/choose.
+
+lojw2uwdgqlmft5h1ra: Received response:  {
+status: 200,
+message: 'OK',
+url: 'https://www.newpharma.fr/search-results/search.html?q=Chardon%20Marie',
+method: 'GET',
+headers: {
+connection: 'keep-alive',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
+accept: 'application/json, text/plain, */*',
+'accept-language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+'accept-encoding': 'gzip, deflate, br',
+origin: 'https://www.newpharma.fr',
+referer: 'https://www.newpharma.fr/',
+'sec-fetch-dest': 'empty',
+'sec-fetch-mode': 'cors',
+'sec-fetch-site': 'same-site'
+}
+}
+lojw2uwdgqlmft5h1ra: Replaced cookie PHPSESSID=q62duvf0m1i679k67t79ar26rp; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly to PHPSESSID=q62duvf0m1i679k67t79ar26rp; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie algolia_feat_checksum=72abec44cbe7650d5cba3c1f3dba6b65; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to algolia_feat_checksum=72abec44cbe7650d5cba3c1f3dba6b65; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie algolia_feat=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to algolia_feat=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie CurrencySymbolAB_checksum=8f74a2854381213a61ced54623ca3739; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to CurrencySymbolAB_checksum=8f74a2854381213a61ced54623ca3739; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie CurrencySymbolAB=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to CurrencySymbolAB=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie popular_and_recommended_products_checksum=1e078c20aadaa6558658bf0ea2cb4671; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to popular_and_recommended_products_checksum=1e078c20aadaa6558658bf0ea2cb4671; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie popular_and_recommended_products=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to popular_and_recommended_products=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie recommender_products_checksum=b48b4847748b9cfb2c67dec815011203; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to recommender_products_checksum=b48b4847748b9cfb2c67dec815011203; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie recommender_products=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to recommender_products=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie patientProfile_checksum=fc3cfc52442255908ab190f0a0ccc9da; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to patientProfile_checksum=fc3cfc52442255908ab190f0a0ccc9da; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie patientProfile=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to patientProfile=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisableAssociatedProducts_checksum=c43f143f53bd39681bdc2e3dafbf1e90; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisableAssociatedProducts_checksum=c43f143f53bd39681bdc2e3dafbf1e90; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisableAssociatedProducts=A; Domain=www.newpharma.fr; Path=/; Secure;HttpOnly; SameSite=Lax to DisableAssociatedProducts=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisablePopularProducts_checksum=61093927067753b7b1731deeecadcaa2; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisablePopularProducts_checksum=61093927067753b7b1731deeecadcaa2; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisablePopularProducts=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisablePopularProducts=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisableTopPromoAction_checksum=dc27c049cee3ceb5aa195ac4a8fab3fe; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisableTopPromoAction_checksum=dc27c049cee3ceb5aa195ac4a8fab3fe; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisableTopPromoAction=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisableTopPromoAction=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisableHomepageRecommender_checksum=d0086fc2f46acfa09b562dee55e3dd23;Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisableHomepageRecommender_checksum=d0086fc2f46acfa09b562dee55e3dd23; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DisableHomepageRecommender=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DisableHomepageRecommender=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie bfcBasket_checksum=665cc517426d40df319b9b7989bb8cbf; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to bfcBasket_checksum=665cc517426d40df319b9b7989bb8cbf; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie bfcBasket=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to bfcBasket=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie price_discount_checksum=5ecb3e06ba5ee2b9c6defee59f748e9f; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to price_discount_checksum=5ecb3e06ba5ee2b9c6defee59f748e9f; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie price_discount=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to price_discount=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie NewCustomersTopBannerDisplay_checksum=4564233850a8400b61f315f01d05cd96; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to NewCustomersTopBannerDisplay_checksum=4564233850a8400b61f315f01d05cd96; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie NewCustomersTopBannerDisplay=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to NewCustomersTopBannerDisplay=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie Adhese_checksum=dd613c6357e782df38dcc22eac445562; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to Adhese_checksum=dd613c6357e782df38dcc22eac445562; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie Adhese=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to Adhese=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie SlidersUsingAjax_checksum=64a45817b187556c53b568047aed20f8; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to SlidersUsingAjax_checksum=64a45817b187556c53b568047aed20f8; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie SlidersUsingAjax=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to SlidersUsingAjax=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingDHLHome_checksum=575b7a3215a66f947a55e16a7e56313c; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingDHLHome_checksum=575b7a3215a66f947a55e16a7e56313c; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingDHLHome=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly;SameSite=Lax to ShippingDHLHome=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingDHLPup_checksum=72b5c085319dec7e82546bcc8c1b5ec0; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingDHLPup_checksum=72b5c085319dec7e82546bcc8c1b5ec0; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingDHLPup=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingDHLPup=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingChronopostHome_checksum=9f14b37289eba8d5fdb2bcc0e3473409; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingChronopostHome_checksum=9f14b37289eba8d5fdb2bcc0e3473409; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingChronopostHome=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingChronopostHome=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingChronopostPup_checksum=bd536bb1718a45180422dd3538f06b0c; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingChronopostPup_checksum=bd536bb1718a45180422dd3538f06b0c; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShippingChronopostPup=B; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShippingChronopostPup=B; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DeliveryCountries_checksum=51fb89b5a9a153226aed9b11a0f527f5; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DeliveryCountries_checksum=51fb89b5a9a153226aed9b11a0f527f5; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie DeliveryCountries=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to DeliveryCountries=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ReorderAwardsOnBasketPage_checksum=7bf46c538a9421bcdcc9cfba3a108ee6; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ReorderAwardsOnBasketPage_checksum=7bf46c538a9421bcdcc9cfba3a108ee6; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ReorderAwardsOnBasketPage=A; Domain=www.newpharma.fr; Path=/; Secure;HttpOnly; SameSite=Lax to ReorderAwardsOnBasketPage=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie Pricing_checksum=2efa9516bec41a346fa2890913c0faf5; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to Pricing_checksum=2efa9516bec41a346fa2890913c0faf5; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie Pricing=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to Pricing=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShowSmartBusinessPopup_checksum=dc819c9438860cfd6b3f68a9ed8de328; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShowSmartBusinessPopup_checksum=dc819c9438860cfd6b3f68a9ed8de328; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie ShowSmartBusinessPopup=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to ShowSmartBusinessPopup=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie EkomiRatingProductPage_checksum=48313e7127868110a3b323cb3d7a3562; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to EkomiRatingProductPage_checksum=48313e7127868110a3b323cb3d7a3562; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie EkomiRatingProductPage=A; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to EkomiRatingProductPage=A; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie WebV=29; Domain=www.newpharma.fr; Path=/; Secure; SameSite=Lax to WebV=29; Path=/; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie visitor_unique_id=E10Jb6DXFvTWZTEnqghLDFWrJT4jBgXB; Expires=Tue, 20 Jan 1970 18:07:48 GMT; Domain=www.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=Lax to visitor_unique_id=E10Jb6DXFvTWZTEnqghLDFWrJT4jBgXB; Expires=Tue, 20 Jan 1970 18:07:48 GMT; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie cookiesession1=678A8C364DCEC74A0A8B6521974B0163; Expires=Wed, 21 Jan 1970 00:43:48 GMT; Domain=www.newpharma.fr; Path=/; HttpOnly to cookiesession1=678A8C364DCEC74A0A8B6521974B0163; Expires=Wed, 21 Jan 1970 00:43:48 GMT; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie __cf_bm=DBd20mzLOKWPJt1RktUpjaC0lEcDKig0DDjFYQiwE3Y-1699092961-0-AcqChBYv136x+/JUOcPob3Pd3IUDg+uL7PSWfA7MzhKkjTedGNZQlxJJHQWp1fuIV1c7bfRIeROp9rr4o9fja2U=; Expires=Tue, 20 Jan 1970 15:58:14 GMT; Domain=.newpharma.fr; Path=/; Secure; HttpOnly; SameSite=None to __cf_bm=DBd20mzLOKWPJt1RktUpjaC0lEcDKig0DDjFYQiwE3Y-1699092961-0-AcqChBYv136x+/JUOcPob3Pd3IUDg+uL7PSWfA7MzhKkjTedGNZQlxJJHQWp1fuIV1c7bfRIeROp9rr4o9fja2U=; Expires=Tue, 20 Jan 1970 15:58:14 GMT; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Replaced cookie __cf_bm=4kP6GujiWKMeRTteah4XQUJhwuZlSneS4jIM7Jit3MQ-1699092961-0-AWNT//zzQ39N+U4dB1+AkWvHU7zRZpNCCOtJBgn2Dw8lfo052lbR84HNIudfSe7NjHwCLl9STX9STsVszQp693c=; Expires=Tue, 20 Jan 1970 15:58:14 GMT; Domain=.newpharma.net; Path=/; Secure; HttpOnly; SameSite=None to __cf_bm=4kP6GujiWKMeRTteah4XQUJhwuZlSneS4jIM7Jit3MQ-1699092961-0-AWNT//zzQ39N+U4dB1+AkWvHU7zRZpNCCOtJBgn2Dw8lfo052lbR84HNIudfSe7NjHwCLl9STX9STsVszQp693c=; Expires=Tue, 20 Jan 1970 15:58:14 GMT; Path=/; HttpOnly; SameSite=None
+lojw2uwdgqlmft5h1ra: Sending response:  {
+status: 200,
+message: 'OK',
+url: '/proxy/debug?url=https%253A%252F%252Fwww.newpharma.fr%252Fsearch-results%252Fsearch.html%253Fq%253DChardon%252520Marie&engine=chrome',
+method: 'GET',
+headers: {
+host: 'shared.collin.best',
+connection: 'close',
+'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0',
+accept: 'application/json, text/plain, */*',
+'accept-language': 'fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3',
+'accept-encoding': 'gzip, deflate, br',
+origin: 'http://localhost:3003',
+referer: 'http://localhost:3003/',
+'sec-fetch-dest': 'empty',
+'sec-fetch-mode': 'cors',
+'sec-fetch-site': 'cross-site'
+}
+}

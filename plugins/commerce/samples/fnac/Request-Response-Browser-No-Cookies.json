@@ -1,0 +1,601 @@
+[
+  {
+  "GET": {
+  "scheme": "https",
+    "host": "www.fnac.com",
+    "filename": "/SearchResult/ResultList.aspx",
+    "query": {
+      "Search": "doro 8080 plus"
+      },
+  "remote": {
+    "Adresse": "96.16.248.189:443"
+      }
+    }
+  }
+  ,
+  {
+    "En-têtes de la requête (509 o)": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+        },
+        {
+          "name": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "Host",
+          "value": "www.fnac.com"
+        },
+        {
+          "name": "Sec-Fetch-Dest",
+          "value": "document"
+        },
+        {
+          "name": "Sec-Fetch-Mode",
+          "value": "navigate"
+        },
+        {
+          "name": "Sec-Fetch-Site",
+          "value": "none"
+        },
+        {
+          "name": "Sec-Fetch-User",
+          "value": "?1"
+        },
+        {
+          "name": "Upgrade-Insecure-Requests",
+          "value": "1"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+        }
+      ]
+    }
+  }
+  ,
+  {
+    "En-têtes de la réponse (545 o)": {
+      "headers": [
+        {
+          "name": "cache-control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "name": "content-length",
+          "value": "0"
+        },
+        {
+          "name": "content-type",
+          "value": "text/html"
+        },
+        {
+          "name": "date",
+          "value": "Sun, 13 Nov 2022 17:31:44 GMT"
+        },
+        {
+          "name": "expires",
+          "value": "Sun, 13 Nov 2022 17:31:44 GMT"
+        },
+        {
+          "name": "location",
+          "value": "https://queue.fnac.com/?c=fnacdarty&e=frprdfnaccom&ver=v3-javascript-3.7.10&cver=140&man=FR%20PRD%20FNAC.COM&t=https%3A%2F%2Fwww.fnac.com%2FSearchResult%2FResultList.aspx%3FSearch%3DDoro%25208080%2520Plus&kupver=akamai-3.0.9"
+        },
+        {
+          "name": "pragma",
+          "value": "no-cache"
+        },
+        {
+          "name": "server-timing",
+          "value": "cdn-cache; desc=HIT"
+        },
+        {
+          "name": "server-timing",
+          "value": "edge; dur=1"
+        },
+        {
+          "name": "X-Firefox-Spdy",
+          "value": "h2"
+        },
+        {
+          "name": "x-queueit-connector",
+          "value": "akamai"
+        }
+      ]
+    }
+  }
+
+,
+
+  {
+    "QUERY":"https://queue.fnac.com/?c=fnacdarty&e=frprdfnaccom&ver=v3-javascript-3.7.10&cver=140&man=FR+PRD+FNAC.COM&t=https%3A%2F%2Fwww.fnac.com%2FSearchResult%2FResultList.aspx%3FSearch%3DDoro%25208080%2520Plus&kupver=akamai-3.0.9"
+    ,"GET": {
+      "scheme": "https",
+      "host": "queue.fnac.com",
+      "filename": "/",
+      "query": {
+        "c": "fnacdarty",
+        "e": "frprdfnaccom",
+        "ver": "v3-javascript-3.7.10",
+        "cver": "140",
+        "man": "FR PRD FNAC.COM",
+        "t": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro%208080%20Plus",
+        "kupver": "akamai-3.0.9"
+      },
+      "remote": {
+        "Adresse": "18.200.143.252:443"
+      }
+    }
+  },
+
+  {
+    "En-têtes de la requête (658 o)": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+        },
+        {
+          "name": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "Host",
+          "value": "queue.fnac.com"
+        },
+        {
+          "name": "Sec-Fetch-Dest",
+          "value": "document"
+        },
+        {
+          "name": "Sec-Fetch-Mode",
+          "value": "navigate"
+        },
+        {
+          "name": "Sec-Fetch-Site",
+          "value": "none"
+        },
+        {
+          "name": "Sec-Fetch-User",
+          "value": "?1"
+        },
+        {
+          "name": "Upgrade-Insecure-Requests",
+          "value": "1"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+        }
+      ]
+    }
+  }
+  ,
+  {
+    "En-têtes de la réponse (1,173 Ko)": {
+      "headers": [
+        {
+          "name": "cache-control",
+          "value": "no-store, no-cache"
+        },
+        {
+          "name": "content-length",
+          "value": "0"
+        },
+        {
+          "name": "date",
+          "value": "Sun, 13 Nov 2022 17:31:44 GMT"
+        },
+        {
+          "name": "location",
+          "value": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro%208080%20Plus&queueittoken=e_frprdfnaccom~q_545173b5-fccc-4910-8af7-8985b7d77b2d~ts_1668360884~ce_true~rt_safetynet~h_277426899d55b1f774e1cf205c93e1c7f59db45b70bf4def2d376e053dfd59c4"
+        },
+        {
+          "name": "p3p",
+          "value": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTR STP IND DEM\""
+        },
+        {
+          "name": "pragma",
+          "value": "no-cache"
+        },
+        {
+          "name": "server",
+          "value": "Kestrel"
+        },
+        {
+          "name": "set-cookie",
+          "value": "Queue-it-token=e_frprdfnaccom~q_545173b5-fccc-4910-8af7-8985b7d77b2d~ts_1668360884~ce_true~rt_safetynet~h_277426899d55b1f774e1cf205c93e1c7f59db45b70bf4def2d376e053dfd59c4; expires=Sun, 13 Nov 2022 17:34:44 GMT; path=/; secure; samesite=none; httponly"
+        },
+        {
+          "name": "set-cookie",
+          "value": "Queue-it-fnacdarty___________frprdfnaccom=; expires=Sat, 01 Jan 2000 01:01:01 GMT; path=/; secure; samesite=none"
+        },
+        {
+          "name": "set-cookie",
+          "value": "Queue-it-545173b5-fccc-4910-8af7-8985b7d77b2d=WasRedirected=false&i=638039575047920357; expires=Sun, 13 Nov 2022 18:31:44 GMT; path=/; secure; httponly; samesite=none"
+        },
+        {
+          "name": "set-cookie",
+          "value": "Queue-it=u=a30cad45-e709-4cd9-b88d-a8133abf28cd; expires=Mon, 13 Nov 2023 17:31:44 GMT; path=/; secure; httponly; samesite=none"
+        },
+        {
+          "name": "X-Firefox-Spdy",
+          "value": "h2"
+        },
+        {
+          "name": "x-robots-tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  }
+    ,
+  {
+  "QUERY": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro+8080+Plus&queueittoken=e_frprdfnaccom%7Eq_545173b5-fccc-4910-8af7-8985b7d77b2d%7Ets_1668360884%7Ece_true%7Ert_safetynet%7Eh_277426899d55b1f774e1cf205c93e1c7f59db45b70bf4def2d376e053dfd59c4"
+  ,
+    "GET": {
+      "scheme": "https",
+      "host": "www.fnac.com",
+      "filename": "/SearchResult/ResultList.aspx",
+      "query": {
+        "Search": "Doro 8080 Plus",
+        "queueittoken": "e_frprdfnaccom~q_545173b5-fccc-4910-8af7-8985b7d77b2d~ts_1668360884~ce_true~rt_safetynet~h_277426899d55b1f774e1cf205c93e1c7f59db45b70bf4def2d376e053dfd59c4"
+      },
+      "remote": {
+        "Adresse": "96.16.248.139:443"
+      }
+    }
+  }
+  ,
+  {
+    "En-têtes de la requête (678 o)": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+        },
+        {
+          "name": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "Host",
+          "value": "www.fnac.com"
+        },
+        {
+          "name": "Sec-Fetch-Dest",
+          "value": "document"
+        },
+        {
+          "name": "Sec-Fetch-Mode",
+          "value": "navigate"
+        },
+        {
+          "name": "Sec-Fetch-Site",
+          "value": "none"
+        },
+        {
+          "name": "Sec-Fetch-User",
+          "value": "?1"
+        },
+        {
+          "name": "TE",
+          "value": "trailers"
+        },
+        {
+          "name": "Upgrade-Insecure-Requests",
+          "value": "1"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+        }
+      ]
+    }
+  }
+  ,
+  {
+    "En-têtes de la réponse (714 o)": {
+      "headers": [
+        {
+          "name": "cache-control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "name": "content-length",
+          "value": "0"
+        },
+        {
+          "name": "content-type",
+          "value": "text/html"
+        },
+        {
+          "name": "date",
+          "value": "Sun, 13 Nov 2022 17:31:44 GMT"
+        },
+        {
+          "name": "expires",
+          "value": "Sun, 13 Nov 2022 17:31:44 GMT"
+        },
+        {
+          "name": "location",
+          "value": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro%208080%20Plus"
+        },
+        {
+          "name": "pragma",
+          "value": "no-cache"
+        },
+        {
+          "name": "server-timing",
+          "value": "cdn-cache; desc=HIT"
+        },
+        {
+          "name": "server-timing",
+          "value": "edge; dur=1"
+        },
+        {
+          "name": "set-cookie",
+          "value": "QueueITAccepted-SDFrts345E-V3_frprdfnaccom=EventId%3Dfrprdfnaccom%26QueueId%3D545173b5-fccc-4910-8af7-8985b7d77b2d%26RedirectType%3Dsafetynet%26IssueTime%3D1668360704%26Hash%3D0378e0de65cddeab67a54671a123bb747b394b7bd405a7ac872e910d858d06f0; expires=Mon, 14 Nov 2022 17:31:44 GMT; domain=fnac.com; path=/"
+        },
+        {
+          "name": "X-Firefox-Spdy",
+          "value": "h2"
+        },
+        {
+          "name": "x-queueit-connector",
+          "value": "akamai"
+        }
+      ]
+    }
+  }
+  ,
+  {
+    "Query": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Doro+8080+Plus"
+    ,
+    "GET": {
+      "scheme": "https",
+      "host": "www.fnac.com",
+      "filename": "/SearchResult/ResultList.aspx",
+      "query": {
+        "Search": "Doro 8080 Plus"
+      },
+      "remote": {
+        "Adresse": "96.16.248.139:443"
+      }
+    }
+  }
+,
+  {
+    "En-têtes de la requête (759 o)": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+        },
+        {
+          "name": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "Cookie",
+          "value": "QueueITAccepted-SDFrts345E-V3_frprdfnaccom=EventId%3Dfrprdfnaccom%26QueueId%3D545173b5-fccc-4910-8af7-8985b7d77b2d%26RedirectType%3Dsafetynet%26IssueTime%3D1668360704%26Hash%3D0378e0de65cddeab67a54671a123bb747b394b7bd405a7ac872e910d858d06f0"
+        },
+        {
+          "name": "Host",
+          "value": "www.fnac.com"
+        },
+        {
+          "name": "Sec-Fetch-Dest",
+          "value": "document"
+        },
+        {
+          "name": "Sec-Fetch-Mode",
+          "value": "navigate"
+        },
+        {
+          "name": "Sec-Fetch-Site",
+          "value": "none"
+        },
+        {
+          "name": "Sec-Fetch-User",
+          "value": "?1"
+        },
+        {
+          "name": "TE",
+          "value": "trailers"
+        },
+        {
+          "name": "Upgrade-Insecure-Requests",
+          "value": "1"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+        }
+      ]
+    }
+  }
+  ,
+
+  {
+    "En-têtes de la réponse (2,582 Ko)": {
+      "headers": [
+        {
+          "name": "accept-ch",
+          "value": "Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory"
+        },
+        {
+          "name": "cache-control",
+          "value": "private"
+        },
+        {
+          "name": "content-encoding",
+          "value": "gzip"
+        },
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "name": "date",
+          "value": "Sun, 13 Nov 2022 17:31:47 GMT"
+        },
+        {
+          "name": "fnac-datacenter",
+          "value": "OnPrem"
+        },
+        {
+          "name": "fnac-modulerouting",
+          "value": "FnaccomNav"
+        },
+        {
+          "name": "link",
+          "value": "<//static.fnac-static.com:443>;rel=\"dns-prefetch preconnect\",<//www.fnac.com:443>;rel=\"dns-prefetch preconnect\""
+        },
+        {
+          "name": "referrer-policy",
+          "value": "no-referrer-when-downgrade"
+        },
+        {
+          "name": "server-timing",
+          "value": "cdn-cache; desc=MISS"
+        },
+        {
+          "name": "server-timing",
+          "value": "edge; dur=71"
+        },
+        {
+          "name": "server-timing",
+          "value": "origin; dur=2624"
+        },
+        {
+          "name": "service-worker-allowed",
+          "value": "/"
+        },
+        {
+          "name": "set-cookie",
+          "value": "datadome=.DN8EkAdxaNbPDzvDQS0khO4qDRW8bI5f0fMJtDg3_pbWG6qn6BBaMbV.sbGKK3ziy8gv7kBq3nllPd.RpXFDJLY3H.usvpUfc2yo98nVI5I_6OamOoqJsjr~JYAf6Nf; Max-Age=31536000; Domain=.fnac.com; Path=/; Secure; SameSite=Lax"
+        },
+        {
+          "name": "set-cookie",
+          "value": "ORGN=FnacAff; domain=.fnac.com; expires=Wed, 23-Nov-2022 17:31:44 GMT; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "OrderInSession=0; domain=.fnac.com; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "kameleoonVisitorCode=41v7btyz6koj5l5p; domain=.fnac.com; path=/"
+        },
+        {
+          "name": "set-cookie",
+          "value": "ORGN=FnacAff; domain=.fnac.com; expires=Wed, 23-Nov-2022 17:31:44 GMT; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "OrderInSession=0; domain=.fnac.com; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "kameleoonVisitorCode=41v7btyz6koj5l5p; domain=.fnac.com; path=/"
+        },
+        {
+          "name": "set-cookie",
+          "value": "SDMTemplateSearch=list; domain=.fnac.com; expires=Tue, 13-Dec-2022 17:31:44 GMT; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "ItemPerPagelistTemplateSearch=20; domain=.fnac.com; expires=Tue, 13-Dec-2022 17:31:44 GMT; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "fd_vls_address=None; domain=.fnac.com; expires=Mon, 14-Nov-2022 17:31:47 GMT; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "UID=0cebf0fc8-e74d-40fe-a58c-8200510c74f3; domain=.fnac.com; path=/; expires=Fri, 12-May-2023 17:31:47 GMT; secure; SameSite=None"
+        },
+        {
+          "name": "set-cookie",
+          "value": "SID=f2c62cf8-5f61-4836-aea0-6a03aa208771; domain=.fnac.com; path=/; expires=Fri, 12-May-2023 17:31:47 GMT; secure; SameSite=None"
+        },
+        {
+          "name": "set-cookie",
+          "value": "VID=23fbe440-1114-470b-bd48-e9ab8e5db3ea; domain=.fnac.com; path=/; expires=Sun, 13-Nov-2022 18:01:47 GMT; secure; SameSite=None"
+        },
+        {
+          "name": "set-cookie",
+          "value": "datadome=.DN8EkAdxaNbPDzvDQS0khO4qDRW8bI5f0fMJtDg3_pbWG6qn6BBaMbV.sbGKK3ziy8gv7kBq3nllPd.RpXFDJLY3H.usvpUfc2yo98nVI5I_6OamOoqJsjr~JYAf6Nf; domain=.fnac.com; path=/; secure"
+        },
+        {
+          "name": "set-cookie",
+          "value": "QueueITAccepted-SDFrts345E-V3_frprdfnaccom=EventId%3Dfrprdfnaccom%26QueueId%3D545173b5-fccc-4910-8af7-8985b7d77b2d%26RedirectType%3Dsafetynet%26IssueTime%3D1668360704%26Hash%3D0378e0de65cddeab67a54671a123bb747b394b7bd405a7ac872e910d858d06f0; expires=Mon, 14 Nov 2022 17:31:44 GMT; domain=fnac.com; path=/"
+        },
+        {
+          "name": "strict-transport-security",
+          "value": "max-age=31536000"
+        },
+        {
+          "name": "vary",
+          "value": "Accept-Encoding"
+        },
+        {
+          "name": "x-akamai-transformed",
+          "value": "9 - 0 pmb=mRUM,2"
+        },
+        {
+          "name": "x-datadome",
+          "value": "protected"
+        },
+        {
+          "name": "X-Firefox-Spdy",
+          "value": "h2"
+        },
+        {
+          "name": "x-queueit-connector",
+          "value": "akamai"
+        },
+        {
+          "name": "x-ua-compatible",
+          "value": "IE=edge"
+        }
+      ]
+    }
+  }
+
+]

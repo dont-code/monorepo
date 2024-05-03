@@ -1,0 +1,44 @@
+{
+  "name": "report",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/report/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/report"],
+      "options": {
+        "project": "libs/report/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": false
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/report/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/report/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/report"],
+      "options": {
+        "jestConfig": "libs/report/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/report/src/**/*.ts",
+          "libs/report/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

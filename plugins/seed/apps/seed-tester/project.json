@@ -1,0 +1,145 @@
+{
+  "name": "seed-tester",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/seed-tester/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/seed-tester",
+        "index": "apps/seed-tester/src/index.html",
+        "main": "apps/seed-tester/src/main.ts",
+        "polyfills": "apps/seed-tester/src/polyfills.ts",
+        "tsConfig": "apps/seed-tester/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "vendorChunk": true,
+        "extractLicenses": false,
+        "buildOptimizer": false,
+        "optimization": false,
+        "namedChunks": true,
+        "sourceMap": {
+          "scripts": true,
+          "styles": true,
+          "hidden": false,
+          "vendor": true
+        },
+        "assets": [
+          "apps/seed-tester/src/favicon.ico",
+          "apps/seed-tester/src/assets",
+          {
+            "input": "node_modules/@dontcode/sandbox/assets",
+            "glob": "**/*",
+            "output": "assets"
+          }
+        ],
+        "styles": [
+          "apps/seed-tester/src/styles.scss",
+          "./node_modules/primeng/resources/primeng.min.css",
+          "./node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "./node_modules/primeflex/primeflex.min.css",
+          "./node_modules/primeicons/primeicons.css"
+        ],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/seed-tester/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "buildOptimizer": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/seed-tester/src/environments/environment.ts",
+              "with": "apps/seed-tester/src/environments/environment.prod.ts"
+            }
+          ],
+          "customWebpackConfig": {
+            "path": "apps/seed-tester/webpack.prod.config.js"
+          }
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/angular:webpack-dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "seed-tester:build:production"
+        },
+        "development": {
+          "browserTarget": "seed-tester:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4200,
+        "publicHost": "http://localhost:4200"
+      }
+    },
+    "extract-i18n": {
+      "executor": "ngx-build-plus:extract-i18n",
+      "options": {
+        "browserTarget": "seed-tester:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/seed-tester/src/**/*.ts",
+          "apps/seed-tester/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/seed-tester"
+      ],
+      "options": {
+        "jestConfig": "apps/seed-tester/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "seed-tester:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "seed-tester:build:development"
+        },
+        "production": {
+          "buildTarget": "seed-tester:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

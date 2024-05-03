@@ -1,0 +1,39 @@
+<h1>Price Check url tester</h1>
+<div class="formgrid grid">
+  <div class="field col">
+    <label for="url-to-try">Url of the search query:</label>
+    <input id="url-to-try" type="text" [(ngModel)]="testUrl" pInputText class="w-full"/>
+  </div>
+  <div class="field col">
+      <div class="flex align-items-center">
+        <p-radioButton id="dontcode-proxy" name="engine" [value]="ProxyEngine.DONT_CODE" [(ngModel)]="proxy"></p-radioButton>
+        <label for="dontcode-proxy">Dont-code Proxy:</label>
+      </div>
+      <div class="flex align-items-center">
+        <p-radioButton id="dontcode-chrome-proxy" name="engine" [value]="ProxyEngine.CHROME_ENGINE" [(ngModel)]="proxy"></p-radioButton>
+        <label for="dontcode-chrome-proxy">Dont-code Chrome Proxy:</label>
+      </div>
+      <div class="flex align-items-center">
+        <p-radioButton id="corsio-proxy" name="engine" [value]="ProxyEngine.CORSPROXY_IO" [(ngModel)]="proxy"></p-radioButton>
+        <label for="corsio-proxy">Cors.io Proxy:</label>
+      </div>
+      <div class="flex align-items-center">
+        <p-radioButton id="cors-org-proxy" name="engine" [value]="ProxyEngine.CORSPROXY_ORG" [(ngModel)]="proxy"></p-radioButton>
+        <label for="corsio-proxy">Cors.org Proxy:</label>
+      </div>
+      <div class="flex align-items-center">
+        <p-radioButton id="web-scraping-proxy" name="engine" [value]="ProxyEngine.WEBSCRAPING_IA" [(ngModel)]="proxy"></p-radioButton>
+        <label for="web-scraping-proxy">WebScraping.ia Proxy:</label>
+      </div>
+  </div>
+</div>
+<button pButton type="button" label="Try" (click)="tryUrl ()"></button>
+<p>Result:</p>
+<div *ngIf="testResponse">
+  <p>Status: {{testResponse.status}}</p>
+  <p>Size: {{testResponse.body?.length}}</p>
+  <p>Text: <textarea pInputTextarea cols="100" rows="30" [autoResize]="true" [disabled]="true" [value]="limitedTextResult()"></textarea> </p>
+</div>
+<div *ngIf="isTestError">
+  <p>Error: {{testError}}</p>
+</div>

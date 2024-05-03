@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "preview-ui": "apps/preview-ui",
+    "preview-ui-e2e": "apps/preview-ui-e2e"
+  }
+}

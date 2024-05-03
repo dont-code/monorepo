@@ -1,0 +1,147 @@
+{
+  "name": "report-tester",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/report-tester/src",
+  "prefix": "dontcode",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/report-tester",
+        "index": "apps/report-tester/src/index.html",
+        "main": "apps/report-tester/src/main.ts",
+        "polyfills": "apps/report-tester/src/polyfills.ts",
+        "tsConfig": "apps/report-tester/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "vendorChunk": true,
+        "extractLicenses": false,
+        "buildOptimizer": false,
+        "optimization": false,
+        "namedChunks": true,
+        "sourceMap": {
+          "scripts": true,
+          "styles": true,
+          "hidden": false,
+          "vendor": true
+        },
+        "assets": [
+          "apps/report-tester/src/favicon.ico",
+          "apps/report-tester/src/assets",
+          {
+            "input": "node_modules/@dontcode/sandbox/assets",
+            "glob": "**/*",
+            "output": "assets"
+          }
+        ],
+        "styles": [
+          "apps/report-tester/src/styles.scss",
+          "./node_modules/primeng/resources/primeng.min.css",
+          "./node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "./node_modules/primeflex/primeflex.min.css",
+          "./node_modules/primeicons/primeicons.css"
+        ],
+        "scripts": [
+          "./node_modules/chart.js/dist/chart.umd.js"
+        ],
+        "customWebpackConfig": {
+          "path": "apps/report-tester/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "buildOptimizer": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/report-tester/src/environments/environment.ts",
+              "with": "apps/report-tester/src/environments/environment.prod.ts"
+            }
+          ],
+          "customWebpackConfig": {
+            "path": "apps/report-tester/webpack.prod.config.js"
+          }
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/angular:webpack-dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "report-tester:build:production"
+        },
+        "development": {
+          "browserTarget": "report-tester:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 3002,
+        "publicHost": "http://localhost:3002"
+      }
+    },
+    "extract-i18n": {
+      "executor": "ngx-build-plus:extract-i18n",
+      "options": {
+        "browserTarget": "report-tester:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/report-tester/src/**/*.ts",
+          "apps/report-tester/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/report-tester"
+      ],
+      "options": {
+        "jestConfig": "apps/report-tester/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "report-tester:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "report-tester:build:development"
+        },
+        "production": {
+          "buildTarget": "report-tester:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

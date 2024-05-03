@@ -1,0 +1,8 @@
+Search: https://www.greenweez.com/_next/data/VhKzZ0x6g_lHxd7bV2jxN/fr/recherche/chardon marie.json?slug=chardon+marie
+
+  then json
+
+    => Doc in https://www.algolia.com/doc/
+
+Product page:
+https://www.greenweez.com/produit/extrait-de-plante-fraiche-chardon-marie-50ml/1LADR0012/201836

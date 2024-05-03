@@ -1,0 +1,62 @@
+<dtcde-dynamic></dtcde-dynamic>
+<ng-template #inlineView><span pTooltip="Price Date: {{value.priceDate??'Unknown'}}<br/>Shop:{{value.shop??'Unknown'}}" [escape]="false">
+  <ng-container *ngIf="value?.urlInShop">
+    <a href="{{value.urlInShop}}" target="_blank">
+      <ng-container *ngTemplateOutlet="priceView" ></ng-container>
+    </a>
+  </ng-container>
+  <ng-container *ngIf="!value?.urlInShop">
+    <ng-container *ngTemplateOutlet="priceView" ></ng-container>
+  </ng-container>
+  </span>
+</ng-template>
+
+<ng-template #priceView>
+  <button *ngIf="value?.inError" pButton type="button" class="p-button-rounded p-button-outlined p-button-danger" icon="pi pi-exclamation-triangle" pTooltip="Error reading this product price"></button>
+  <ng-container *ngTemplateOutlet="subFieldInlineViewTemplate('cost')"></ng-container>&nbsp;
+</ng-template>
+
+<ng-template #fullEditView>
+  <ng-container *ngIf="form" [formGroup]="form">
+    <div class="formgrid grid">
+      <div class="field col-12 md:col-6">
+        <span class="p-float-label">
+          <input [id]="name+'-name'" type="text" pInputText formControlName="nameInShop" class="w-full" (input)="productNameChanged($event)">
+          <label [for]="name+'-name'">Product Name</label>
+        </span>
+      </div>
+      <div class="field col-12 md:col-6">
+        <ng-container *ngTemplateOutlet="subFieldFullEditTemplate('shop')"></ng-container>
+      </div>
+      <div class="field col-12 md:col-6">
+        <div class="flex align-items-center">
+          <button *ngIf="value?.inError" pButton type="button" class="p-button-rounded p-button-outlined p-button-danger" icon="pi pi-exclamation-triangle" pTooltip="Error reading this product price"></button>
+          <button name="FetchPrice" class="flex flex-initial align-items-center p-button-rounded p-button-text" pButton pRipple type="button" [icon]="updatePriceIcon" [disabled]="cannotUpdatePrice ()" (click)="updatePrice()"></button>
+          <div class="flex align-items-center flex-1" style="margin-top: 0.5rem">Price:&nbsp;
+            <ng-container *ngTemplateOutlet="subFieldFullEditTemplate('cost')"></ng-container>
+          </div>
+        </div>
+      </div>
+      <div class="field col-12 md:col-6">Date of Price:&nbsp;
+        <ng-container *ngTemplateOutlet="subFieldFullEditTemplate('priceDate')"></ng-container>
+      </div>
+      <div class="field col-12 md:col-6">Product Id:
+          <input type="text" pInputText formControlName="idInShop" class="w-full">
+      </div>
+      <div class="field col-12 md:col-6">Product url:
+          <ng-container *ngTemplateOutlet="subFieldFullEditTemplate('urlInShop')"></ng-container>
+      </div>
+      <ng-container *ngIf="isInError ()">
+        <p-messages severity="error">
+          <ng-template pTemplate>Error : {{errorMessage()}}
+            <a *ngIf="parsingError?.url" [href]="parsingError?.url" target="_blank">Try in the browser</a>
+          </ng-template>
+        </p-messages>
+      </ng-container>
+      <ng-container *ngIf="productSelectionMode">
+        <div [id]="name+'-select'" class="field col-12"><dontcode-commerce-product-selection [listOfProducts]="listOfSelectableProducts" (selected)="selectedProduct ($event)"></dontcode-commerce-product-selection>
+        </div>
+      </ng-container>
+    </div>
+  </ng-container>
+</ng-template>

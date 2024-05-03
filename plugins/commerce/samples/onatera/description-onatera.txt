@@ -1,0 +1,105 @@
+url: https://www.onatera.com/
+https://f75bb6q2sy-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia+for+JavaScript+%284.11.0%29%3B+Browser+%28lite%29%3B+instantsearch.js+%284.41.0%29%3B+Vue+%282.6.14%29%3B+Vue+InstantSearch+%284.3.3%29%3B+JS+Helper+%283.8.2%29&x-algolia-api-key=f319f4e4b15d239ba0509b3c6c4a0ecd&x-algolia-application-id=F75BB6Q2SY
+
+{
+	"POST": {
+		"scheme": "https",
+		"host": "f75bb6q2sy-dsn.algolia.net",
+		"filename": "/1/indexes/*/queries",
+		"query": {
+			"x-algolia-agent": "Algolia for JavaScript (4.11.0); Browser (lite); instantsearch.js (4.41.0); Vue (2.6.14); Vue InstantSearch (4.3.3); JS Helper (3.8.2)",
+			"x-algolia-api-key": "f319f4e4b15d239ba0509b3c6c4a0ecd",
+			"x-algolia-application-id": "F75BB6Q2SY"
+		},
+		"remote": {
+			"Adresse": "37.187.254.177:443"
+		}
+	}
+}
+
+Query:
+{
+	"{\"requests\":[{\"indexName\":\"intl.product.fr.fr\",\"params\":\"clickAnalytics": "true",
+	"facets": [
+		"[]",
+		"[]",
+		"[]",
+		"[]",
+		"[]",
+		"[]"
+	],
+	"hitsPerPage": [
+		"0",
+		"6",
+		"3",
+		"3",
+		"3",
+		"3"
+	],
+	"query": [
+		"chardon marie",
+		"chardon marie",
+		"chardon marie",
+		"chardon marie",
+		"chardon marie",
+		"chardon marie"
+	],
+	"tagFilters": [
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"userToken": [
+		"anonymous_09f81bae3a73d5bcb1582423816110b7\"},{\"indexName\":\"intl.product.fr.fr\",\"params\":\"clickAnalytics",
+		"anonymous_09f81bae3a73d5bcb1582423816110b7\"},{\"indexName\":\"intl.category.fr.fr\",\"params\":\"clickAnalytics",
+		"anonymous_09f81bae3a73d5bcb1582423816110b7\"},{\"indexName\":\"intl.brand.fr.fr\",\"params\":\"clickAnalytics",
+		"anonymous_09f81bae3a73d5bcb1582423816110b7\"},{\"indexName\":\"intl.active.fr.fr\",\"params\":\"clickAnalytics",
+		"anonymous_09f81bae3a73d5bcb1582423816110b7\"},{\"indexName\":\"intl.content.for_recipes.fr.fr\",\"params\":\"clickAnalytics",
+		"anonymous_09f81bae3a73d5bcb1582423816110b7\"}]}"
+	],
+	"highlightPostTag": [
+		"__/ais-highlight__",
+		"__/ais-highlight__",
+		"__/ais-highlight__",
+		"__/ais-highlight__",
+		"__/ais-highlight__"
+	],
+	"highlightPreTag": [
+		"__ais-highlight__",
+		"__ais-highlight__",
+		"__ais-highlight__",
+		"__ais-highlight__",
+		"__ais-highlight__"
+	],
+	"numericFilters": [
+		"ref_count > 0",
+		"product_count > 0",
+		"product_count > 0"
+	],
+	"facetFilters": "[\"type:diy\"]"
+}
+
+Or:
+https://www.onatera.com/FR/fr/recherche/produits?q=chardon+marie
+
+Image url:
+https://media.onatera.com/cache/product_image_listing_DM/product/image/62c436a9465d662c436a94.jpg
+
+Product page=
+https://www.onatera.com/FR/fr/produit-complexe-digestion-foie-detox-50-ml-a-vogel
+{
+	"GET": {
+		"scheme": "https",
+		"host": "www.onatera.com",
+		"filename": "/FR/fr/produit-complexe-digestion-foie-detox-50-ml-a-vogel",
+		"remote": {
+			"Adresse": "34.79.177.47:443"
+		}
+	}
+}
+
+
+Response:
