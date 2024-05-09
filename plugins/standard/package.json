@@ -9,6 +9,8 @@
     "ng": "nx",
     "start": "nx serve",
     "build": "nx run std:build:development",
+    "build-for": "nx run std:build:${npm_config_build}",
+    "build-deploy": "nx run plugin-tester:build:${npm_config_build} --output-path=\"dist/apps/plugin-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugins/${npm_config_stage}\"", 
     "test": "nx test",
     "build-all": "nx run common:build:development && nx run sandbox:build:development && nx run basic:build:development && nx run fields:build:development",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-common versions --json | jq -r '.[-1]') && cd libs/common && npm version $PACKAGE_VERSION --allow-same-version && cd ../sandbox && npm version $PACKAGE_VERSION --allow-same-version && PACKAGE_VERSION=$(npm view @dontcode/plugin-basic versions --json | jq -r '.[-1]')  && cd ../basic && npm version $PACKAGE_VERSION --allow-same-version && cd ../fields && npm version $PACKAGE_VERSION --allow-same-version && cd ../screen && npm version $PACKAGE_VERSION --allow-same-version",
@@ -29,6 +31,7 @@
     "@angular/router": "^15.1.2",
     "@dontcode/core": "workspace:^",
     "@dontcode/plugin-common": "workspace:^",
+    "@dontcode/sandbox": "workspace:^",
     "@fortawesome/angular-fontawesome": "^0.12.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
@@ -91,5 +94,8 @@
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
+  },
+  "browser": {
+    "zlib": false
   }
 }

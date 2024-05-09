@@ -1,8 +1,8 @@
 module.exports = {
   name: 'plugin-tester',
   exposes: {
-    './Fields': './libs/fields/src/lib/fields.module.ts',
-    './Basic': './libs/basic/src/lib/basic.module.ts'
+    './Fields': './libs/std/src/lib/fields.module.ts',
+    './Basic': './libs/std/src/lib/basic.module.ts'
   },
   shared: (name, config) => {
     return {

@@ -7,9 +7,7 @@ import {SandboxModule} from "@dontcode/sandbox";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {environment} from "../environments/environment";
 import {HttpClientModule} from "@angular/common/http";
-import {BasicModule} from "@dontcode/plugin-basic";
-import {FieldsModule} from "@dontcode/plugin-fields";
-import {ScreenModule} from "@dontcode/plugin-screen";
+import {BasicModule, FieldsModule} from "@dontcode/plugin-std";
 import {PluginCommonModule} from "@dontcode/plugin-common";
 
 @NgModule({
@@ -34,9 +32,8 @@ import {PluginCommonModule} from "@dontcode/plugin-common";
       templateFileUrl: 'assets/dev/templates.json'
     }),
     BasicModule,
-    FieldsModule,
-    ScreenModule
-  ],
+    FieldsModule
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

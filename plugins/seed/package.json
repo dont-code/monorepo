@@ -8,7 +8,9 @@
   "scripts": {
     "ng": "nx",
     "start": "nx serve",
-    "build": "nx build",
+    "build": "nx run seed:build:development",
+    "build-for": "nx run seed:build:${npm_config_build}",
+    "build-deploy": "nx run seed-tester:build:${npm_config_build} --output-path=\"dist/apps/seed-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugin-seed/${npm_config_stage}\"", 
     "test": "nx test",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-seed versions --json | jq -r '.[-1]') && cd libs/seed && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/seed && npm version prerelease && cd ../.. && nx run seed:build:development && cd dist/libs/seed && yalc push",

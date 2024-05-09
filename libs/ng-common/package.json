@@ -9,6 +9,8 @@
     "ng": "nx",
     "start": "nx serve",
     "build": "nx run common:build:development",
+    "build-for": "nx run common:build:${npm_config_build}",
+    "build-deploy": "echo \"No deploy for common\"", 
     "test": "nx test",
     "build-all": "nx run common:build:development && nx run sandbox:build:development && nx run basic:build:development && nx run fields:build:development",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-common versions --json | jq -r '.[-1]') && cd libs/common && npm version $PACKAGE_VERSION --allow-same-version && cd ../sandbox && npm version $PACKAGE_VERSION --allow-same-version && PACKAGE_VERSION=$(npm view @dontcode/plugin-basic versions --json | jq -r '.[-1]')  && cd ../basic && npm version $PACKAGE_VERSION --allow-same-version && cd ../fields && npm version $PACKAGE_VERSION --allow-same-version && cd ../screen && npm version $PACKAGE_VERSION --allow-same-version",

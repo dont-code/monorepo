@@ -8,7 +8,9 @@
   "scripts": {
     "ng": "nx",
     "start": "nx serve",
-    "build": "nx build",
+    "build": "nx run report:build:development",
+    "build-for": "nx run report:build:${npm_config_build}",
+    "build-deploy": "nx run report-tester:build:${npm_config_build} --output-path=\"dist/apps/report-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugin-report/${npm_config_stage}\"", 
     "test": "nx test",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-report versions --json | jq -r '.[-1]') && cd libs/report && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/report && npm version prerelease && cd ../.. && nx run report:build:development && cd dist/libs/report && yalc push",

@@ -19,6 +19,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
+      "@dontcode/plugin-std": ["libs/std/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]
