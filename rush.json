@@ -296,6 +296,12 @@
       "projectFolder": "apps/preview-ui",
       "reviewCategory": "production",
       "shouldPublish": false
-      }
-    ]
+    },
+    {
+      "packageName": "@dontcode/ide-ui",
+      "projectFolder": "apps/ide-ui",
+      "reviewCategory": "production",
+      "shouldPublish": false
+    }
+  ]
 }
