@@ -40,6 +40,14 @@
     },
     {
       "commandKind": "bulk",
+      "name": "clean",
+      "summary": "Clean all build artifacts",
+      "description": "Clean all build artifacts by calling clean in package.json",
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true
+    },
+    {
+      "commandKind": "bulk",
       "name": "build-deploy",
       "shellCommand": "rush-pnpm run build-deploy",
       "summary": "Prepare build for deployement",

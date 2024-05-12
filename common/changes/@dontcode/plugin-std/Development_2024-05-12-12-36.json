@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@dontcode/plugin-std",
+      "comment": "merge fields and basic plugins",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@dontcode/plugin-std"
+}

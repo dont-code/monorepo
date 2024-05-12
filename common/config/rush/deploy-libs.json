@@ -17,7 +17,7 @@
    * If the main project should include other unrelated Rush projects, add it to the "projectSettings" section,
    * and then specify those projects in the "additionalProjectsToInclude" list.
    */
-  "deploymentProjectNames": [ "@dontcode/plugin-std"],
+  "deploymentProjectNames": [ "@dontcode/core","@dontcode/plugin-common", "@dontcode/sandbox","@dontcode/plugin-std", "@dontcode/plugin-rest", "@dontcode/plugin-report", "@dontcode/plugin-commerce","@dontcode/plugin-seed"],
 
   /**
    * When deploying a local Rush project, the package.json "devDependencies" are normally excluded.

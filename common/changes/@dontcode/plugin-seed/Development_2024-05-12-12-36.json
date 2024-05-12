@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@dontcode/plugin-seed",
+      "comment": "refactor for monorepo",
+      "type": "none"
+    }
+  ],
+  "packageName": "@dontcode/plugin-seed"
+}

@@ -1,0 +1,151 @@
+{
+  "name": "ide-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "generators": {
+    "@nrwl/angular:component": {
+      "style": "<scss"
+    }
+  },
+  "sourceRoot": "apps/ide-ui/src",
+  "prefix": "ide-ui",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "options": {
+        "outputPath": "dist/apps/ide-ui",
+        "index": "apps/ide-ui/src/index.html",
+        "main": "apps/ide-ui/src/main.ts",
+        "polyfills": "apps/ide-ui/src/polyfills.ts",
+        "tsConfig": "apps/ide-ui/tsconfig.app.json",
+        "assets": [
+          "apps/ide-ui/src/favicon.ico",
+          "apps/ide-ui/src/assets",
+          {
+            "glob": "**/*",
+            "input": "./node_modules/@dontcode/core/assets",
+            "output": "/assets/core/"
+          }
+        ],
+        "styles": [
+          "apps/ide-ui/src/styles.scss",
+          "./node_modules/primeflex/primeflex.css",
+          "./node_modules/primeng/resources/themes/saga-green/theme.css",
+          "./node_modules/primeng/resources/primeng.min.css",
+          "./node_modules/primeicons/primeicons.css"
+        ],
+        "scripts": [],
+        "vendorChunk": true,
+        "extractLicenses": false,
+        "buildOptimizer": false,
+        "sourceMap": {
+          "scripts": true,
+          "styles": true,
+          "hidden": false,
+          "vendor": true
+        },
+        "optimization": false,
+        "namedChunks": true
+      },
+      "configurations": {
+        "next": {
+          "fileReplacements": [
+            {
+              "replace": "apps/ide-ui/src/environments/environment.ts",
+              "with": "apps/ide-ui/src/environments/environment.next.ts"
+            }
+          ]
+        },
+        "e2e": {
+          "fileReplacements": [
+            {
+              "replace": "apps/ide-ui/src/environments/environment.ts",
+              "with": "apps/ide-ui/src/environments/environment.e2e.ts"
+            }
+          ]
+        },
+        "offline": {
+          "fileReplacements": [
+            {
+              "replace": "apps/ide-ui/src/environments/environment.ts",
+              "with": "apps/ide-ui/src/environments/environment.offline.ts"
+            }
+          ]
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/ide-ui/src/environments/environment.ts",
+              "with": "apps/ide-ui/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "buildOptimizer": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "5mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "6kb",
+              "maximumError": "10kb"
+            }
+          ]
+        },
+        "yolo": {
+          "fileReplacements": [
+            {
+              "replace": "apps/ide-ui/src/environments/environment.ts",
+              "with": "apps/ide-ui/src/environments/environment.yolo.ts"
+            }
+          ]
+        }
+      },
+      "defaultConfiguration": ""
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "browserTarget": "ide-ui:build"
+      },
+      "configurations": {
+        "next": {
+          "browserTarget": "ide-ui:build:next"
+        },
+        "e2e": {
+          "browserTarget": "ide-ui:build:e2e"
+        },
+        "offline": {
+          "browserTarget": "ide-ui:build:offline"
+        },
+        "production": {
+          "browserTarget": "ide-ui:build:production"
+        },
+        "yolo": {
+          "browserTarget": "ide-ui:build:yolo"
+        }
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "ide-ui:build"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "apps/ide-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

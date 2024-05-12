@@ -11,6 +11,7 @@
     "build": "nx run commerce:build:development",
     "build-for": "nx run commerce:build:${npm_config_build}",
     "build-deploy": "nx run commerce-tester:build:${npm_config_build} --output-path=\"dist/apps/commerce-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugin-commerce/${npm_config_stage}\"", 
+    "clean": "rm -rf dist/*",
     "test": "nx run commerce:test",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-commerce versions --json | jq -r '.[-1]') && cd libs/commerce && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/commerce && npm version prerelease && cd ../.. && nx run commerce:build:development && cd dist/libs/commerce && yalc push",
