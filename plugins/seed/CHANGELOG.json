@@ -1,0 +1,17 @@
+{
+  "name": "@dontcode/plugin-seed",
+  "entries": [
+    {
+      "version": "1.7.0",
+      "tag": "@dontcode/plugin-seed_v1.7.0",
+      "date": "Sun, 12 May 2024 13:08:02 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "refactor for monorepo"
+          }
+        ]
+      }
+    }
+  ]
+}
