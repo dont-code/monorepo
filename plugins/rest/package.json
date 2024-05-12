@@ -11,6 +11,7 @@
     "build": "nx run rest:build:development",
     "build-for": "nx run rest:build:${npm_config_build}",
     "build-deploy": "nx run rest-tester:build:${npm_config_build} --output-path=\"dist/apps/rest-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugin-rest/${npm_config_stage}\"", 
+    "clean": "rm -rf dist/*",
     "test": "nx test",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-rest versions --json | jq -r '.[-1]') && cd libs/rest && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/rest && npm version prerelease && cd ../.. && nx run rest:build:development && cd dist/libs/rest && yalc push",
