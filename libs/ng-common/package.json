@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/plugin-common",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "license": "MIT",
   "main": "dist/libs/common/esm2020/index.mjs",
   "typings": "dist/libs/common/index.d.ts",
