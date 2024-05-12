@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/plugin-std",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "license": "MIT",
   "main": "dist/libs/std/esm2020/index.mjs",
   "typings": "dist/libs/std/index.d.ts",

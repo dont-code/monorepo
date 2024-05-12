@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/plugin-commerce",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "license": "MIT",
   "main": "dist/libs/commerce/esm2020/index.mjs",
   "typings": "dist/libs/commerce/index.d.ts",
