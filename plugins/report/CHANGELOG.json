@@ -2,6 +2,27 @@
   "name": "@dontcode/plugin-report",
   "entries": [
     {
+      "version": "1.7.3",
+      "tag": "@dontcode/plugin-report_v1.7.3",
+      "date": "Mon, 13 May 2024 18:25:23 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@dontcode/core\" to `^1.7.2`"
+          },
+          {
+            "comment": "Updating dependency \"@dontcode/plugin-common\" to `^7.1.2`"
+          },
+          {
+            "comment": "Updating dependency \"@dontcode/plugin-std\" to `^7.1.3`"
+          },
+          {
+            "comment": "Updating dependency \"@dontcode/sandbox\" to `^7.1.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.7.2",
       "tag": "@dontcode/plugin-report_v1.7.2",
       "date": "Sun, 12 May 2024 13:35:28 GMT",

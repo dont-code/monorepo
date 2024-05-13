@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/core",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "license": "MIT",
   "main": "dist/packages/core/index.js",
   "typings": "dist/packages/core/src/index.d.ts",

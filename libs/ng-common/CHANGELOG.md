@@ -1,6 +1,13 @@
 # Change Log - @dontcode/plugin-common
 
-This log was last generated on Sun, 12 May 2024 13:35:28 GMT and should not be manually modified.
+This log was last generated on Mon, 13 May 2024 18:25:23 GMT and should not be manually modified.
+
+## 7.1.2
+Mon, 13 May 2024 18:25:23 GMT
+
+### Patches
+
+- Test
 
 ## 7.1.1
 Sun, 12 May 2024 13:35:28 GMT

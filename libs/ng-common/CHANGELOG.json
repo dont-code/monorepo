@@ -2,6 +2,23 @@
   "name": "@dontcode/plugin-common",
   "entries": [
     {
+      "version": "7.1.2",
+      "tag": "@dontcode/plugin-common_v7.1.2",
+      "date": "Mon, 13 May 2024 18:25:23 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Test"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@dontcode/core\" to `^1.7.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "7.1.1",
       "tag": "@dontcode/plugin-common_v7.1.1",
       "date": "Sun, 12 May 2024 13:35:28 GMT",
