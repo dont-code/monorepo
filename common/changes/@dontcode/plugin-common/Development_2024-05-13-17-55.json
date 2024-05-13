@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@dontcode/plugin-common",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@dontcode/plugin-common"
+}

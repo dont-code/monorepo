@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@dontcode/plugin-std",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@dontcode/plugin-std"
+}

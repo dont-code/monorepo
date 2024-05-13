@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@dontcode/plugin-rest",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@dontcode/plugin-rest"
+}
