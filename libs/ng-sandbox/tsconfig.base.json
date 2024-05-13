@@ -19,6 +19,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
+      "@dontcode/sandbox":["libs/sandbox/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

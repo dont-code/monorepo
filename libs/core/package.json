@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/core",
-  "version": "1.7.2",
+  "version": "1.7.1",
   "license": "MIT",
   "main": "dist/packages/core/index.js",
   "typings": "dist/packages/core/src/index.d.ts",
@@ -10,6 +10,8 @@
     "build-for": "nx run core:build:${npm_config_build}",
     "build-deploy": "echo \"No deploy for Core\"", 
     "clean": "rm -rf dist/*",
+    "test": "nx run core:test",
+    "e2e-test":"echo \"No end to end tests for Core\"",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/core versions --json | jq -r '.[-1]') && cd packages/core && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd packages/core && npm version prerelease && cd ../.. && nx run core:build:development && cd dist/packages/core && yalc push",
     "push": "cd packages/${npm_config_dir} && npm version prerelease && cd ../.. && nx run ${npm_config_dir}:build:development && cd dist/packages/${npm_config_dir} && yalc push"

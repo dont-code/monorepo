@@ -18,5 +18,5 @@
   "dependencies": {
     "tslib": "^2.4.1"
   },
-  "private":"false"
+  "private":false
 }

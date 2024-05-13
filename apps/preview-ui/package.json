@@ -12,7 +12,8 @@
     "build-for": "nx run preview-ui:build:${npm_config_build}",
     "build-deploy": "nx run preview-ui:build:${npm_config_build} --output-path=\"dist/apps/preview-ui/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/preview-ui/${npm_config_stage}\"", 
     "clean": "rm -rf dist/*",
-    "test": "nx test",
+    "test": "nx run preview-ui:test",
+    "e2e-test": "nx run preview-ui-e2e:e2e",
     "add-all": "yalc add @dontcode/core && yalc add @dontcode/plugin-common && yalc add @dontcode/sandbox",
     "add": "yalc add @dontcode/${npm_config_lib}"
   },
