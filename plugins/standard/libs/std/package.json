@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/plugin-std",
-  "version": "1.6.1-4",
+  "version": "1.7.1",
   "peerDependencies": {
     "@angular/common": "^15.1.2",
     "@angular/core": "^15.1.2",
@@ -12,10 +12,11 @@
     "primeng": "^15.1.1",
     "rxjs": "^7.8.0",
     "core-js": "^3.27.2",
-    "@dontcode/core": "^1.0.0",
-    "@dontcode/plugin-common": "^1.0.0"
+    "@dontcode/core": "^1.7.0",
+    "@dontcode/plugin-common": "^1.7.0"
   },
   "dependencies": {
     "tslib": "^2.4.1"
-  }
+  },
+  "private":"false"
 }
