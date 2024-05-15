@@ -39,5 +39,5 @@ jobs:
         run: node common/scripts/install-run-rush.js e2e-test
       - name: Rush rebuild
         run: |
-        node common/scripts/install-run-rush.js clean
-        node common/scripts/install-run-rush.js build-prod
+          node common/scripts/install-run-rush.js clean
+          node common/scripts/install-run-rush.js build-prod
