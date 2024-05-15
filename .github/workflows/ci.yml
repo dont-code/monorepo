@@ -31,13 +31,12 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - name: Rush Install
+      - name: Install
         run: node common/scripts/install-run-rush.js install
-      - name: Rush Tests
-        run: node common/scripts/install-run-rush.js test
-      - name: Rush E2e Tests
-        run: node common/scripts/install-run-rush.js e2e-test
-      - name: Rush rebuild
+      - name: Build
         run: |
-          node common/scripts/install-run-rush.js clean
           node common/scripts/install-run-rush.js build-prod
+      - name: Tests
+        run: node common/scripts/install-run-rush.js test
+      - name: E2e Tests
+        run: node common/scripts/install-run-rush.js e2e-test
