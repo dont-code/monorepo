@@ -13,7 +13,7 @@ import {
 } from '@dontcode/core';
 import {Observable} from 'rxjs';
 import {PossibleTemplateList, TemplateList} from './template-list';
-import {ComponentLoaderService, PluginCommonModule} from '@dontcode/plugin-common';
+import {ComponentLoaderService, PluginCommonModule} from '../plugin-common.module';
 import DoneCallback = jest.DoneCallback;
 
 describe('PluginBaseComponent', () => {

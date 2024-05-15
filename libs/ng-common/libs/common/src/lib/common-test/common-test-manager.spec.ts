@@ -1,14 +1,9 @@
-import {
-  AbstractDynamicComponent,
-  CommonTestManager, ComponentLoaderService,
-  PluginCommonModule,
-  PossibleTemplateList,
-  TemplateList
-} from "@dontcode/plugin-common";
 import {Component} from "@angular/core";
 import 'core-js/stable/structured-clone';
 import {CommonTestHostComponent} from "./common-test-host.component";
+import {CommonTestManager} from './common-test-manager';
 import {ComponentFixture, TestBed} from "@angular/core/testing"; // Some bugs in Jest disable the native call
+import { PluginCommonModule, ComponentLoaderService, AbstractDynamicComponent, PossibleTemplateList, TemplateList, DynamicInsertPoint } from "../plugin-common.module";
 
 describe('CommonTestManager', () => {
 
@@ -18,6 +13,7 @@ describe('CommonTestManager', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [CommonTestHostComponent],
+      providers: [DynamicInsertPoint],
       imports: [PluginCommonModule.forRoot()],
     }).compileComponents();
   });
