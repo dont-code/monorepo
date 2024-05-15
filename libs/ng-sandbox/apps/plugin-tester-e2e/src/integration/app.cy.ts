@@ -10,7 +10,7 @@ import {
   getToolbar,
   selectPopupChoiceWithText
 } from "../support/app.po";
-import {getTableHeader} from "../support/edit.po";
+import {getInputWithName} from "../support/edit.po";
 
 describe('Plugin tester', () => {
   beforeEach(() => cy.visit('/'));
@@ -38,7 +38,7 @@ describe('Plugin tester', () => {
     getSubMenus().should('have.length', 5);
     getSubMenuWithText( 'Task').click();
     getPageTitle().should('contain.text',"Task");
-    getTableHeader('Name').should('contain.text', "Name");
+    getInputWithName('Name');
 
       // Then load the Note Editor app
     getSubMenuWithText('Dev').click();// Move to dev page
@@ -50,7 +50,7 @@ describe('Plugin tester', () => {
     getSubMenus().should('have.length', 5);
     getSubMenuWithText( 'Note').click();
     getPageTitle().should('contain.text',"Note");
-    getTableHeader('Content').should('contain.text', "Content");
+    getInputWithName('Content');
 
       // Then reset the app
     getSubMenuWithText('Dev').click();// Move to dev page
