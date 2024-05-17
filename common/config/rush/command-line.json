@@ -52,15 +52,17 @@
       "summary": "Run Jest unit tests.",
       "description": "Run Jest unit tests",
       "enableParallelism": true,
-      "ignoreDependencyOrder": true
+      "ignoreDependencyOrder": true,
+      "allowWarningsInSuccessfulBuild": true
     },
     {
       "commandKind": "bulk",
       "name": "e2e-test",
       "summary": "Run Cypress tests",
       "description": "Run Cypress tests",
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true
+      "enableParallelism": false,
+      "ignoreDependencyOrder": true,
+      "allowWarningsInSuccessfulBuild": true
     },
     {
       "commandKind": "bulk",
