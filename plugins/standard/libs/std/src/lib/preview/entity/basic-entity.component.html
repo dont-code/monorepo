@@ -11,7 +11,7 @@
 <p-tabView [(activeIndex)]="tabIndex">
   <p-tabPanel header="List">
       <!-- Display an array of elements -->
-    <dontcode-list-entity [store]="store" [(selectedItem)]="selectedItem" (selectedItemChange)="selectChange($event)" ></dontcode-list-entity>
+    <dontcode-list-entity [entities]="store?.entities??[]" [(selectedItem)]="selectedItem" (selectedItemChange)="selectChange($event)" ></dontcode-list-entity>
   </p-tabPanel>
   <p-tabPanel header="Edit" [disabled]="!selectedItem">
       <dontcode-edit-entity [value]="selectedItem"></dontcode-edit-entity>
