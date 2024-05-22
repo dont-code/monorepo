@@ -39,4 +39,4 @@ jobs:
       - name: Tests
         run: node common/scripts/install-run-rush.js test
       - name: E2e Tests
-        run: node common/scripts/install-run-rush.js e2e-test
+        run: node common/scripts/install-run-rush.js e2e-test --browser chrome

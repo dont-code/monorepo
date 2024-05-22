@@ -110,7 +110,22 @@
       "required": true,
       "defaultValue": "next",
       "associatedCommands": ["build-deploy"]
+    },
+    {
+      "parameterKind":"choiceList",
+      "longName": "--browser",
+      "shortName": "-r",
+      "description": "Browser to use for e2e tests",
+      "alternatives": [
+        { "name":"chrome", "description": "Latest version of Chrome"},
+        { "name":"chromium", "description": "Latest version of Chromium"},
+        { "name":"firefox", "description": "Latest version of Firefox"}
+      ],
+      "required": false,
+      "defaultValue": "chromium",
+      "associatedCommands": ["e2e-test"]
     }
+
 
   ]
 }
