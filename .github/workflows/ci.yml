@@ -13,7 +13,8 @@ jobs:
     env:
       branch: ${{ inputs.branch || github.head_ref || github.ref_name }}
       stage: ${{ inputs.branch == 'main' && 'latest' || github.ref_name == 'main' && 'latest' || 'next' }}
-
+      ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
+      
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
