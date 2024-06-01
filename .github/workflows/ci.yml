@@ -19,7 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 10
           ref: ${{ env.branch }}
           token: ${{secrets.DONTCODE_ACTIONS_TOKEN}}
           
