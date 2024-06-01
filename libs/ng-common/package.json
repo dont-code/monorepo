@@ -10,7 +10,7 @@
     "start": "nx serve",
     "build": "nx run common:build:development",
     "build-for": "nx run common:build:${npm_config_build}",
-    "build-deploy": "echo \"No deploy for common\"", 
+    "build-deploy": "nx run common:build:${npm_config_build}",
     "clean": "rm -rf dist/*",
     "test": "nx run common:test",
     "e2e-test":"echo \"No end to end tests for Common lib\"",

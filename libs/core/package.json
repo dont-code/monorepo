@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nx run core:build:development",
     "build-for": "nx run core:build:${npm_config_build}",
-    "build-deploy": "echo \"No deploy for Core\"", 
+    "build-deploy": "nx run core:build:${npm_config_build}",
     "clean": "rm -rf dist/*",
     "test": "nx run core:test",
     "e2e-test":"echo \"No end to end tests for Core\"",
