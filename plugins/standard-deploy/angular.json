@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "projects": {
-    "plugin-tester": "apps/plugin-tester",
-    "plugin-tester-e2e": "apps/plugin-tester-e2e"
-  }
-}
