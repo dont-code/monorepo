@@ -4,7 +4,7 @@ import {
   ComponentLoaderService,
   PossibleTemplateList,
   TemplateList
-} from "@dontcode/plugin-common";
+} from '../plugin-common.module';
 
 @Component({
   selector: 'dontcode-test-host',

@@ -10,7 +10,8 @@
     "build-for": "nx run ide-ui:build:${npm_config_build}",
     "build-deploy": "nx run ide-ui:build:${npm_config_build} --output-path=\"dist/apps/ide-ui/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/ide-ui/${npm_config_stage}\"",
     "clean": "rm -rf dist/*",
-    "test": "nx test --detectOpenHandles=true",
+    "test": "nx run ide-ui:test",
+    "e2e-test":"nx run ide-ui-e2e:e2e",
     "lint": "nx workspace-lint && ng lint",
     "yalc-add-all": "yalc add @dontcode/core && yalc add @dontcode/plugin-common && yalc add @dontcode/plugin-basic && yalc add @dontcode/plugin-fields && yalc add @dontcode/plugin-rest && yalc add @dontcode/plugin-report",
     "yalc-add": "yalc add @dontcode/${npm_config_lib}"

@@ -1,7 +1,7 @@
 import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {DontCodeModelManager, DontCodeStoreManager, DontCodeTestManager, dtcde,} from '@dontcode/core';
-import {AbstractReferenceComponent, PluginCommonModule} from '@dontcode/plugin-common';
+import {AbstractReferenceComponent, PluginCommonModule} from '../plugin-common.module';
 
 describe('AbstractReferenceComponent', () => {
   let component: TestBaseComponent;

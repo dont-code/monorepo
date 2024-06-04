@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/sandbox",
-  "version": "7.1.0",
+  "version": "7.1.2",
   "license": "MIT",
   "main": "dist/libs/sandbox/esm2020/index.mjs",
   "typings": "dist/libs/sandbox/index.d.ts",
@@ -12,7 +12,8 @@
     "build-for": "nx run sandbox:build:${npm_config_build}",
     "build-deploy": "echo \"No deploy for Sandbox\"", 
     "clean": "rm -rf dist/*",
-    "test": "nx test",
+    "test": "nx run sandbox:test && nx run plugin-tester:test",
+    "e2e-test":"nx run plugin-tester-e2e:e2e",
     "build-all": "nx run common:build:development && nx run sandbox:build:development && nx run basic:build:development && nx run fields:build:development",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-common versions --json | jq -r '.[-1]') && cd libs/common && npm version $PACKAGE_VERSION --allow-same-version && cd ../sandbox && npm version $PACKAGE_VERSION --allow-same-version && PACKAGE_VERSION=$(npm view @dontcode/plugin-basic versions --json | jq -r '.[-1]')  && cd ../basic && npm version $PACKAGE_VERSION --allow-same-version && cd ../fields && npm version $PACKAGE_VERSION --allow-same-version && cd ../screen && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/common && npm version prerelease && cd ../sandbox && npm version prerelease && cd ../basic && npm version prerelease && cd ../fields && npm version prerelease && cd ../.. && nx run common:build:development && nx run sandbox:build:development && nx run basic:build:development && nx run fields:build:development && cd dist/libs/common && yalc push && cd ../sandbox && yalc push && cd ../basic && yalc push && cd ../fields && yalc push",

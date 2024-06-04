@@ -49,7 +49,7 @@ describe('Debug', () => {
     getSendButton().click();
     getHeaderMenu(4).should('contain.text', 'Application Menu');
     getSubMenuWithText( 'NewItem').click();
-    getPageTitle().should('contain.text',"NewItem");
+    cy.get('dontcode-sandbox-default-viewer').should('contain.text',"NewItem entity:");
   });
 
 

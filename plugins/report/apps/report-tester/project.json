@@ -32,7 +32,7 @@
           "apps/report-tester/src/favicon.ico",
           "apps/report-tester/src/assets",
           {
-            "input": "node_modules/@dontcode/sandbox/assets",
+            "input": "node_modules/@dontcode/sandbox/dist/libs/sandbox/assets",
             "glob": "**/*",
             "output": "assets"
           }

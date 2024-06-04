@@ -13,7 +13,7 @@ import Dexie, {Table} from "dexie";
 import {Injectable, OnDestroy, Optional} from "@angular/core";
 import {CommonConfigService, ValueService} from "@dontcode/plugin-common";
 import {CommonLibConfig} from "@dontcode/plugin-common";
-
+   
 @Injectable({
   providedIn: 'root'
 })

@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "sandbox": "libs/sandbox"
+    "sandbox": "libs/sandbox",
+    "plugin-tester":"apps/plugin-tester",
+    "plugin-tester-e2e":"apps/plugin-tester-e2e"
   }
 }

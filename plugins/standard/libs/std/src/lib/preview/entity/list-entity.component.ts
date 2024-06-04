@@ -50,7 +50,7 @@ export class ListEntityComponent
   colsMap = new Map<string, number>();
 
   @Input()
-  store: EntityListManager<any> | null = null;
+  entities:any[] = [] ;
 
   constructor(
     ref: ChangeDetectorRef,
@@ -130,10 +130,10 @@ export class ListEntityComponent
       // It must point directly to the element
     if (action.position == this.entityPointer?.position) {
         // Update all columns
-      if (this.store?.entities!=null) {
+      if (this.entities!=null) {
         for (const colInfo of this.cols)
           if ((colInfo.component as unknown as ActionHandler)?.performAction != null) {
-            for (const entity of this.store?.entities) {
+            for (const entity of this.entities) {
               colInfo.component?.setValue(entity[colInfo.field]);
               await (colInfo.component as unknown as ActionHandler).performAction (action);
               }
@@ -168,7 +168,7 @@ export class ListEntityComponent
   }
 
   getStoreEntities(): any[] {
-    if (this.store?.entities) return this.store.entities;
+    if (this.entities != null) return this.entities;
     else return [];
   }
 

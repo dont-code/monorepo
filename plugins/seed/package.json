@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/plugin-seed",
-  "version": "1.7.0",
+  "version": "1.7.2",
   "license": "MIT",
   "main": "dist/libs/seed/esm2020/index.mjs",
   "typings": "dist/libs/seed/index.d.ts",
@@ -12,7 +12,8 @@
     "build-for": "nx run seed:build:${npm_config_build}",
     "build-deploy": "nx run seed-tester:build:${npm_config_build} --output-path=\"dist/apps/seed-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugin-seed/${npm_config_stage}\"", 
     "clean": "rm -rf dist/*",
-    "test": "nx test",
+    "test": "nx run seed:test && nx run seed-tester:test",
+    "e2e-test":"nx run seed-tester-e2e:e2e",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-seed versions --json | jq -r '.[-1]') && cd libs/seed && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/seed && npm version prerelease && cd ../.. && nx run seed:build:development && cd dist/libs/seed && yalc push",
     "push": "cd libs/${npm_config_dir} && npm version prerelease && cd ../.. && nx run ${npm_config_dir}:build:development && cd dist/libs/${npm_config_dir} && yalc push"

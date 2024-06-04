@@ -1,6 +1,6 @@
 {
   "name": "@dontcode/plugin-commerce",
-  "version": "1.7.0",
+  "version": "1.7.3",
   "license": "MIT",
   "main": "dist/libs/commerce/esm2020/index.mjs",
   "typings": "dist/libs/commerce/index.d.ts",
@@ -12,7 +12,8 @@
     "build-for": "nx run commerce:build:${npm_config_build}",
     "build-deploy": "nx run commerce-tester:build:${npm_config_build} --output-path=\"dist/apps/commerce-tester/${npm_config_stage}\" --base-href=\"https://run.dont-code.net/plugin-commerce/${npm_config_stage}\"", 
     "clean": "rm -rf dist/*",
-    "test": "nx run commerce:test",
+    "test": "nx run commerce:test && nx run commerce-tester:test",
+    "e2e-test":"nx run commerce-tester-e2e:e2e",
     "align-version": "PACKAGE_VERSION=$(npm view @dontcode/plugin-commerce versions --json | jq -r '.[-1]') && cd libs/commerce && npm version $PACKAGE_VERSION --allow-same-version",
     "push-all": "cd libs/commerce && npm version prerelease && cd ../.. && nx run commerce:build:development && cd dist/libs/commerce && yalc push",
     "push": "cd libs/${npm_config_dir} && npm version prerelease && cd ../.. && nx run ${npm_config_dir}:build:development && cd dist/libs/${npm_config_dir} && yalc push"

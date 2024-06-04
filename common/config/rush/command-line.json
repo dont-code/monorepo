@@ -48,6 +48,24 @@
     },
     {
       "commandKind": "bulk",
+      "name": "test",
+      "summary": "Run Jest unit tests.",
+      "description": "Run Jest unit tests",
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "allowWarningsInSuccessfulBuild": true
+    },
+    {
+      "commandKind": "bulk",
+      "name": "e2e-test",
+      "summary": "Run Cypress tests",
+      "description": "Run Cypress tests",
+      "enableParallelism": false,
+      "ignoreDependencyOrder": true,
+      "allowWarningsInSuccessfulBuild": true
+    },
+    {
+      "commandKind": "bulk",
       "name": "build-deploy",
       "shellCommand": "rush-pnpm run build-deploy",
       "summary": "Prepare build for deployement",
@@ -92,7 +110,22 @@
       "required": true,
       "defaultValue": "next",
       "associatedCommands": ["build-deploy"]
+    },
+    {
+      "parameterKind":"choiceList",
+      "longName": "--browser",
+      "shortName": "-r",
+      "description": "Browser to use for e2e tests",
+      "alternatives": [
+        { "name":"chrome", "description": "Latest version of Chrome"},
+        { "name":"chromium", "description": "Latest version of Chromium"},
+        { "name":"firefox", "description": "Latest version of Firefox"}
+      ],
+      "required": false,
+      "defaultValue": "chromium",
+      "associatedCommands": ["e2e-test"]
     }
+
 
   ]
 }

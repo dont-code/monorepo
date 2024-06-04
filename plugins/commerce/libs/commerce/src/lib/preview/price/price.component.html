@@ -1,5 +1,5 @@
 <dtcde-dynamic></dtcde-dynamic>
-<ng-template #inlineView><span pTooltip="Price Date: {{value.priceDate??'Unknown'}}<br/>Shop:{{value.shop??'Unknown'}}" [escape]="false">
+<ng-template #inlineView><ng-container *ngIf="value"><span pTooltip="Price Date: {{value.priceDate??'Unknown'}}<br/>Shop:{{value.shop??'Unknown'}}" [escape]="false">
   <ng-container *ngIf="value?.urlInShop">
     <a href="{{value.urlInShop}}" target="_blank">
       <ng-container *ngTemplateOutlet="priceView" ></ng-container>
@@ -9,6 +9,7 @@
     <ng-container *ngTemplateOutlet="priceView" ></ng-container>
   </ng-container>
   </span>
+  </ng-container>
 </ng-template>
 
 <ng-template #priceView>

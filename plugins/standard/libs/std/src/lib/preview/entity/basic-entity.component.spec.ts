@@ -24,7 +24,7 @@ import {
   dtcde
 } from '@dontcode/core';
 import {Observable, Subject} from 'rxjs';
-import {BasicEntityComponent} from "@dontcode/plugin-basic";
+import {BasicEntityComponent} from "../entity/basic-entity.component";
 import {ToolbarModule} from "primeng/toolbar";
 import {TabViewModule} from "primeng/tabview";
 import {ListEntityComponent} from "./list-entity.component";
@@ -87,7 +87,7 @@ describe('BasicEntityComponent', () => {
       component.refreshScreen().then ( ()=> {
           done();
         }
-      ).catch(reason => {
+      ).catch((reason: any) => {
         done(reason);
       });
     });

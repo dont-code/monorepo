@@ -18,6 +18,8 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
       "@dontcode/plugin-std": ["libs/std/src/index.ts"],
     }
