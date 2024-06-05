@@ -38,10 +38,22 @@ jobs:
           node common/scripts/install-run-rush.js build-prod
       - name: Tests
         run: node common/scripts/install-run-rush.js test
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: test-logs
+          path: ./**/*.test*.log
       - name: E2e Tests
         run: node common/scripts/install-run-rush.js e2e-test --browser chrome
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: e2e-test-logs
-          path: ./**/*.log
+          path: ./**/*.e2e-test*.log
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: e2e-test-results
+          path: |
+            dist/cypress/**/*.mp4
+            dist/cypress/**/*.png
