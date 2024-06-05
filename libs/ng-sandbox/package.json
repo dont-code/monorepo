@@ -10,7 +10,7 @@
     "start": "nx serve",
     "build": "nx run sandbox:build:development",
     "build-for": "nx run sandbox:build:${npm_config_build}",
-    "build-deploy": "echo \"No deploy for Sandbox\"", 
+    "build-deploy": "nx run sandbox:build:${npm_config_build}", 
     "clean": "rm -rf dist/*",
     "test": "nx run sandbox:test && nx run plugin-tester:test",
     "e2e-test":"nx run plugin-tester-e2e:e2e",

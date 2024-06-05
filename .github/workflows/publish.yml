@@ -10,10 +10,6 @@ on:
         description: Is it a dev / next release ?
         required: true
         type: boolean
-      deploy:
-        description: Deploy to public website?
-        required: true
-        type: boolean
 jobs:
   build:
     env:
