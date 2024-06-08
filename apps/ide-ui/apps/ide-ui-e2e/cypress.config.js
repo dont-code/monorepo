@@ -1,6 +1,5 @@
-const { defineConfig } = require('cypress')
-installLogsPrinter= require ('cypress-terminal-report/src/installLogsPrinter');
-
+const { defineConfig } = require('cypress');
+const installLogsPrinter= require ('cypress-terminal-report/src/installLogsPrinter');
 
 module.exports = defineConfig({
   "fileServerFolder": ".",
@@ -17,6 +16,6 @@ module.exports = defineConfig({
         });
     },
     specPattern: './src/integration/**/*.cy.{js,jsx,ts,tsx}',
-    supportFile: './src/support/index.ts',
-  },
+    supportFile: './src/support/index.ts'
+  }
 })

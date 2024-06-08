@@ -15,6 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands';
+import 'cypress-mochawesome-reporter/register';
+import installLogsCollector from 'cypress-terminal-report/src/installLogsCollector'
 
 Cypress.on('uncaught:exception', (err) => {
   if (err.message.includes(`import.meta`)) {
@@ -22,3 +24,10 @@ Cypress.on('uncaught:exception', (err) => {
   }
   return true;
 });
+
+afterEach(() => {
+  cy.wait(50, {log: false}).then(() => cy.addTestContext(Cypress.TerminalReport.getLogs('txt')))
+});
+
+installLogsCollector();
+

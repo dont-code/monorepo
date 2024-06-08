@@ -44,6 +44,7 @@ export class TextService {
     this.jsonSchema = schemaAsJson;
     const rootSchema= AbstractSchemaItem.goto(schemaAsJson, DontCodeModel.ROOT);
     if( rootSchema) {
+      console.debug('Setting new RootElement');
       this.rootElement = EditorElement.createNew(
         DontCodeModel.ROOT, DontCodeModel.ROOT,
         EditorElementType.label, rootSchema);
