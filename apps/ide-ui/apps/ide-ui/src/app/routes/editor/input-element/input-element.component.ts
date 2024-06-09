@@ -38,18 +38,22 @@ export class InputElementComponent implements OnInit, OnDestroy {
       } else {
         this.control.setValue(this.element.getEditedValue(), {emitModelToViewChange:true, emitEvent:false});
       }
-    if (this.element?.isReadonly()==true)
+    
+    if ((this.element!=null) && (this.element.isReadonly()==true))
         this.control.disable({emitEvent:false});
       else
         this.control.enable({emitEvent:false});
     }
 
   onChange(newValue: string|null): void {
+    if (this.element!=null) {
     this.element.setEditedValue(newValue);
     this.changeService.pushChange(
       new Change(ChangeType.UPDATE,
         this.element.position,
         newValue));
-  }
+
+      }
+    }
 
 }
