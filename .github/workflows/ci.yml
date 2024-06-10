@@ -42,18 +42,14 @@ jobs:
         if: failure()
         with:
           name: test-logs
-          path: ./**/*.test*.log
+          path: ./*/*/*.test*.log
       - name: E2e Tests
         run: node common/scripts/install-run-rush.js e2e-test --browser chrome
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: e2e-test-logs
-          path: ./**/*.e2e-test*.log
-      - uses: actions/upload-artifact@v4
-        if: failure()
-        with:
           name: e2e-test-results
-          path: |
-            dist/cypress/**/*.mp4
-            dist/cypress/**/*.png
+          path: | 
+            ./*/*/*.e2e-test*.log
+            ./*/*/dist/cypress/**/*.mp4
+            ./*/*/dist/cypress/**/*.png

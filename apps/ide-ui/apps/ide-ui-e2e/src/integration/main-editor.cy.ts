@@ -28,12 +28,12 @@ describe('main-editor', () => {
     getEditorMenu().click();
     getAppNameInput().type('To Do App');
     getIndexEntityName('a').type('ToDo');
-    getIndexEntityFieldName('a','a').type('name');
+    getIndexEntityFieldName('a','a').type('name').type('{enter}');
     getIndexEntityFieldType('a','a').click();
     selectPopupChoiceWithText('Text');
     getIndexEntityAddButton('a').click();
-    getIndexEntityName('b').type('2nd');
-    getIndexEntityFieldName('b','a').type('description');
+    getIndexEntityName('b').type('2nd').type('{enter}');
+    getIndexEntityFieldName('b','a').type('description').type('{enter}');
     getIndexEntityFieldTypeInput('b','a').type('boolean');
     getIndexEntityFieldTypeValue('b','a').should('equal', 'Boolean');
     getDevMenu ().click();
