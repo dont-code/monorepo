@@ -26,8 +26,10 @@ describe('main-editor', () => {
     // Function helper example, see `../support/app.po.ts` file
 
     getEditorMenu().click();
-    getAppNameInput().should ('be.enabled');
-    getAppNameInput().type('To Do App');
+    const appName=getAppNameInput();
+    appName.click();
+    appName.should ('be.enabled');
+    appName.type('To Do App');
     getIndexEntityName('a').type('ToDo');
     getIndexEntityFieldName('a','a').type('name').type('{enter}');
     getIndexEntityFieldType('a','a').click();
