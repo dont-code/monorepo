@@ -80,7 +80,7 @@ jobs:
           PACKAGE_VERSION=$(npm view @dontcode/core versions --json | jq -r '.[-1]')
           echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
           npm version $PACKAGE_VERSION --allow-same-version
-          npm version $PACKAGE_VERSION
+          npm version ${{env.version}}
         working-directory: 'libs/core/packages/core'
 
       - name: Increase Common & Sandbox versions
