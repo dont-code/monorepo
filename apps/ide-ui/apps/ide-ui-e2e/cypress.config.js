@@ -1,4 +1,4 @@
-const { defineConfig } = require('cypress');
+const { defineConfig } = require('cypress')
 const installLogsPrinter= require ('cypress-terminal-report/src/installLogsPrinter');
 
 module.exports = defineConfig({
@@ -11,11 +11,11 @@ module.exports = defineConfig({
   "chromeWebSecurity": false,
   e2e: {
     setupNodeEvents(on, config) {
-        installLogsPrinter(on, {
-          printLogsToConsole: "always",
-        });
-    },
-    specPattern: './src/integration/**/*.cy.{js,jsx,ts,tsx}',
-    supportFile: './src/support/index.ts'
-  }
+      installLogsPrinter(on, {
+        printLogsToConsole: "always",
+      });
+  },
+  specPattern: './src/integration/**/*.cy.{js,jsx,ts,tsx}',
+    supportFile: './src/support/index.ts',
+  },
 })
