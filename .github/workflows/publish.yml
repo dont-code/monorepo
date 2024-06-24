@@ -41,12 +41,6 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - name: Install
-        run: |
-          node common/scripts/install-run-rush.js install
-      - name: Build
-        run: |
-          node common/scripts/install-run-rush.js build-deploy-${{ env.stage }}
 #      - name: Publish libraries & plugins
 #        run: |
 #          node common/scripts/install-run-rush.js version --bump --target-branch $${{ env.branch }}
@@ -61,17 +55,31 @@ jobs:
           npm version $PACKAGE_VERSION --allow-same-version
           cd ../../../../ng-common
           npm version $PACKAGE_VERSION --allow-same-version
-          cd ../ng-sandbox
+          cd libs/common
           npm version $PACKAGE_VERSION --allow-same-version
-          cd ../../plugins/standard
+          cd ../../../ng-sandbox
           npm version $PACKAGE_VERSION --allow-same-version
-          cd ../seed
+          cd libs/sandbox
           npm version $PACKAGE_VERSION --allow-same-version
-          cd ../rest
+          cd ../../../../plugins/standard
           npm version $PACKAGE_VERSION --allow-same-version
-          cd ../commerce
+          cd libs/std
           npm version $PACKAGE_VERSION --allow-same-version
-          cd ../report
+          cd ../../../seed
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd libs/seed
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd ../../../rest
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd libs/rest
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd ../../../report
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd libs/report
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd ../../../commerce
+          npm version $PACKAGE_VERSION --allow-same-version
+          cd libs/commerce
           npm version $PACKAGE_VERSION --allow-same-version
 
       - name: Increase Core version
@@ -112,13 +120,19 @@ jobs:
           cd plugins/seed
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{ env.version }}
+          cd libs/seed
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
 
       - name: Increase Rest version
-        if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
+        if: ${{ ( matrix.browser == 'chcd .romium' ) && ( inputs.version == '') }}
         run: |
           PACKAGE_VERSION=$(npm view @dontcode/plugin-rest versions --json | jq -r '.[-1]')
           echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
           cd plugins/rest
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
+          cd libs/rest
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{ env.version }}
 
@@ -130,6 +144,9 @@ jobs:
           cd plugins/commerce
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{ env.version }}
+          cd libs/commerce
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
 
       - name: Increase Report version
         if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
@@ -139,7 +156,15 @@ jobs:
           cd plugins/report
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{ env.version }}
-
+          cd libs/report
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
+      - name: Install
+        run: |
+          node common/scripts/install-run-rush.js install
+      - name: Build
+        run: |
+          node common/scripts/install-run-rush.js build-deploy-${{ env.stage }}
       - name: Publish libraries to ${{env.stage}}
         if: ${{ success() && ( matrix.browser == 'chromium' ) }}
         run: |
