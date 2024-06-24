@@ -41,11 +41,6 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
-#      - name: Publish libraries & plugins
-#        run: |
-#          node common/scripts/install-run-rush.js version --bump --target-branch $${{ env.branch }}
-#          node common/scripts/install-run-rush.js publish --include-all --versio#n-policy Standard --tag ${{ env.stage }} --target-branch $${{ env.branch }}
-
       - name: Set libs & plugins versions
         if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version != '') }}
         run: |
