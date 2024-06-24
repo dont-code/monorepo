@@ -112,7 +112,7 @@ jobs:
       - name: Increase Standard version
         if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
         run: |
-          PACKAGE_VERSION=$(npm view @dontcode/plugin-basic versions --json | jq -r '.[-1]')
+          PACKAGE_VERSION=$(npm view @dontcode/plugin-std versions --json | jq -r '.[-1]')
           echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
           cd plugins/standard
           npm version $PACKAGE_VERSION --allow-same-version
