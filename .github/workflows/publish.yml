@@ -99,9 +99,15 @@ jobs:
           cd libs/ng-common
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{env.version}}
-          cd ../ng-sandbox
+          cd libs/common
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
+          cd ../../../ng-sandbox
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{env.version}}
+          cd libs/sandbox
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
 
       - name: Increase Standard version
         if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
@@ -111,6 +117,9 @@ jobs:
           cd plugins/standard
           npm version $PACKAGE_VERSION --allow-same-version
           npm version ${{env.version}}
+          cd libs/std
+          npm version $PACKAGE_VERSION --allow-same-version
+          npm version ${{ env.version }}
         
       - name: Increase Seed version
         if: ${{ ( matrix.browser == 'chromium' ) && ( inputs.version == '') }}
