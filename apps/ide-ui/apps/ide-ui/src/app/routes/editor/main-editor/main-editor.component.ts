@@ -33,7 +33,7 @@ export class MainEditorComponent implements OnInit, OnDestroy {
 
     this.unsubscriber.add(this.changeListener.getChangeEvents()
       .subscribe(change => {
-        console.debug('Change receive for rootElement', this.rootElement?.getChild('name')?.getEditedValue());
+        //console.debug('Change receive for rootElement', this.rootElement?.getChild('name')?.getEditedValue());
         if (change.type===ChangeType.RESET) {
           if( change.position===DontCodeModel.ROOT || change.position==="") {
             try {
@@ -49,6 +49,7 @@ export class MainEditorComponent implements OnInit, OnDestroy {
         }
       })
     );
+
   }
 
   ngOnDestroy(): void {

@@ -46,9 +46,6 @@ jobs:
       - name: Build
         run: |
           node common/scripts/install-run-rush.js build-deploy-${{ env.stage }}
-#      - name: Deploy plugins and apps
-#        run: |
-#          node common/scripts/install-run-rush.js deploy --scenario libs --project @dontcode/plugin-std --target-folder publish/plugin-std
       - name: Deploy to github pages as ${{env.stage}}
         if: ${{ success() && (matrix.browser == 'chromium') && ( inputs.deploy == true ) }}
         uses: gcollin/ghaction-github-pages@main
