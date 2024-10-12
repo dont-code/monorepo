@@ -35,18 +35,18 @@ describe('EasyParaScrapper', () => {
     }).catch(error => {
       done (error);
     });
-    expectOneSampleFile("easypara/chardon-marie-search-result.json", httpTestingController,AbstractOnlineShopScrapper.CORS_PROXY_URL);
+    expectOneSampleFile("easypara/chardon-marie-search-result.json", httpTestingController,AbstractOnlineShopScrapper.CORS_DONTCODE_PROXY_URL);
   });
 
   it('should get price', (done) => {
     expect(component).toBeTruthy();
-    component.updatePrice({productId:"3700026996703", productName:"Chardon Marie"}).then(value => {
-      expect(value?.productPrice).toEqual(9.8);
+    component.updatePrice({productId:"3760265300044", productName:"Chardon Marie"}).then(value => {
+      expect(value?.productPrice).toEqual(8.49);
       done();
     }).catch(error => {
       done (error);
     });
-    expectOneSampleFile("easypara/chardon-marie-search-result.json", httpTestingController,AbstractOnlineShopScrapper.CORS_PROXY_URL);
+    expectOneSampleFile("easypara/chardon-marie-search-result.json", httpTestingController,AbstractOnlineShopScrapper.CORS_DONTCODE_PROXY_URL);
   });
 });
 
