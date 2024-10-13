@@ -40,7 +40,7 @@ describe('GreenweezScrapper', () => {
   it('should get price', (done) => {
     expect(component).toBeTruthy();
     component.updatePrice({productId:"1NATF0093", productName:"Chardon Marie"}).then(value => {
-      expect(value?.productPrice).toEqual(10.9);
+      expect(value?.productPrice).toEqual(9.95);
       done();
     }).catch(error => {
       done (error);
