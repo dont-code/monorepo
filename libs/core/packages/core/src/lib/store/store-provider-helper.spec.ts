@@ -113,6 +113,39 @@ describe('Store Provider Helper', () => {
 
   });
 
+  it('should correctly manage Date fields', () => {
+
+    StoreProviderHelper.clearConfigCache();
+
+    let result = StoreProviderHelper.findSpecialFields("creation/entity/b", {
+      name:"EntityB",
+      fields: {
+        "ba": {
+          name: "_id",
+          type:"Text"
+        },
+        "bb": {
+          name: "Date",
+          type:"Date & Time"
+        }
+      }
+    });
+
+    expect(result.dateFields).toEqual(["Date"]);
+
+    let listToTest:Array<any>=[{
+      _id:454545,
+      Date:"2024-12-23T13:18:37.000Z"
+    }, {
+      _id:76877,
+      Date:"2022-12-10T14:51:59.110Z"
+    }]
+
+    StoreProviderHelper.cleanUpLoadedData(listToTest, result);
+    expect(listToTest[0].Date.valueOf()).not.toBeNaN();
+    expect(listToTest[1].Date.valueOf()).not.toBeNaN();
+  });
+
   it('should dynamically manage Id fields', () => {
     StoreProviderHelper.clearConfigCache();
     const result = StoreProviderHelper.findSpecialFields("creation/entity/d", {
