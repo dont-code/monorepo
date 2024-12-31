@@ -68,12 +68,12 @@ export class TimeFieldsComponent extends AbstractDynamicComponent {
   }
 
   localizeLongDate (value:Date): string {
-    if( Number.isNaN(value.valueOf()) ) return "";
+    if( (value!=null) && (Number.isNaN(value.valueOf())) ) return "";
     return this.longConverter.format(value);
   }
 
   localizeShortDate (value:Date): string {
-    if( Number.isNaN(value.valueOf()) ) return "";
+    if( (value!=null) && (Number.isNaN(value.valueOf())) ) return "";
     return this.shortConverter.format(value);
   }
 
