@@ -184,6 +184,7 @@ export class StoreProviderHelper {
             }
             else {
               val[prop]=new Date(timeEpoch);
+
             }
           }
         })
@@ -273,7 +274,7 @@ export class StoreProviderHelper {
 
                 if ((value!=null) && ((maxValue==null) || (value > maxValue)))
                   { counter.maximum = valSrc; counter.maxAsValue = value;}
-              
+
               }
 
               if (value!=null) {

@@ -59,6 +59,10 @@ export class DontCodeApiStoreProvider<T=never> extends AbstractDontCodeStoreProv
     }
 
     const id=(data as any)._id;
+    // Reconverts dates or Ids
+    const specialFields = StoreProviderHelper.findSpecialFields(position, entity);
+    StoreProviderHelper.cleanUpDataBeforeSaving([data], specialFields);
+
     if( id != undefined) {
       return lastValueFrom(this.http.put<T>(this.apiUrl+'/'+entity.name+'/'+id, data, {observe:"body", responseType:"json"}));
     } else {
@@ -73,7 +77,12 @@ export class DontCodeApiStoreProvider<T=never> extends AbstractDontCodeStoreProv
     }
 
     const obs = this.http.get<T>(this.apiUrl+'/'+entity.name+'/'+key, {observe:"body", responseType:"json"});
-    return lastValueFrom(obs);
+    const specialFields = StoreProviderHelper.findSpecialFields(position, entity);
+
+    return lastValueFrom(obs).then((value) => {
+      StoreProviderHelper.cleanUpLoadedData([value], specialFields);
+      return value;
+    });
   }
 
   deleteEntity(position: string, key: any): Promise<boolean> {
@@ -82,7 +91,7 @@ export class DontCodeApiStoreProvider<T=never> extends AbstractDontCodeStoreProv
       return Promise.reject("No entity found at position "+position);
     }
 
-    return this.http.delete(this.apiUrl+'/'+entity.name+'/'+key, {observe:"body", responseType:"json"}).toPromise().then(value => {
+    return lastValueFrom(this.http.delete(this.apiUrl+'/'+entity.name+'/'+key, {observe:"body", responseType:"json"})).then(value => {
       return true;
     });
     }
@@ -93,10 +102,16 @@ export class DontCodeApiStoreProvider<T=never> extends AbstractDontCodeStoreProv
       return throwError(()=> new Error ("No entity found at position "+position));
     }
 
-    return this.http.get(this.apiUrl+'/'+entity.name, {observe:"body", responseType:"json"}).pipe(map(value => {
-            return StoreProviderHelper.applyFilters( value as Array<any>, ...criteria);
-          }
-        ));
+    const specialFields = StoreProviderHelper.findSpecialFields(position, entity);
+    return this.http.get(this.apiUrl+'/'+entity.name, {observe:"body", responseType:"json"}).pipe(
+        map(value => {
+          StoreProviderHelper.cleanUpLoadedData(value as T [], specialFields);
+          return value as T[];
+        }),map(value => {
+          return StoreProviderHelper.applyFilters( value, ...criteria);
+        }
+      )
+    );
     }
 
   canStoreDocument(position?: string): boolean {
